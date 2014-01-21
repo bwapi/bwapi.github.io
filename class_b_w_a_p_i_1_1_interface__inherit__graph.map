@@ -1,0 +1,20 @@
+<map id="BWAPI::Interface&lt; T &gt;" name="BWAPI::Interface&lt; T &gt;">
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; Game \&gt;" alt="" coords="349,5,531,32"/>
+<area shape="rect" id="node5" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; ForceInterface \&gt;" alt="" coords="326,56,554,83"/>
+<area shape="rect" id="node8" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; UnitInterface \&gt;" alt="" coords="331,107,549,133"/>
+<area shape="rect" id="node11" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; Bullet\lInterface \&gt;" alt="" coords="357,158,523,199"/>
+<area shape="rect" id="node14" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; Player\lInterface \&gt;" alt="" coords="355,223,525,265"/>
+<area shape="rect" id="node17" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; Region\lInterface \&gt;" alt="" coords="353,289,527,330"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_game.html" title="The abstract Game class is implemented by BWAPI and is the primary means of obtaining all game state ..." alt="" coords="633,5,741,32"/>
+<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_game_impl.html" title="BWAPI::GameImpl" alt="" coords="822,5,954,32"/>
+<area shape="rect" id="node6" href="$class_b_w_a_p_i_1_1_force_interface.html" title="The Force class is used to get information about each force in a match. " alt="" coords="609,56,764,83"/>
+<area shape="rect" id="node7" href="$class_b_w_a_p_i_1_1_force_impl.html" title="BWAPI::ForceImpl" alt="" coords="823,56,953,83"/>
+<area shape="rect" id="node9" href="$class_b_w_a_p_i_1_1_unit_interface.html" title="The Unit class is used to get information about individual units as well as issue orders to units..." alt="" coords="614,107,759,133"/>
+<area shape="rect" id="node10" href="$class_b_w_a_p_i_1_1_unit_impl.html" title="BWAPI::UnitImpl" alt="" coords="828,107,948,133"/>
+<area shape="rect" id="node12" href="$class_b_w_a_p_i_1_1_bullet_interface.html" title="An interface object representing a bullet or missile spawned from an attack. " alt="" coords="609,165,764,192"/>
+<area shape="rect" id="node13" href="$class_b_w_a_p_i_1_1_bullet_impl.html" title="BWAPI::BulletImpl" alt="" coords="823,165,953,192"/>
+<area shape="rect" id="node15" href="$class_b_w_a_p_i_1_1_player_interface.html" title="The Player represents a unique controller in the game. " alt="" coords="607,231,766,257"/>
+<area shape="rect" id="node16" href="$class_b_w_a_p_i_1_1_player_impl.html" title="BWAPI::PlayerImpl" alt="" coords="821,231,955,257"/>
+<area shape="rect" id="node18" href="$class_b_w_a_p_i_1_1_region_interface.html" title="Region objects are created by Starcraft: Broodwar to contain several tiles with the same properties..." alt="" coords="605,296,768,323"/>
+<area shape="rect" id="node19" href="$class_b_w_a_p_i_1_1_region_impl.html" title="BWAPI::RegionImpl" alt="" coords="819,296,957,323"/>
+</map>

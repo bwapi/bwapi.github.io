@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; ForceInterface \&gt;" alt="" coords="6,5,234,32"/>
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_force_interface.html" title="The Force class is used to get information about each force in a match. " alt="" coords="283,5,437,32"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_force_impl.html" title="BWAPI::ForceImpl" alt="" coords="485,5,616,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; Order,\l Orders::Enum::Unknown \&gt;" alt="" coords="6,5,186,46"/>
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_order.html" title="An Order (Order type) represents a Unit&#39;s current action and can be retrieved with UnitInterface::get..." alt="" coords="235,12,341,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="BWAPI::DamageType" name="BWAPI::DamageType">
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; DamageType,\l DamageTypes::Enum::Unknown \&gt;" alt="" coords="5,110,229,151"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_type.html" title="Base superclass for all BWAPI Types. " alt="" coords="16,5,219,32"/>
+</map>

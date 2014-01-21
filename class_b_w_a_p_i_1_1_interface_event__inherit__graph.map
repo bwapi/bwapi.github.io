@@ -1,0 +1,8 @@
+<map id="BWAPI::InterfaceEvent&lt; T &gt;" name="BWAPI::InterfaceEvent&lt; T &gt;">
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_interface_event.html" title="BWAPI::InterfaceEvent\l\&lt; Game \&gt;" alt="" coords="357,5,512,46"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_interface_event.html" title="BWAPI::InterfaceEvent\l\&lt; ForceInterface \&gt;" alt="" coords="357,70,512,111"/>
+<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_interface_event.html" title="BWAPI::InterfaceEvent\l\&lt; UnitInterface \&gt;" alt="" coords="357,135,512,177"/>
+<area shape="rect" id="node5" href="$class_b_w_a_p_i_1_1_interface_event.html" title="BWAPI::InterfaceEvent\l\&lt; BulletInterface \&gt;" alt="" coords="357,201,512,242"/>
+<area shape="rect" id="node6" href="$class_b_w_a_p_i_1_1_interface_event.html" title="BWAPI::InterfaceEvent\l\&lt; PlayerInterface \&gt;" alt="" coords="357,266,512,307"/>
+<area shape="rect" id="node7" href="$class_b_w_a_p_i_1_1_interface_event.html" title="BWAPI::InterfaceEvent\l\&lt; RegionInterface \&gt;" alt="" coords="357,331,512,373"/>
+</map>
