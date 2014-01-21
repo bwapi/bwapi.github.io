@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['race',['Race',['../class_b_w_a_p_i_1_1_race.html#a51f7d7bb49ef4801ceb76f960a9270ce',1,'BWAPI::Race']]],
+  ['rand',['rand',['../class_b_w_a_p_i_1_1_const_vectorset.html#ad94d5cc2cd8f35d0e1ad2da1beb22469',1,'BWAPI::ConstVectorset']]],
+  ['red',['red',['../class_b_w_a_p_i_1_1_color.html#ac1894347565d74bb82e9bcdcaa5f1e76',1,'BWAPI::Color']]],
+  ['refundedgas',['refundedGas',['../class_b_w_a_p_i_1_1_player_interface.html#a12b92be6f436b4a725b34c02a3d4d4d8',1,'BWAPI::PlayerInterface']]],
+  ['refundedminerals',['refundedMinerals',['../class_b_w_a_p_i_1_1_player_interface.html#a081936a2f743365157394f7e4d980ce7',1,'BWAPI::PlayerInterface']]],
+  ['regenerateshp',['regeneratesHP',['../class_b_w_a_p_i_1_1_unit_type.html#a8ef479fe3a3cba22da9554eae9632c3e',1,'BWAPI::UnitType']]],
+  ['registerevent',['registerEvent',['../class_b_w_a_p_i_1_1_interface.html#a8b577bbffb372ba99db11a495366cd3b',1,'BWAPI::Interface::registerEvent(const std::function&lt; void(T *)&gt; &amp;action, const std::function&lt; bool(T *)&gt; &amp;condition=nullptr, int timesToRun=-1, int framesToCheck=0)'],['../class_b_w_a_p_i_1_1_interface.html#a691ef1b5133c555d91ef5650df374c65',1,'BWAPI::Interface::registerEvent(const InterfaceEvent&lt; T &gt; &amp;evt)'],['../class_b_w_a_p_i_1_1_interface.html#a261100a770a51a3263dda0bbc9682423',1,'BWAPI::Interface::registerEvent(InterfaceEvent&lt; T &gt; &amp;&amp;evt)']]],
+  ['remove',['remove',['../class_b_w_a_p_i_1_1_vectorset.html#af0dc10078ebbad93ca5ed5d8c98110e6',1,'BWAPI::Vectorset::remove(const _T &amp;val)'],['../class_b_w_a_p_i_1_1_vectorset.html#a0e1c53220a04ac03c429a855da12686b',1,'BWAPI::Vectorset::remove(const iterator &amp;iter)']]],
+  ['remove_5fif',['remove_if',['../class_b_w_a_p_i_1_1_vectorset.html#a76aea0f14fc1c5b64ab5a6ddd45b7b24',1,'BWAPI::Vectorset']]],
+  ['removeevent',['removeEvent',['../class_b_w_a_p_i_1_1_interface_event.html#ac99d5d8c5225e1abcb9a53fe01acc83e',1,'BWAPI::InterfaceEvent']]],
+  ['repair',['repair',['../class_b_w_a_p_i_1_1_unit_interface.html#aa3eada76d4e63286025559f32c5e4bb8',1,'BWAPI::UnitInterface::repair()'],['../class_b_w_a_p_i_1_1_unitset.html#a22a670da179af078b1bbe4cbed49f040',1,'BWAPI::Unitset::repair()']]],
+  ['repairedgas',['repairedGas',['../class_b_w_a_p_i_1_1_player_interface.html#a54a49614debd1d15fc93784ed52613c2',1,'BWAPI::PlayerInterface']]],
+  ['repairedminerals',['repairedMinerals',['../class_b_w_a_p_i_1_1_player_interface.html#a1924e4db4876d3e42398865876bd6d94',1,'BWAPI::PlayerInterface']]],
+  ['requiredtech',['requiredTech',['../class_b_w_a_p_i_1_1_unit_type.html#a4441e75d1234cdce3934b64bb2fcf8aa',1,'BWAPI::UnitType']]],
+  ['requiredunits',['requiredUnits',['../class_b_w_a_p_i_1_1_unit_type.html#aa1912ae57c4201a60c5cae1fd4db1ee8',1,'BWAPI::UnitType']]],
+  ['requirescreep',['requiresCreep',['../class_b_w_a_p_i_1_1_unit_type.html#a96e12875a03c4036c05b5fdf9270aa58',1,'BWAPI::UnitType']]],
+  ['requirespsi',['requiresPsi',['../class_b_w_a_p_i_1_1_unit_type.html#a97b50b4342acd82f72cdbbe3cdade061',1,'BWAPI::UnitType']]],
+  ['research',['research',['../class_b_w_a_p_i_1_1_unit_interface.html#a00b77ee444c0f3eaf13c46c83529a349',1,'BWAPI::UnitInterface']]],
+  ['researchtime',['researchTime',['../class_b_w_a_p_i_1_1_tech_type.html#a8a3a87f469edea3f2d15767ec0589435',1,'BWAPI::TechType']]],
+  ['restartgame',['restartGame',['../class_b_w_a_p_i_1_1_game.html#abe618329ee25aeac8914fd1e10ad11d4',1,'BWAPI::Game']]],
+  ['resumegame',['resumeGame',['../class_b_w_a_p_i_1_1_game.html#ae4313d3b2c372cf4fdefade30bde30df',1,'BWAPI::Game']]],
+  ['returncargo',['returnCargo',['../class_b_w_a_p_i_1_1_unit_interface.html#a238046ac17f954b141e7098efab70721',1,'BWAPI::UnitInterface::returnCargo()'],['../class_b_w_a_p_i_1_1_unitset.html#a0b24b5f25b609169c0fafbe70d2f60aa',1,'BWAPI::Unitset::returnCargo()']]],
+  ['rightclick',['rightClick',['../class_b_w_a_p_i_1_1_unit_interface.html#a1f49bd019830de7ab36bf5b2bfeff9af',1,'BWAPI::UnitInterface::rightClick()'],['../class_b_w_a_p_i_1_1_unitset.html#aa4fe373b8211adf80c805440b8857890',1,'BWAPI::Unitset::rightClick()']]]
+];

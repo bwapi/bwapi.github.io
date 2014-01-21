@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>BWAPI: Main Page</title>
+<title>BWAPI: BWAPI::BulletType Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -54,10 +54,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript" src="dynsections.js"></script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -77,6 +77,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
 </div>
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -88,15 +96,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('index.html','');
+  initNavTree('class_b_w_a_p_i_1_1_bullet_type.html','');
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">BWAPI Documentation</div>  </div>
+<div class="title">BWAPI::BulletType Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<!-- doxytag: class="BWAPI::BulletType" --><!-- doxytag: inherits="Type&lt; BulletType, BulletTypes::Enum::Unknown &gt;" --><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for BWAPI::BulletType:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+ <div class="center">
+  <img src="class_b_w_a_p_i_1_1_bullet_type.png" usemap="#BWAPI::BulletType_map" alt=""/>
+  <map id="BWAPI::BulletType_map" name="BWAPI::BulletType_map">
+<area href="class_b_w_a_p_i_1_1_type.html" alt="BWAPI::Type&lt; BulletType, BulletTypes::Enum::Unknown &gt;" shape="rect" coords="0,0,336,24"/>
+</map>
+ </div></div>
+
+<p><a href="class_b_w_a_p_i_1_1_bullet_type-members.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_bullet_type.html#a73a332278bf53b0d129b8d8ecfc776f4">BulletType</a> (int id=BulletTypes::Enum::None)</td></tr>
+</table>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a73a332278bf53b0d129b8d8ecfc776f4"></a><!-- doxytag: member="BWAPI::BulletType::BulletType" ref="a73a332278bf53b0d129b8d8ecfc776f4" args="(int id=BulletTypes::Enum::None)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_b_w_a_p_i_1_1_bullet_type.html#a73a332278bf53b0d129b8d8ecfc776f4">BWAPI::BulletType::BulletType</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em> = <code>BulletTypes::Enum::None</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Expected type constructor. </p>
+<p>If the type is an invalid type, then it becomes Types::Unknown. A type is invalid if its value is less than 0 or greater than Types::Unknown.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>(optional) The id that corresponds to this type. It is typically an integer value that corresponds to an internal Broodwar type. If the given id is invalid, then it becomes Types::Unknown. If it is omitted, then it becomes Types::None. </td></tr>
+  </table>
+  </dd>
+</dl>
+ 
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_bullet_type_8h_source.html">BulletType.h</a></li>
+</ul>
 </div><!-- contents -->
+</div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -111,11 +169,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-</div>
   <div id="nav-path" class="navpath">
     <ul>
+      <li class="navelem"><b>BWAPI</b>      </li>
+      <li class="navelem"><a class="el" href="class_b_w_a_p_i_1_1_bullet_type.html">BulletType</a>      </li>
 
-    <li class="footer">Generated on Mon Jan 20 2014 20:42:02 for BWAPI by
+    <li class="footer">Generated on Mon Jan 20 2014 20:42:00 for BWAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

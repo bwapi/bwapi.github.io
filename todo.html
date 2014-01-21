@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>BWAPI: Main Page</title>
+<title>BWAPI: Todo List</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript" src="dynsections.js"></script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -88,15 +88,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('index.html','');
+  initNavTree('todo.html','');
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">BWAPI Documentation</div>  </div>
+<div class="title">Todo List </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_const_vectorset.html#aad51383711186be1319ba7ffa62b222f">BWAPI::ConstVectorset&lt; T &gt;::operator[]</a>  (unsigned int index) const </dt>
+<dd>Needs to be modified </dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_const_vectorset.html#ad94d5cc2cd8f35d0e1ad2da1beb22469">BWAPI::ConstVectorset&lt; T &gt;::rand</a>  () const </dt>
+<dd>needs to be modified </dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#ad10051a0a72568d2b767c17f2c60f352">BWAPI::Game::canResearch</a>  (TechType type, Unit unit=nullptr, bool checkCanIssueCommandType=true)=0</dt>
+<dd>fill this in </dd>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#ae9953ba1c9fb93ed3269fa6b5e78f168">BWAPI::Game::canUpgrade</a>  (UpgradeType type, Unit unit=nullptr, bool checkCanIssueCommandType=true)=0</dt>
+<dd>fill this in </dd>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#a4db25bc867384c505cacfafc3ee49314">BWAPI::Game::enableFlag</a>  (int flag)=0</dt>
+<dd>Take Flag::Enum as parameter instead of int  </dd>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#aa42b7aa3eaa6c0bed9e9216571cdcdea">BWAPI::Game::getLatency</a>  () const =0</dt>
+<dd>Change return type to Latency::Enum without breaking everything.  </dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#a570fd50181adb09a5c528ada3904be35">BWAPI::Game::isFlagEnabled</a>  (int flag) const =0</dt>
+<dd>Take Flag::Enum as parameter instead of int  </dd>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#a3e0a6ef7e7937c6c63e16ee5bb0e8d44">BWAPI::Game::mapFileName</a>  () const =0</dt>
+<dd>: Note on campaign files. </dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#a93ae6526a432f40b784c57633d73392c">BWAPI::Game::mapHash</a>  () const =0</dt>
+<dd>: Note on replays.  </dd>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#a69b366ffecdfac5a0d36eecc41c4b29b">BWAPI::Game::mapPathName</a>  () const =0</dt>
+<dd>: Note on campaign files. </dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_game.html#abe618329ee25aeac8914fd1e10ad11d4">BWAPI::Game::restartGame</a>  ()=0</dt>
+<dd>return a bool indicating success, document error code for invalid state  </dd>
+<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_unit_interface.html#a0a44575cd8dae94766538848c1113b98">BWAPI::UnitInterface::isHoldingPosition</a>  () const </dt>
+<dd>may currently be wrong  </dd>
+<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#ae1c2e4b9d4be22c64edfc4f59fd9fb24">BWAPI::UnitType::isRobotic</a>  () const </dt>
+<dd>finish this </dd>
+<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_vectorset.html#ae8e7cd872089abde9e574dac3a8d5a69">BWAPI::Vectorset&lt; _T &gt;::pop_back</a>  ()</dt>
+<dd>change return value to copy of value that was popped  </dd>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="class_b_w_a_p_i_1_1_vectorset.html#af96a2a9e231ab372169218984125c750">BWAPI::Vectorset&lt; _T &gt;::pop_front</a>  ()</dt>
+<dd>change return value to copy of value that was popped </dd>
+</dl>
+</div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -115,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="nav-path" class="navpath">
     <ul>
 
-    <li class="footer">Generated on Mon Jan 20 2014 20:42:02 for BWAPI by
+    <li class="footer">Generated on Mon Jan 20 2014 20:42:00 for BWAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
