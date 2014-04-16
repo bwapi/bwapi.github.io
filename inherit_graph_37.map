@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_tournament_module.html" title="TournamentModule is a virtual class that is intended to be implemented or inherited by a custom Tourn..." alt="" coords="6,5,189,32"/>
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; PlayerType,\l PlayerTypes::Enum::Unknown \&gt;" alt="" coords="5,5,221,51"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_player_type.html" title="BWAPI::PlayerType" alt="" coords="271,13,409,43"/>
 </map>

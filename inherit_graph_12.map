@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_b_w_a_p_i_1_1_game_table.html" title="BWAPI::GameTable" alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; Region\lInterface \&gt;" alt="" coords="5,5,184,51"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_region_interface.html" title="Region objects are created by Starcraft: Broodwar to contain several tiles with the same properties..." alt="" coords="233,13,399,43"/>
 </map>

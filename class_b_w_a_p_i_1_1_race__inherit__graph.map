@@ -1,4 +1,4 @@
 <map id="BWAPI::Race" name="BWAPI::Race">
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; Race,\l Races::Enum::Unknown \&gt;" alt="" coords="17,110,196,151"/>
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_type.html" title="Base superclass for all BWAPI Types. " alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; Race,\l Races::Enum::Unknown \&gt;" alt="" coords="19,118,200,165"/>
+<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_type.html" title="Base superclass for all BWAPI Types. " alt="" coords="5,5,213,35"/>
 </map>

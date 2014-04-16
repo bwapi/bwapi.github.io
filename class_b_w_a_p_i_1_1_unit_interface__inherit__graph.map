@@ -1,5 +1,4 @@
 <map id="BWAPI::UnitInterface" name="BWAPI::UnitInterface">
-<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_unit_impl.html" title="BWAPI::UnitImpl" alt="" coords="55,251,175,277"/>
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; UnitInterface \&gt;" alt="" coords="5,96,224,123"/>
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_interface.html" title="This generalized class allows the application of features that are common to all interface classes..." alt="" coords="38,5,191,32"/>
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; UnitInterface \&gt;" alt="" coords="5,101,229,131"/>
+<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_interface.html" title="This generalized class allows the application of features that are common to all interface classes..." alt="" coords="39,5,196,35"/>
 </map>

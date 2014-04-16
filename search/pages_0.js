@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bug_20list',['Bug List',['../bug.html',1,'']]]
+  ['academics',['Academics',['../md_pages_wiki__academics.html',1,'']]]
 ];

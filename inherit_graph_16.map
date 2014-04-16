@@ -1,5 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; Game \&gt;" alt="" coords="5,5,187,32"/>
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_game.html" title="The abstract Game class is implemented by BWAPI and is the primary means of obtaining all game state ..." alt="" coords="235,5,343,32"/>
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_game_impl.html" title="BWAPI::GameImpl" alt="" coords="393,5,525,32"/>
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_interface_event.html" title="BWAPI::InterfaceEvent\l\&lt; ForceInterface \&gt;" alt="" coords="7,5,164,51"/>
 </map>

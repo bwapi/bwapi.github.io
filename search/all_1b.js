@@ -2,7 +2,6 @@ var searchData=
 [
   ['_7eaimodule',['~AIModule',['../class_b_w_a_p_i_1_1_a_i_module.html#aeaaa08e378d92cbf8145d43ec9e6a930',1,'BWAPI::AIModule']]],
   ['_7ebulletinterface',['~BulletInterface',['../class_b_w_a_p_i_1_1_bullet_interface.html#ae51fc3232e23fdb2fab6812ffb1d5354',1,'BWAPI::BulletInterface']]],
-  ['_7eclient',['~Client',['../class_b_w_a_p_i_1_1_client.html#a33cc971583879174b46ea4684d8a3324',1,'BWAPI::Client']]],
   ['_7eevent',['~Event',['../class_b_w_a_p_i_1_1_event.html#a42cc72714c496cb82f394f70abd8baf3',1,'BWAPI::Event']]],
   ['_7eforceinterface',['~ForceInterface',['../class_b_w_a_p_i_1_1_force_interface.html#a28d88f8dad0d52e506747aeab475291c',1,'BWAPI::ForceInterface']]],
   ['_7egame',['~Game',['../class_b_w_a_p_i_1_1_game.html#acd4ea5d3e02870eddd71db0eee80d470',1,'BWAPI::Game']]],

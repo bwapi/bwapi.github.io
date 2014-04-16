@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_event.html" title="BWAPI::Event" alt="" coords="6,5,111,32"/>
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_interface.html" title="BWAPI::Interface\&lt; Bullet\lInterface \&gt;" alt="" coords="5,5,176,51"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_bullet_interface.html" title="An interface object representing a bullet or missile spawned from an attack. " alt="" coords="225,13,383,43"/>
 </map>

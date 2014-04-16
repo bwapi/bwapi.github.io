@@ -3,18 +3,14 @@ var searchData=
   ['access_5fdenied',['Access_Denied',['../namespace_b_w_a_p_i_1_1_errors.html#ab47e72b46f42427da052edeea9a4eae4',1,'BWAPI::Errors']]],
   ['acid_5fspore',['Acid_Spore',['../namespace_b_w_a_p_i_1_1_bullet_types.html#a6ccfdabde897361325c070f5ee9e1ad3',1,'BWAPI::BulletTypes::Acid_Spore()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#aafbd17e5d5d1c08245b0f1d3b8606c73',1,'BWAPI::WeaponTypes::Acid_Spore()']]],
   ['acid_5fspore_5fkukulza',['Acid_Spore_Kukulza',['../namespace_b_w_a_p_i_1_1_weapon_types.html#aaae6ee8ed3d3247fcfc2a71d3e0ec68b',1,'BWAPI::WeaponTypes']]],
-  ['acidsporecount',['acidSporeCount',['../struct_b_w_a_p_i_1_1_unit_data.html#a8556263c1031ce99f5b058aeebddac08',1,'BWAPI::UnitData::acidSporeCount()'],['../namespace_b_w_a_p_i_1_1_filter.html#aa43197d315b8aa97ccc3ba49451efab3',1,'BWAPI::Filter::AcidSporeCount()']]],
-  ['addon',['addon',['../struct_b_w_a_p_i_1_1_unit_data.html#aca01d7e45f60ebc7be3087bfb10df607',1,'BWAPI::UnitData']]],
+  ['acidsporecount',['AcidSporeCount',['../namespace_b_w_a_p_i_1_1_filter.html#aa43197d315b8aa97ccc3ba49451efab3',1,'BWAPI::Filter']]],
   ['adrenal_5fglands',['Adrenal_Glands',['../namespace_b_w_a_p_i_1_1_upgrade_types.html#ad0da5c95e86b8897d78deebd13de14c9',1,'BWAPI::UpgradeTypes']]],
   ['aipatrol',['AIPatrol',['../namespace_b_w_a_p_i_1_1_orders.html#af3ea43d1e145805b0ff172dc966e61c6',1,'BWAPI::Orders']]],
   ['air_5fsplash',['Air_Splash',['../namespace_b_w_a_p_i_1_1_explosion_types.html#a49c5616460600b512786c2001777e1f6',1,'BWAPI::ExplosionTypes']]],
   ['airweapon',['AirWeapon',['../namespace_b_w_a_p_i_1_1_filter.html#adcaa256391bee1f7418d84fb4df52e7e',1,'BWAPI::Filter']]],
-  ['airweaponcooldown',['airWeaponCooldown',['../struct_b_w_a_p_i_1_1_unit_data.html#aba37d33c047db193f76b5d73952fca43',1,'BWAPI::UnitData']]],
-  ['allunitcount',['allUnitCount',['../struct_b_w_a_p_i_1_1_player_data.html#ac59792d29f8438c8a8437422d3f02bd5',1,'BWAPI::PlayerData']]],
   ['allunits',['AllUnits',['../namespace_b_w_a_p_i_1_1_unit_types.html#accca246355dfff8ea6d681ca470b1919',1,'BWAPI::UnitTypes']]],
   ['already_5fresearched',['Already_Researched',['../namespace_b_w_a_p_i_1_1_errors.html#ac52e8b0baa403df938897161abcd74d7',1,'BWAPI::Errors']]],
   ['anabolic_5fsynthesis',['Anabolic_Synthesis',['../namespace_b_w_a_p_i_1_1_upgrade_types.html#a79a55365747744c4500f03f13493133d',1,'BWAPI::UpgradeTypes']]],
-  ['angle',['angle',['../struct_b_w_a_p_i_1_1_bullet_data.html#a8feeeb8d6d7f707c95db1700b98bffd6',1,'BWAPI::BulletData::angle()'],['../struct_b_w_a_p_i_1_1_unit_data.html#af95bf5e7855ffbf84135cd929e721395',1,'BWAPI::UnitData::angle()']]],
   ['antennae',['Antennae',['../namespace_b_w_a_p_i_1_1_upgrade_types.html#aa3120b542cb3b70260564f53f3955e70',1,'BWAPI::UpgradeTypes']]],
   ['anti_5fmatter_5fmissile',['Anti_Matter_Missile',['../namespace_b_w_a_p_i_1_1_bullet_types.html#a95a84eb1fa1e82b0d60bcf892465b4cc',1,'BWAPI::BulletTypes']]],
   ['anti_5fmatter_5fmissiles',['Anti_Matter_Missiles',['../namespace_b_w_a_p_i_1_1_weapon_types.html#ac60ce6cf57bef308aed790d80c31fd9d',1,'BWAPI::WeaponTypes']]],
@@ -45,6 +41,5 @@ var searchData=
   ['attack_5funit',['Attack_Unit',['../namespace_b_w_a_p_i_1_1_unit_command_types.html#a9ea8c488c52acfdf5e7ff099f600299a',1,'BWAPI::UnitCommandTypes']]],
   ['attackmove',['AttackMove',['../namespace_b_w_a_p_i_1_1_orders.html#aeced750030fdf1e9d91b9b17361c87c8',1,'BWAPI::Orders']]],
   ['attacktile',['AttackTile',['../namespace_b_w_a_p_i_1_1_orders.html#a2b577424001487b4a8866f55c90aa2c5',1,'BWAPI::Orders']]],
-  ['attackunit',['AttackUnit',['../namespace_b_w_a_p_i_1_1_orders.html#a0ccccf8d2caf42a55f0b3b0ecd499d3f',1,'BWAPI::Orders']]],
-  ['averagefps',['averageFPS',['../struct_b_w_a_p_i_1_1_game_data.html#a426b91795be0e447e16721161d7a02b3',1,'BWAPI::GameData']]]
+  ['attackunit',['AttackUnit',['../namespace_b_w_a_p_i_1_1_orders.html#a0ccccf8d2caf42a55f0b3b0ecd499d3f',1,'BWAPI::Orders']]]
 ];

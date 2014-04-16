@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; GameType,\l GameTypes::Enum::Unknown \&gt;" alt="" coords="5,5,216,46"/>
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_game_type.html" title="BWAPI::GameType" alt="" coords="264,12,400,39"/>
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; UnitType,\l UnitTypes::Enum::Unknown \&gt;" alt="" coords="5,5,208,51"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_unit_type.html" title="The UnitType is used to get information about a particular type of unit, such as its cost..." alt="" coords="257,13,383,43"/>
 </map>

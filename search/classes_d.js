@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['unaryfilter',['UnaryFilter',['../class_b_w_a_p_i_1_1_unary_filter.html',1,'BWAPI']]],
-  ['unitcommand',['UnitCommand',['../struct_b_w_a_p_i_c_1_1_unit_command.html',1,'BWAPIC']]],
-  ['unitcommand',['UnitCommand',['../class_b_w_a_p_i_1_1_unit_command.html',1,'BWAPI']]],
-  ['unitcommandtype',['UnitCommandType',['../class_b_w_a_p_i_1_1_unit_command_type.html',1,'BWAPI']]],
-  ['unitdata',['UnitData',['../struct_b_w_a_p_i_1_1_unit_data.html',1,'BWAPI']]],
-  ['unitfinder',['unitFinder',['../struct_b_w_a_p_i_1_1unit_finder.html',1,'BWAPI']]],
-  ['unitimpl',['UnitImpl',['../class_b_w_a_p_i_1_1_unit_impl.html',1,'BWAPI']]],
-  ['unitinterface',['UnitInterface',['../class_b_w_a_p_i_1_1_unit_interface.html',1,'BWAPI']]],
-  ['unitset',['Unitset',['../class_b_w_a_p_i_1_1_unitset.html',1,'BWAPI']]],
-  ['unitsizetype',['UnitSizeType',['../class_b_w_a_p_i_1_1_unit_size_type.html',1,'BWAPI']]],
-  ['unittype',['UnitType',['../class_b_w_a_p_i_1_1_unit_type.html',1,'BWAPI']]],
-  ['upgradetype',['UpgradeType',['../class_b_w_a_p_i_1_1_upgrade_type.html',1,'BWAPI']]]
+  ['vectorset',['Vectorset',['../class_b_w_a_p_i_1_1_vectorset.html',1,'BWAPI']]],
+  ['vectorset_3c_20bwapi_3a_3abullet_20_3e',['Vectorset&lt; BWAPI::Bullet &gt;',['../class_b_w_a_p_i_1_1_vectorset.html',1,'BWAPI']]],
+  ['vectorset_3c_20bwapi_3a_3aforce_20_3e',['Vectorset&lt; BWAPI::Force &gt;',['../class_b_w_a_p_i_1_1_vectorset.html',1,'BWAPI']]],
+  ['vectorset_3c_20bwapi_3a_3aplayer_20_3e',['Vectorset&lt; BWAPI::Player &gt;',['../class_b_w_a_p_i_1_1_vectorset.html',1,'BWAPI']]],
+  ['vectorset_3c_20bwapi_3a_3aregion_20_3e',['Vectorset&lt; BWAPI::Region &gt;',['../class_b_w_a_p_i_1_1_vectorset.html',1,'BWAPI']]],
+  ['vectorset_3c_20bwapi_3a_3aunit_20_3e',['Vectorset&lt; BWAPI::Unit &gt;',['../class_b_w_a_p_i_1_1_vectorset.html',1,'BWAPI']]],
+  ['vsetiterator',['VSetIterator',['../class_b_w_a_p_i_1_1_v_set_iterator.html',1,'BWAPI']]]
 ];

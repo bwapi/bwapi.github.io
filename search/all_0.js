@@ -34,6 +34,5 @@ var searchData=
   ['_5f_5fundefined_5f40',['__UNDEFINED_40',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca4844ad0182b5b83e5f191ee3977393bc',1,'BWAPI']]],
   ['_5f_5fundefined_5f7',['__UNDEFINED_7',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca5cc573e956a40a0b276415e7e6c1e569',1,'BWAPI']]],
   ['_5f_5fundefined_5fe',['__UNDEFINED_E',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca8dc3b9d70fb3f474411f7ba8bd795a8a',1,'BWAPI']]],
-  ['_5f_5fundefined_5ff',['__UNDEFINED_F',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca7d70f2a6aa80e564135cb8ea0061e8b5',1,'BWAPI']]],
-  ['_5funitfromindex',['_unitFromIndex',['../class_b_w_a_p_i_1_1_game_impl.html#a1af8b020b82fe810a151694c85058ad2',1,'BWAPI::GameImpl']]]
+  ['_5f_5fundefined_5ff',['__UNDEFINED_F',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca7d70f2a6aa80e564135cb8ea0061e8b5',1,'BWAPI']]]
 ];

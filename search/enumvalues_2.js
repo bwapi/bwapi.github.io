@@ -4,7 +4,6 @@ var searchData=
   ['battlenetlow',['BattlenetLow',['../namespace_b_w_a_p_i_1_1_latency.html#a2899444e2659944e7b339f7eff3b2ca9a4a49d727298dacc5e0210ca40d26e3db',1,'BWAPI::Latency']]],
   ['battlenetmedium',['BattlenetMedium',['../namespace_b_w_a_p_i_1_1_latency.html#a2899444e2659944e7b339f7eff3b2ca9a61169b19107e97c3bfbfeb61f08c8b2d',1,'BWAPI::Latency']]],
   ['blue',['Blue',['../namespace_b_w_a_p_i_1_1_text.html#a944232c0d5b699bd4e51e36b37394555a70c55af92bb45b8fe4862f088a251d3d',1,'BWAPI::Text']]],
-  ['box',['Box',['../namespace_b_w_a_p_i_c_1_1_shape_type.html#aae4348bf0423b1442f3211e47683c653a7c2f0b1694951f9232de7aad232171fe',1,'BWAPIC::ShapeType']]],
   ['brightred',['BrightRed',['../namespace_b_w_a_p_i_1_1_text.html#a944232c0d5b699bd4e51e36b37394555ad4d4070e2b339f96d0f549db95876ec7',1,'BWAPI::Text']]],
   ['broodlings',['Broodlings',['../namespace_b_w_a_p_i_1_1_explosion_types_1_1_enum.html#ad634897e524bcdbbd44bbefcf823ec3aa37fc63cc5aa6b0bb2e891a3b27d6aeaf',1,'BWAPI::ExplosionTypes::Enum']]],
   ['brown',['Brown',['../namespace_b_w_a_p_i_1_1_text.html#a944232c0d5b699bd4e51e36b37394555a491c0b7ae645546b6ed43a328eda2a34',1,'BWAPI::Text']]],

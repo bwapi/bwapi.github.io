@@ -1,4 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; TechType,\l TechTypes::Enum::Unknown \&gt;" alt="" coords="6,5,210,46"/>
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_tech_type.html" title="The TechType (or Technology Type, also referred to as an Ability) represents a Unit&#39;s ability which c..." alt="" coords="259,12,389,39"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_v_set_iterator.html" title="The iterator class template allows the iteration of elements of a Vectorset with ease while maintaini..." alt="" coords="117,5,293,35"/>
 </map>

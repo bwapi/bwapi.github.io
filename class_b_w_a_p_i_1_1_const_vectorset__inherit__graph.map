@@ -1,15 +1,15 @@
 <map id="BWAPI::ConstVectorset&lt; T &gt;" name="BWAPI::ConstVectorset&lt; T &gt;">
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_const_vectorset.html" title="BWAPI::ConstVectorset\l\&lt; _T \&gt;" alt="" coords="291,259,453,301"/>
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_vectorset.html" title="The Vectorset is a class template designed specifically for trivial classes or PODs and performance..." alt="" coords="504,208,664,235"/>
-<area shape="rect" id="node5" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Region \&gt;" alt="" coords="832,5,1016,46"/>
-<area shape="rect" id="node7" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Player \&gt;" alt="" coords="832,82,1016,123"/>
-<area shape="rect" id="node9" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Unit \&gt;" alt="" coords="832,233,1016,274"/>
-<area shape="rect" id="node11" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Force \&gt;" alt="" coords="832,314,1016,355"/>
-<area shape="rect" id="node13" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Bullet \&gt;" alt="" coords="832,411,1016,453"/>
-<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_typeset.html" title="BWAPI::Typeset\&lt; T \&gt;" alt="" coords="849,173,999,200"/>
-<area shape="rect" id="node6" href="$class_b_w_a_p_i_1_1_regionset.html" title="BWAPI::Regionset" alt="" coords="1067,12,1197,39"/>
-<area shape="rect" id="node8" href="$class_b_w_a_p_i_1_1_playerset.html" title="BWAPI::Playerset" alt="" coords="1068,89,1196,116"/>
-<area shape="rect" id="node10" href="$class_b_w_a_p_i_1_1_unitset.html" title="The Unitset is a container for a set of pointers to Unit objects. " alt="" coords="1075,240,1189,267"/>
-<area shape="rect" id="node12" href="$class_b_w_a_p_i_1_1_forceset.html" title="A container that holds a group of Forces. " alt="" coords="1070,321,1194,348"/>
-<area shape="rect" id="node14" href="$class_b_w_a_p_i_1_1_bulletset.html" title="BWAPI::Bulletset" alt="" coords="1070,419,1194,445"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_const_vectorset.html" title="BWAPI::ConstVectorset\l\&lt; _T \&gt;" alt="" coords="296,270,461,317"/>
+<area shape="rect" id="node5" href="$class_b_w_a_p_i_1_1_vectorset.html" title="The Vectorset is a class template designed specifically for trivial classes or PODs and performance..." alt="" coords="512,217,675,247"/>
+<area shape="rect" id="node9" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Region \&gt;" alt="" coords="845,5,1032,51"/>
+<area shape="rect" id="node13" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Player \&gt;" alt="" coords="845,86,1032,133"/>
+<area shape="rect" id="node17" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Unit \&gt;" alt="" coords="845,241,1032,287"/>
+<area shape="rect" id="node21" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Force \&gt;" alt="" coords="845,325,1032,371"/>
+<area shape="rect" id="node25" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Bullet \&gt;" alt="" coords="845,425,1032,471"/>
+<area shape="rect" id="node7" href="$class_b_w_a_p_i_1_1_typeset.html" title="BWAPI::Typeset\&lt; T \&gt;" alt="" coords="863,180,1015,209"/>
+<area shape="rect" id="node11" href="$class_b_w_a_p_i_1_1_regionset.html" title="BWAPI::Regionset" alt="" coords="1083,13,1216,43"/>
+<area shape="rect" id="node15" href="$class_b_w_a_p_i_1_1_playerset.html" title="BWAPI::Playerset" alt="" coords="1085,95,1213,124"/>
+<area shape="rect" id="node19" href="$class_b_w_a_p_i_1_1_unitset.html" title="The Unitset is a container for a set of pointers to Unit objects. " alt="" coords="1092,249,1207,279"/>
+<area shape="rect" id="node23" href="$class_b_w_a_p_i_1_1_forceset.html" title="A container that holds a group of Forces. " alt="" coords="1087,333,1212,363"/>
+<area shape="rect" id="node27" href="$class_b_w_a_p_i_1_1_bulletset.html" title="BWAPI::Bulletset" alt="" coords="1087,433,1212,463"/>
 </map>

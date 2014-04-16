@@ -1,6 +1,16 @@
 var NAVTREE =
 [
   [ "BWAPI", "index.html", [
+    [ "Academics", "md_pages_wiki__academics.html", null ],
+    [ "Coding-Standard", "md_pages_wiki__coding-_standard.html", null ],
+    [ "Commands", "md_pages_wiki__commands.html", null ],
+    [ "Competitions", "md_pages_wiki__competitions.html", null ],
+    [ "Contact", "md_pages_wiki__contact.html", null ],
+    [ "Developing-BWAPI", "md_pages_wiki__developing-_b_w_a_p_i.html", null ],
+    [ "FAQ", "md_pages_wiki__f_a_q.html", null ],
+    [ "Troubleshooting", "md_pages_wiki__troubleshooting.html", null ],
+    [ "Changes", "changes.html", null ],
+    [ "GNU Lesser General Public License", "md__home_heinermann__b_w_a_p_i_bwapi__l_i_c_e_n_s_e.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Namespaces", null, [
@@ -21,7 +31,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
@@ -32,14 +42,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_b_w_a_p_i_1_1_game.html#a4d2fcd44467c232ea6abeacea584c22f",
-"class_b_w_a_p_i_1_1_interface.html#a691ef1b5133c555d91ef5650df374c65",
-"class_b_w_a_p_i_1_1_tech_type.html#acdaa81b271e66d4bf1a1107e7c316b1a",
-"class_b_w_a_p_i_1_1_unit_impl.html#ab077eb0670a7e721fee4293ece118a82",
-"class_b_w_a_p_i_1_1_unit_interface.html#ab80d1241c5dcb0bf380e8ebe89aa8666",
-"class_b_w_a_p_i_1_1_vectorset.html#a08cd9c0590be500064407480eb8d0b29",
-"namespacemembers_enum.html",
-"struct_b_w_a_p_i_1_1_unit_data.html#a48ef562438941e8f3c4d1483f9eda086"
+"class_b_w_a_p_i_1_1_game.html#a3e27b75d34b7df3992cfb13eef48d6b4",
+"class_b_w_a_p_i_1_1_point.html#a98fbef9413206b8f7ff8ddfca01f0c72",
+"class_b_w_a_p_i_1_1_unit_interface.html#a3997087321e3d6e9d5b69676c1491080",
+"class_b_w_a_p_i_1_1_unit_type.html#a9ec42278ba3baf73a93bed716ce59701",
+"namespace_b_w_a_p_i_1_1_errors.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
@@ -162,11 +169,13 @@ var animationInProgress = false;
 function gotoAnchor(anchor,aname,updateLocation)
 {
   var pos, docContent = $('#doc-content');
-  if (anchor.parent().attr('class')=='memItemLeft' ||
-      anchor.parent().attr('class')=='fieldtype' ||
-      anchor.parent().is(':header')) 
+  var ancParent = $(anchor.parent());
+  if (ancParent.hasClass('memItemLeft') ||
+      ancParent.hasClass('fieldname') ||
+      ancParent.hasClass('fieldtype') ||
+      ancParent.is(':header'))
   {
-    pos = anchor.parent().position().top;
+    pos = ancParent.position().top;
   } else if (anchor.position()) {
     pos = anchor.position().top;
   }
@@ -322,10 +331,10 @@ function highlightAnchor()
   var anchor = $(aname);
   if (anchor.parent().attr('class')=='memItemLeft'){
     var rows = $('.memberdecls tr[class$="'+
-               window.location.hash.substring(1)+'"]');
+               window.location.hash.substring(1).replace(/</g,'\\3c ')+'"]');
     glowEffect(rows.children(),300); // member without details
-  } else if (anchor.parents().slice(2).prop('tagName')=='TR') {
-    glowEffect(anchor.parents('div.memitem'),1000); // enum value
+  } else if (anchor.parent().attr('class')=='fieldname'){
+    glowEffect(anchor.parent().parent(),1000); // enum value
   } else if (anchor.parent().attr('class')=='fieldtype'){
     glowEffect(anchor.parent().parent(),1000); // struct field
   } else if (anchor.parent().is(":header")) {
@@ -341,7 +350,7 @@ function selectAndHighlight(hash,n)
   var a;
   if (hash) {
     var link=stripPath($(location).attr('pathname'))+':'+hash.substring(1);
-    a=$('.item a[class$="'+link+'"]');
+    a=$('.item a[class$="'+link.replace(/</g,'\\3c ')+'"]');
   }
   if (a && a.length) {
     a.parent().parent().addClass('selected');
@@ -542,7 +551,7 @@ function initNavTree(toroot,relpath)
        if ($(location).attr('hash')){
          var clslink=stripPath($(location).attr('pathname'))+':'+
                                $(location).attr('hash').substring(1);
-         a=$('.item a[class$="'+clslink+'"]');
+         a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
        }
        if (a==null || !$(a).parent().parent().hasClass('selected')){
          $('.item').removeClass('selected');

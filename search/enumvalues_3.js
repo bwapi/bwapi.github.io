@@ -48,7 +48,6 @@ var searchData=
   ['caststasisfield',['CastStasisField',['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137a9884e0d7ec09adcac199554a4ee748ce',1,'BWAPI::Orders::Enum']]],
   ['charon_5fboosters',['Charon_Boosters',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1a0c821a8096f91b8c26d16600b5fdee6c',1,'BWAPI::UpgradeTypes::Enum']]],
   ['chitinous_5fplating',['Chitinous_Plating',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1af71113628c8c060993bc69a26d5eb3b6',1,'BWAPI::UpgradeTypes::Enum']]],
-  ['circle',['Circle',['../namespace_b_w_a_p_i_c_1_1_shape_type.html#aae4348bf0423b1442f3211e47683c653ac80b394aeb035c2b5ea615d424fe4217',1,'BWAPIC::ShapeType']]],
   ['claws',['Claws',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1da512cc2e7454b3eeeac394f101686486f',1,'BWAPI::WeaponTypes::Enum']]],
   ['claws_5fdevouring_5fone',['Claws_Devouring_One',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1da7efb837e212fed59cb392ebc67a5d083',1,'BWAPI::WeaponTypes::Enum']]],
   ['claws_5finfested_5fkerrigan',['Claws_Infested_Kerrigan',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1da05ec3318661e8b6008e5a929e37f4766',1,'BWAPI::WeaponTypes::Enum']]],

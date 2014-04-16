@@ -1,6 +1,6 @@
 <map id="BWAPI::Unitset" name="BWAPI::Unitset">
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Unit \&gt;" alt="" coords="35,281,219,322"/>
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_const_vectorset.html" title="BWAPI::ConstVectorset\l\&lt; _T \&gt;" alt="" coords="21,97,184,138"/>
-<area shape="rect" id="node5" href="$class_b_w_a_p_i_1_1_vectorset.html" title="The Vectorset is a class template designed specifically for trivial classes or PODs and performance..." alt="" coords="124,189,284,216"/>
-<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_const_vectorset.html" title="The Vectorset is a class template designed specifically for trivial classes or PODs and performance..." alt="" coords="5,5,200,32"/>
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Unit \&gt;" alt="" coords="35,297,221,343"/>
+<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_const_vectorset.html" title="BWAPI::ConstVectorset\l\&lt; _T \&gt;" alt="" coords="21,102,187,149"/>
+<area shape="rect" id="node8" href="$class_b_w_a_p_i_1_1_vectorset.html" title="The Vectorset is a class template designed specifically for trivial classes or PODs and performance..." alt="" coords="125,200,288,229"/>
+<area shape="rect" id="node6" href="$class_b_w_a_p_i_1_1_const_vectorset.html" title="The Vectorset is a class template designed specifically for trivial classes or PODs and performance..." alt="" coords="5,5,203,35"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="BWAPI::UnitCommandType" name="BWAPI::UnitCommandType">
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; UnitCommand\lType, UnitCommandTypes\l::Enum::Unknown \&gt;" alt="" coords="9,125,204,181"/>
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_type.html" title="Base superclass for all BWAPI Types. " alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; UnitCommand\lType, UnitCommandTypes\l::Enum::Unknown \&gt;" alt="" coords="11,136,208,200"/>
+<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_type.html" title="Base superclass for all BWAPI Types. " alt="" coords="5,5,213,35"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_point.html" title="BWAPI::Point\&lt; int, 1 \&gt;" alt="" coords="6,5,162,32"/>
+<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; Error,\l Errors::Enum::Unknown \&gt;" alt="" coords="5,5,184,51"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_error.html" title="The Error object is generally used to determine why certain functions in BWAPI have failed..." alt="" coords="233,13,335,43"/>
 </map>
