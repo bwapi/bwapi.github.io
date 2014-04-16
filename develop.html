@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>BWAPI: Coding-Standard</title>
+<title>BWAPI: Developing BWAPI</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('md_pages_wiki__coding-_standard.html','');});
+$(document).ready(function(){initNavTree('develop.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -90,11 +90,30 @@ $(document).ready(function(){initNavTree('md_pages_wiki__coding-_standard.html',
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Coding-Standard </div>  </div>
+<div class="title">Developing <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This page contains the coding standards that the <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> project is using.</p>
-<h2>Spacing</h2>
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#dev-coding">Coding Standards</a><ul><li class="level2"><a href="#dev-code-spacing">Spacing</a></li>
+<li class="level2"><a href="#dev-code-format">Formatting</a></li>
+<li class="level2"><a href="#dev-code-names">Naming</a></li>
+<li class="level2"><a href="#dev-code-hacking">Hacking</a></li>
+<li class="level2"><a href="#dev-code-docs">Documentation</a></li>
+<li class="level2"><a href="#dev-code-lang">Language Features</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#dev-release">Creating a Release</a><ul><li class="level2"><a href="#dev-gen-doc">Generating Documentation (Any OS)</a><ul><li class="level3"><a href="#dev-gen-doc-req">Requirements</a></li>
+<li class="level3"><a href="#dev-gen-doc-instruct">Instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="dev-coding"></a>
+Coding Standards</h1>
+<h2><a class="anchor" id="dev-code-spacing"></a>
+Spacing</h2>
 <p>Spacing is important. Don't be afraid of spacing.</p>
 <ol type="1">
 <li>Use double-spaces instead of tabs. You should be able to convert tabs to spaces automatically in your editor's settings. Spaces will ensure that code will always be aligned correctly regardless of tab settings.</li>
@@ -119,7 +138,8 @@ $(document).ready(function(){initNavTree('md_pages_wiki__coding-_standard.html',
 <div class="line"><span class="comment">// good, alternative spacing style for if statements</span></div>
 <div class="line"><span class="keywordflow">if</span> ( <a class="code" href="namespace_b_w_a_p_i.html#a0858264e08a7273886488efc5f5ba64c">Broodwar</a>-&gt;<a class="code" href="class_b_w_a_p_i_1_1_game.html#ae2f21ddd4292cba616e2a9a058b140fc">canMake</a>(UnitTypes::Terran_Marine, builder) )</div>
 <div class="line">  reservedMinerals = -UnitTypes::Terran_Marine.mineralPrice();</div>
-</div><!-- fragment --><h2>Formatting</h2>
+</div><!-- fragment --><h2><a class="anchor" id="dev-code-format"></a>
+Formatting</h2>
 <ol type="1">
 <li>Use <a href="http://en.wikipedia.org/wiki/Indent_style#Allman_style">ANSI style</a> braces.</li>
 <li>Break up large single-line if statements to be multi-line if statements.</li>
@@ -133,7 +153,8 @@ $(document).ready(function(){initNavTree('md_pages_wiki__coding-_standard.html',
 <div class="line">{</div>
 <div class="line">  <span class="comment">// additional constructor code</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><h2>Naming</h2>
+</div><!-- fragment --><h2><a class="anchor" id="dev-code-names"></a>
+Naming</h2>
 <ol type="1">
 <li>Try to use meaningful names. If a variable name cannot be resolved by another project member, then the variable needs to be renamed.</li>
 <li>In local looping scopes, single-letter variable names are generally used as follows:<ul>
@@ -150,13 +171,15 @@ $(document).ready(function(){initNavTree('md_pages_wiki__coding-_standard.html',
 <li>Use <a href="http://en.wikipedia.org/wiki/CamelCase">upper Camel Case</a> for class names and namespaces. Do not use underscores in class names. Instead put it inside of a namespace.</li>
 <li>Enumerations should be in <a href="http://en.wikipedia.org/wiki/CamelCase">upper Camel Case</a>.</li>
 </ol>
-<h2>Hacking</h2>
+<h2><a class="anchor" id="dev-code-hacking"></a>
+Hacking</h2>
 <ol type="1">
 <li>Offsets should be in hexadecimal, and all offsets are to be separate from the coding itself. Example: <code>0x00408CF0</code></li>
 <li>Avoid using inline assembly unless it is impossible to do so.</li>
 <li>Perform version checking before making code patches, to ensure that <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> is compatible with all versions of Starcraft: Broodwar.</li>
 </ol>
-<h2>Documentation</h2>
+<h2><a class="anchor" id="dev-code-docs"></a>
+Documentation</h2>
 <ol type="1">
 <li>Documentation should follow <a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> style formatting.</li>
 <li>Use the triple slash (<code>///</code>) format to ensure that the documentation displays correctly in Microsoft Visual Studio's intellisense tooltips.</li>
@@ -171,18 +194,36 @@ $(document).ready(function(){initNavTree('md_pages_wiki__coding-_standard.html',
 <li>If a piece of code is incomplete or temporary, then label it as such.</li>
 </ol>
 <p>Examples of documentation </p><div class="fragment"><div class="line"><span class="keyword">virtual</span> <span class="keywordtype">bool</span> isVisible(Player* player = <span class="keyword">nullptr</span>) <span class="keyword">const</span> = 0;</div>
-</div><!-- fragment --><h2>Language Features</h2>
+</div><!-- fragment --><h2><a class="anchor" id="dev-code-lang"></a>
+Language Features</h2>
 <ol type="1">
 <li>Use the new <code>nullptr</code> keyword instead of <code>NULL</code>. This is to conform with the new standard.</li>
 <li>Create move constructors if appropriate (especially when memory allocation is involved). This is to improve performance.</li>
-<li>Use the <code>const</code> keyword where appropriate. </li>
+<li>Use the <code>const</code> keyword where appropriate.</li>
 </ol>
+<h1><a class="anchor" id="dev-release"></a>
+Creating a Release</h1>
+<h2><a class="anchor" id="dev-gen-doc"></a>
+Generating Documentation (Any OS)</h2>
+<h3><a class="anchor" id="dev-gen-doc-req"></a>
+Requirements</h3>
+<ul>
+<li><a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> (1.8.6 or newer)</li>
+<li><a href="http://www.graphviz.org/">Graphviz</a> (For prettier diagrams)</li>
+</ul>
+<h3><a class="anchor" id="dev-gen-doc-instruct"></a>
+Instructions</h3>
+<ol type="1">
+<li>Navigate to <code>bwapi/Documentation</code>.</li>
+<li>Run the <code>doxygen</code> application/command.</li>
+</ol>
+<p>Documentation should be created in <code>bwapi/Release_Binary/documentation</code> and ready for packaging. The generated log messages should contain no errors. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 15 2014 23:23:51 for BWAPI by
+    <li class="footer">Generated on Wed Apr 16 2014 13:09:09 for BWAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

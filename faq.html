@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('md_pages_wiki__f_a_q.html','');});
+$(document).ready(function(){initNavTree('faq.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -93,8 +93,22 @@ $(document).ready(function(){initNavTree('md_pages_wiki__f_a_q.html','');});
 <div class="title">FAQ </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This page contains answers to frequent questions.</p>
-<h2>Will there be an API like this for Starcraft II?</h2>
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#faq-sc2">Will there be an API like this for Starcraft II?</a></li>
+<li class="level1"><a href="#faq-units-invalid">When are units deleted? When do Unit pointers become invalid?</a></li>
+<li class="level1"><a href="#faq-dll-or-client">Should I Make an AI DLL Module or an AI Client Program?</a><ul><li class="level2"><a href="#faq-dll">DLL Module</a></li>
+<li class="level2"><a href="#faq-client">Client Program</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#faq-visual-studio">Why use Visual Studio?</a></li>
+<li class="level1"><a href="#faq-compiler">Can I use another compiler?</a></li>
+<li class="level1"><a href="#faq-thread-safety">Is the API thread-safe?</a></li>
+<li class="level1"><a href="#faq-force">What is a Force?</a></li>
+<li class="level1"><a href="#faq-heal-move">Where is Heal Move?</a></li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="faq-sc2"></a>
+Will there be an API like this for Starcraft II?</h1>
 <p>The <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> team is not interested in developing an API for <a href="http://www.battle.net/sc2/">Starcraft II</a>. Some reasons are listed below.</p><ul>
 <li><a href="http://www.blizzard.com">Blizzard Entertainment</a> has a strict anti-hacking policy for its newer games.</li>
 <li>Creating hacks and freely moving about the binary is far more difficult than doing so with <a href="http://www.blizzard.com/games/sc/">Starcraft: Broodwar</a>.</li>
@@ -104,40 +118,51 @@ $(document).ready(function(){initNavTree('md_pages_wiki__f_a_q.html','');});
 <li>Embarking on such a project will require an exponentially greater amount of time to develop.</li>
 <li>The <a href="http://www.blizzard.com/support/article.xml?tag=SC2MINSPEC">system requirements</a> are in another universe compared to those of <a href="http://www.blizzard.com/support/article.xml?articleId=25801">Starcraft: Broodwar</a>.</li>
 </ul>
-<h2>When are units deleted? When do Unit pointers become invalid?</h2>
+<h1><a class="anchor" id="faq-units-invalid"></a>
+When are units deleted? When do Unit pointers become invalid?</h1>
 <p>Units are deleted only after the match ends.</p>
-<h2>Should I Make an AI DLL Module or an AI Client Program?</h2>
-<p>It is completely up to you. Each type has advantages and disadvantages. If you are a beginner, the DLL module is recommended. </p><h3>DLL Module</h3>
+<h1><a class="anchor" id="faq-dll-or-client"></a>
+Should I Make an AI DLL Module or an AI Client Program?</h1>
+<p>It is completely up to you. Each type has advantages and disadvantages. If you are a beginner, the DLL module is recommended.</p>
+<h2><a class="anchor" id="faq-dll"></a>
+DLL Module</h2>
 <ul>
 <li>Low overhead</li>
 <li>Most functional</li>
-<li>Must compile with Visual C++ <h3>Client Program</h3>
-</li>
+<li>Must compile with Visual C++ </li>
 </ul>
+<h2><a class="anchor" id="faq-client"></a>
+Client Program</h2>
 <ul>
 <li>Can use any compiler</li>
 <li>Prevents potential cheating (unable to read memory from another process)</li>
 </ul>
-<h2>Why use Visual Studio?</h2>
+<h1><a class="anchor" id="faq-visual-studio"></a>
+Why use Visual Studio?</h1>
 <p>The <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> uses Visual C++ for its friendly interface and powerful debugger. Users that are new to <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> or C++ can simply download the Integrated Developer Environment (IDE), install <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a>, open the project, and click "Build". It is very easy to use and the only drawback is that it is not up-to-date with the new C++ language standard.</p>
-<h2>Can I use another compiler?</h2>
-<p>You can only use another compiler for a Client AI. Compiling AI DLL Modules to be loaded by <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> directly, or even <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> itself can only result in incompatibilities with modules compiled in Visual C++. This is because in the C++ standard, virtual functions are <em>implementation defined</em>.</p>
-<h2>Is the API thread-safe?</h2>
+<h1><a class="anchor" id="faq-compiler"></a>
+Can I use another compiler?</h1>
+<p>You can only use another compiler for a Client AI. Compiling AI DLL Modules to be loaded by <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> directly, or even <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> itself can only result in incompatibilities with modules compiled in Visual C++. This is because maybe elements of the C++ standard are <em>implementation defined</em>, including structure of stl containers and implementation of virtual functions.</p>
+<h1><a class="anchor" id="faq-thread-safety"></a>
+Is the API thread-safe?</h1>
 <p>No. The API is not thread safe. Adding thread-safety to the API will only add unnecessary overhead. If you want your bot to use the API in a multi-threaded environment, you will have to put locks on copies of the data retrieved during the onFrame callback.</p>
-<h2>What is a Force?</h2>
+<h1><a class="anchor" id="faq-force"></a>
+What is a Force?</h1>
 <p>A Force is another name for Team. In fact, the term "Team" is never used by Starcraft's Campaign Editor "StarEdit". Default team names are also called "Force #" by Starcraft. In addition, players in the same Force are not necessarily allies, and thus not part of the same team.</p>
 <div class="image">
 <img src="forces.gif" alt="forces.gif"/>
 <div class="caption">
 In-game forces</div></div>
- <h2>Where is Heal Move?</h2>
-<p>You can HealMove by using either of the following calls; ```cpp pUnit-&gt;attack(position); pUnit-&gt;useTech(TechTypes::Healing, position); ``` </p>
-</div></div><!-- contents -->
+ <h1><a class="anchor" id="faq-heal-move"></a>
+Where is Heal Move?</h1>
+<p>You can HealMove by using either of the following calls; </p><div class="fragment"><div class="line">pUnit-&gt;attack(position);</div>
+<div class="line">pUnit-&gt;useTech(TechTypes::Healing, position);</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 15 2014 23:23:51 for BWAPI by
+    <li class="footer">Generated on Wed Apr 16 2014 13:09:09 for BWAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

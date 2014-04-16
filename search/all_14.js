@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['troubleshooting',['Troubleshooting',['../md_pages_wiki__troubleshooting.html',1,'']]],
   ['tan',['Tan',['../namespace_b_w_a_p_i_1_1_text.html#a944232c0d5b699bd4e51e36b37394555a2b457e8edf48053dc5468c8d58e43be4',1,'BWAPI::Text']]],
   ['tank_5fsiege_5fmode',['Tank_Siege_Mode',['../namespace_b_w_a_p_i_1_1_tech_types_1_1_enum.html#ac8a30f9e35ac28c95ded8279767b2f16a1b5f54f0042692ef0d46a45be2b01089',1,'BWAPI::TechTypes::Enum::Tank_Siege_Mode()'],['../namespace_b_w_a_p_i_1_1_tech_types.html#ace98069c11e88426a81d2e889738fe76',1,'BWAPI::TechTypes::Tank_Siege_Mode()']]],
   ['target',['target',['../class_b_w_a_p_i_1_1_unit_command.html#aa1ae1eda0e7c85966b50042501e1cb22',1,'BWAPI::UnitCommand::target()'],['../namespace_b_w_a_p_i_1_1_filter.html#a7f2f22fd2b45099e184ef11fcc0d5598',1,'BWAPI::Filter::Target()']]],
@@ -85,6 +84,7 @@ var searchData=
   ['toxic_5fspores',['Toxic_Spores',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1dafcfd7c0f8fc6fdaebdd6db5df25ce401',1,'BWAPI::WeaponTypes::Enum::Toxic_Spores()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#a6f054d3235adf04e11cea62a430cc519',1,'BWAPI::WeaponTypes::Toxic_Spores()']]],
   ['train',['train',['../class_b_w_a_p_i_1_1_unit_interface.html#a8c139d0e42cb62a4344bd037420abb39',1,'BWAPI::UnitInterface::train()'],['../class_b_w_a_p_i_1_1_unit_command.html#a5edc4110edae07e2f22f20b8cf3331b0',1,'BWAPI::UnitCommand::train()'],['../class_b_w_a_p_i_1_1_unitset.html#af7fccc321e5bc8b5e61bed5f59bb66e3',1,'BWAPI::Unitset::train()'],['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137a7d04a329b1d920ed38b4ff8c890a0263',1,'BWAPI::Orders::Enum::Train()'],['../namespace_b_w_a_p_i_1_1_orders.html#af81f7c76e0fbb02e1985b8e3e419ce05',1,'BWAPI::Orders::Train()'],['../namespace_b_w_a_p_i_1_1_unit_command_types_1_1_enum.html#a9911e96eb2b58a13aa7476f62edb3956a43fa9f027342f9da9957f055342d4944',1,'BWAPI::UnitCommandTypes::Enum::Train()'],['../namespace_b_w_a_p_i_1_1_unit_command_types.html#a10b067515cf2718b96d4d6a7d2e3c5dd',1,'BWAPI::UnitCommandTypes::Train()']]],
   ['trainfighter',['TrainFighter',['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137a3d76bd9db380132fd05ec66fb80c85d0',1,'BWAPI::Orders::Enum::TrainFighter()'],['../namespace_b_w_a_p_i_1_1_orders.html#a1caf2875570cec50ffb1f6e96ae0048b',1,'BWAPI::Orders::TrainFighter()']]],
+  ['troubleshooting',['Troubleshooting',['../troubleshoot.html',1,'']]],
   ['turnradius',['turnRadius',['../class_b_w_a_p_i_1_1_unit_type.html#a86bece4e0a3a93dab7b31e016acc65c9',1,'BWAPI::UnitType']]],
   ['turquoise',['Turquoise',['../namespace_b_w_a_p_i_1_1_text.html#a944232c0d5b699bd4e51e36b37394555a77973ba233473da3a5b8f95c3a05972b',1,'BWAPI::Text']]],
   ['turretattack',['TurretAttack',['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137a677ac8623715b93e5e5097dc6a1ce221',1,'BWAPI::Orders::Enum']]],

@@ -1,16 +1,99 @@
 var NAVTREE =
 [
   [ "BWAPI", "index.html", [
+    [ "Project Information", "index.html#project", [
+      [ "Overview", "index.html#overview", null ],
+      [ "Capabilities", "index.html#capability", null ],
+      [ "Sample Projects", "index.html#samples", null ],
+      [ "Getting Started", "index.html#getting-started", null ],
+      [ "Important Links & Contact Information", "index.html#contact", null ],
+      [ "Competitions", "index.html#competition", null ],
+      [ "Issues", "index.html#issues", null ],
+      [ "Legal", "index.html#legal", null ]
+    ] ],
     [ "Academics", "md_pages_wiki__academics.html", null ],
-    [ "Coding-Standard", "md_pages_wiki__coding-_standard.html", null ],
-    [ "Commands", "md_pages_wiki__commands.html", null ],
-    [ "Competitions", "md_pages_wiki__competitions.html", null ],
-    [ "Contact", "md_pages_wiki__contact.html", null ],
-    [ "Developing-BWAPI", "md_pages_wiki__developing-_b_w_a_p_i.html", null ],
-    [ "FAQ", "md_pages_wiki__f_a_q.html", null ],
-    [ "Troubleshooting", "md_pages_wiki__troubleshooting.html", null ],
-    [ "Changes", "changes.html", null ],
-    [ "GNU Lesser General Public License", "md__home_heinermann__b_w_a_p_i_bwapi__l_i_c_e_n_s_e.html", null ],
+    [ "Developing BWAPI", "develop.html", [
+      [ "Coding Standards", "develop.html#dev-coding", [
+        [ "Spacing", "develop.html#dev-code-spacing", null ],
+        [ "Formatting", "develop.html#dev-code-format", null ],
+        [ "Naming", "develop.html#dev-code-names", null ],
+        [ "Hacking", "develop.html#dev-code-hacking", null ],
+        [ "Documentation", "develop.html#dev-code-docs", null ],
+        [ "Language Features", "develop.html#dev-code-lang", null ]
+      ] ],
+      [ "Creating a Release", "develop.html#dev-release", [
+        [ "Generating Documentation (Any OS)", "develop.html#dev-gen-doc", [
+          [ "Requirements", "develop.html#dev-gen-doc-req", null ],
+          [ "Instructions", "develop.html#dev-gen-doc-instruct", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Commands", "commands.html", [
+      [ "BWAPI Commands", "commands.html#cmd-bwapi", [
+        [ "Release Commands", "commands.html#cmd-release", null ],
+        [ "Debug Commands", "commands.html#cmd-debug", null ],
+        [ "Hotkeys", "commands.html#hotkeys", null ]
+      ] ],
+      [ "StarCraft Commands", "commands.html#cmd-starcraft", [
+        [ "Cheat Codes", "commands.html#cheats", null ],
+        [ "Replay Commands", "commands.html#cmd-replay", null ],
+        [ "Command Line Options", "commands.html#cmd-cmdline", null ]
+      ] ]
+    ] ],
+    [ "FAQ", "faq.html", [
+      [ "Will there be an API like this for Starcraft II?", "faq.html#faq-sc2", null ],
+      [ "When are units deleted? When do Unit pointers become invalid?", "faq.html#faq-units-invalid", null ],
+      [ "Should I Make an AI DLL Module or an AI Client Program?", "faq.html#faq-dll-or-client", [
+        [ "DLL Module", "faq.html#faq-dll", null ],
+        [ "Client Program", "faq.html#faq-client", null ]
+      ] ],
+      [ "Why use Visual Studio?", "faq.html#faq-visual-studio", null ],
+      [ "Can I use another compiler?", "faq.html#faq-compiler", null ],
+      [ "Is the API thread-safe?", "faq.html#faq-thread-safety", null ],
+      [ "What is a Force?", "faq.html#faq-force", null ],
+      [ "Where is Heal Move?", "faq.html#faq-heal-move", null ]
+    ] ],
+    [ "Troubleshooting", "troubleshoot.html", [
+      [ "Fatal Error: C1047", "troubleshoot.html#err-c1047", null ],
+      [ "Error: This application has failed to start ... problem. (14001)", "troubleshoot.html#err-14001", null ]
+    ] ],
+    [ "Changes", "changes_top.html", [
+      [ "Current (Tue Apr 15 20:59:42 EDT 2014) ", "changes_top.html#current", null ],
+      [ "BWAPI 4.0.1 Beta (r4453) ", "changes_top.html#changes_401b", null ],
+      [ "BWAPI 4.0.0 Beta (r4350) ", "changes_top.html#changes_400b", null ],
+      [ "BWAPI 3.7.4 (r4160) ", "changes_top.html#changes_374", null ],
+      [ "BWAPI 3.7.3 (r4111) ", "changes_top.html#changes_373", null ],
+      [ "BWAPI 3.7.2 (r4025) ", "changes_top.html#changes_372", null ],
+      [ "BWAPI 3.7.1 (r4000) ", "changes_top.html#changes_371", null ],
+      [ "BWAPI 3.7 (3969) ", "changes_top.html#changes_370", null ],
+      [ "BWAPI 3.6.1 (r3769) ", "changes_top.html#changes_361", null ],
+      [ "BWAPI 3.6 (r3745) ", "changes_top.html#changes_360", null ],
+      [ "BWAPI 3.5.4 (r3597) ", "changes_top.html#changes_354", null ],
+      [ "BWAPI 3.5.3 (r3589) ", "changes_top.html#changes_353", null ],
+      [ "BWAPI 3.5.2 (r3586) ", "changes_top.html#changes_352", null ],
+      [ "BWAPI 3.5.1 (r3584) ", "changes_top.html#changes_351", null ],
+      [ "BWAPI 3.5 (r3577) ", "changes_top.html#changes_350", null ],
+      [ "BWAPI Beta 3.4 (r3347) ", "changes_top.html#changes_340b", null ],
+      [ "BWAPI Beta 3.3 (r3163) ", "changes_top.html#changes_330b", null ],
+      [ "BWAPI Beta 3.2 (r2917) ", "changes_top.html#changes_320b", null ],
+      [ "BWAPI Beta 3.1.1 (r2864) ", "changes_top.html#changes_311b", null ],
+      [ "BWAPI Beta 3.0.3 (r2639) ", "changes_top.html#changes_303b", null ],
+      [ "BWAPI Beta 3.0.2 (r2635) ", "changes_top.html#changes_302b", null ],
+      [ "BWAPI Beta 3.0.1 (r2630) ", "changes_top.html#changes_301b", null ],
+      [ "BWAPI Beta 3.0 (r2627) ", "changes_top.html#changes_300b", null ],
+      [ "BWAPI Beta 2.8 (r2422) ", "changes_top.html#changes_280b", null ],
+      [ "BWAPI Beta 2.7.2 (r2239) ", "changes_top.html#changes_272b", null ],
+      [ "BWAPI Beta 2.7.1 (r2224) ", "changes_top.html#changes_271b", null ],
+      [ "BWAPI Beta 2.6.1 (r1914) ", "changes_top.html#changes_261b", null ],
+      [ "BWAPI Beta 2.6 (r1910) ", "changes_top.html#changes_260b", null ],
+      [ "BWAPI Beta 2.5 (r1830) ", "changes_top.html#changes_250b", null ],
+      [ "BWAPI Beta 2.4 (r1689) ", "changes_top.html#changes_240b", null ],
+      [ "BWAPI Beta 2.3 (r1610) ", "changes_top.html#changes_230b", null ],
+      [ "BWAPI Beta 2.2 (r1491) ", "changes_top.html#changes_220b", null ],
+      [ "BWAPI Beta 2.1 (r1416) ", "changes_top.html#changes_210b", null ],
+      [ "BWAPI Beta 2 (r1400) ", "changes_top.html#changes_200b", null ]
+    ] ],
+    [ "GNU Lesser General Public License", "md__home_heinermann_bwapi_bwapi__l_i_c_e_n_s_e.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Namespaces", null, [
@@ -46,7 +129,7 @@ var NAVTREEINDEX =
 "class_b_w_a_p_i_1_1_point.html#a98fbef9413206b8f7ff8ddfca01f0c72",
 "class_b_w_a_p_i_1_1_unit_interface.html#a3997087321e3d6e9d5b69676c1491080",
 "class_b_w_a_p_i_1_1_unit_type.html#a9ec42278ba3baf73a93bed716ce59701",
-"namespace_b_w_a_p_i_1_1_errors.html"
+"functions_rela.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

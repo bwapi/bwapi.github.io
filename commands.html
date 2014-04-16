@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('md_pages_wiki__commands.html','');});
+$(document).ready(function(){initNavTree('commands.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -93,8 +93,24 @@ $(document).ready(function(){initNavTree('md_pages_wiki__commands.html','');});
 <div class="title">Commands </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This page contains a list of <code>/commands</code> specified and reserved by <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a>.</p>
-<h2>Release Commands</h2>
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#cmd-bwapi">BWAPI Commands</a><ul><li class="level2"><a href="#cmd-release">Release Commands</a></li>
+<li class="level2"><a href="#cmd-debug">Debug Commands</a></li>
+<li class="level2"><a href="#hotkeys">Hotkeys</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#cmd-starcraft">StarCraft Commands</a><ul><li class="level2"><a href="#cheats">Cheat Codes</a></li>
+<li class="level2"><a href="#cmd-replay">Replay Commands</a></li>
+<li class="level2"><a href="#cmd-cmdline">Command Line Options</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="cmd-bwapi"></a>
+BWAPI Commands</h1>
+<p>The following commands were established by <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> and are not a part of the original game.</p>
+<h2><a class="anchor" id="cmd-release"></a>
+Release Commands</h2>
 <p>This list contains commands that are available in both <code>RELEASE</code> and <code>DEBUG</code> modes.</p>
 <table class="doxtable">
 <tr>
@@ -120,7 +136,8 @@ $(document).ready(function(){initNavTree('md_pages_wiki__commands.html','');});
 <tr>
 <td align="left"><code>/stoprecord</code> </td><td align="left">Stops video recording. </td></tr>
 </table>
-<h2>Debug Commands</h2>
+<h2><a class="anchor" id="cmd-debug"></a>
+Debug Commands</h2>
 <p>This list contains commands that are only available in <code>DEBUG</code> mode.</p>
 <table class="doxtable">
 <tr>
@@ -140,7 +157,8 @@ $(document).ready(function(){initNavTree('md_pages_wiki__commands.html','');});
 <tr>
 <td align="left"><code>/hud</code> </td><td align="left">Toggles the display of the HUD (minimap/buttons/stats GUI). </td></tr>
 </table>
-<h2>Hotkeys</h2>
+<h2><a class="anchor" id="hotkeys"></a>
+Hotkeys</h2>
 <table class="doxtable">
 <tr>
 <th align="left">Hotkey </th><th align="left">Description  </th></tr>
@@ -151,7 +169,11 @@ $(document).ready(function(){initNavTree('md_pages_wiki__commands.html','');});
 <tr>
 <td align="left"><code>CTRL</code> </td><td align="left">When held down while resizing the window in Windowed Mode, it will maintain its original aspect ratio of 4:3. </td></tr>
 </table>
-<h2>Cheat Codes</h2>
+<h1><a class="anchor" id="cmd-starcraft"></a>
+StarCraft Commands</h1>
+<p>The following commands are a part of the original game StarCraft: BroodWar and are left unchanged by <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a>.</p>
+<h2><a class="anchor" id="cheats"></a>
+Cheat Codes</h2>
 <p>This list contains cheat codes that were already part of StarCraft. They can only be used in Single Player games. The 'player' refers to the only human player in single player games.</p>
 <table class="doxtable">
 <tr>
@@ -191,12 +213,56 @@ $(document).ready(function(){initNavTree('md_pages_wiki__commands.html','');});
 <tr>
 <td align="left"><code>radio free zerg</code> </td><td align="left">Plays the hidden Zerg song. Must play as the Zerg in BroodWar. </td></tr>
 </table>
+<h2><a class="anchor" id="cmd-replay"></a>
+Replay Commands</h2>
+<p>The following commands only work when watching a replay. The show commands enable a leaderboard that shows a given statistic for every player in the game.</p>
+<table class="doxtable">
+<tr>
+<th align="left">Command </th><th align="left">Description  </th></tr>
+<tr>
+<td align="left"><code>/replay show kills</code> </td><td align="left">Shows the number of kills. </td></tr>
+<tr>
+<td align="left"><code>/replay show razings</code> </td><td align="left">Shows the number of razings. </td></tr>
+<tr>
+<td align="left"><code>/replay show slaughter</code> </td><td align="left">Shows the slaughter leaderboard. </td></tr>
+<tr>
+<td align="left"><code>/replay show resources</code> </td><td align="left">Shows the resources. </td></tr>
+<tr>
+<td align="left"><code>/replay show minerals</code> </td><td align="left">Shows the amount of minerals. </td></tr>
+<tr>
+<td align="left"><code>/replay show gas</code> </td><td align="left">Shows the amount of gas. </td></tr>
+<tr>
+<td align="left"><code>/replay show score</code> </td><td align="left">Shows the total score. </td></tr>
+<tr>
+<td align="left"><code>/replay show score units</code> </td><td align="left">Shows the units score. </td></tr>
+<tr>
+<td align="left"><code>/replay show score buildings</code> </td><td align="left">Shows the buildings score. </td></tr>
+<tr>
+<td align="left"><code>/replay show score kills</code> </td><td align="left">Shows the kill score. </td></tr>
+<tr>
+<td align="left"><code>/replay show score razings</code> </td><td align="left">Shows the razings score. </td></tr>
+<tr>
+<td align="left"><code>/replay show score user</code> </td><td align="left">Shows the custom score. </td></tr>
+<tr>
+<td align="left"><code>/replay hide</code> </td><td align="left">Hides the leaderboard. </td></tr>
+</table>
+<h2><a class="anchor" id="cmd-cmdline"></a>
+Command Line Options</h2>
+<p>The following commands can be passed to StarCraft: BroodWar via command-line. In addition to these, any cheat codes, specifically the <code>ophelia</code> level skipping code, can also be passed to the command line.</p>
+<table class="doxtable">
+<tr>
+<th align="left">Command </th><th align="left">Description  </th></tr>
+<tr>
+<td align="left"><code>ddemulate</code> </td><td align="left">Uses an alternative DirectDraw method which fixes drawing issues in some versions of Windows. </td></tr>
+<tr>
+<td align="left"><code>nosound</code> </td><td align="left">Disables the sound engine. </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 15 2014 23:23:51 for BWAPI by
+    <li class="footer">Generated on Wed Apr 16 2014 13:09:09 for BWAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
