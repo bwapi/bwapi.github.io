@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['k',['k',['http://en.cppreference.com/w/cpp/numeric/random/negative_binomial_distribution/params.html',1,'std::negative_binomial_distribution']]],
   ['k_5f0',['K_0',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca9091949749756108f288953547ed24e8',1,'BWAPI']]],
   ['k_5f1',['K_1',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca39abcc14b36002f80c8fa15fc951269d',1,'BWAPI']]],
   ['k_5f2',['K_2',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca2a6ecaa3c86297cd26c8ce7a39c9112e',1,'BWAPI']]],
@@ -194,10 +195,16 @@ var searchData=
   ['k_5fy',['K_Y',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca3d292ccc26d83ee9249494472e43de13',1,'BWAPI']]],
   ['k_5fz',['K_Z',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18cad6de85d4228c00244ad2688bfda47b5c',1,'BWAPI']]],
   ['k_5fzoom',['K_ZOOM',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca1caa62844dbc429c413b1e84051f00b7',1,'BWAPI']]],
-  ['kaiser_5fblades',['Kaiser_Blades',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1daa8b6503fcb1f05012608da8eb4b52022',1,'BWAPI::WeaponTypes::Enum::Kaiser_Blades()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#a6667d4b00b943aa415988737f4f1680d',1,'BWAPI::WeaponTypes::Kaiser_Blades()']]],
-  ['kaiser_5fblades_5ftorrasque',['Kaiser_Blades_Torrasque',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1da4a7880e355e0dc720ac50fb456b3bf4c',1,'BWAPI::WeaponTypes::Enum::Kaiser_Blades_Torrasque()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#a674ae529249666ef70a93a329360f9af',1,'BWAPI::WeaponTypes::Kaiser_Blades_Torrasque()']]],
+  ['kaiser_5fblades',['Kaiser_Blades',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1da3628a98e9f532a777ec830c2f0ccccc8',1,'BWAPI::WeaponTypes::Enum::Kaiser_Blades()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#a6d0124bb1e9264c0bf42e4ca9b45f780',1,'BWAPI::WeaponTypes::Kaiser_Blades()']]],
+  ['kaiser_5fblades_5ftorrasque',['Kaiser_Blades_Torrasque',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1dac10621d92da9b55458884106ca42bdfc',1,'BWAPI::WeaponTypes::Enum::Kaiser_Blades_Torrasque()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#a35a3658de67331ef2c5a6a90952d459e',1,'BWAPI::WeaponTypes::Kaiser_Blades_Torrasque()']]],
   ['key',['Key',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18c',1,'BWAPI']]],
-  ['khaydarin_5famulet',['Khaydarin_Amulet',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1a5e7a5952dd02d4152a15f41f34fa0034',1,'BWAPI::UpgradeTypes::Enum::Khaydarin_Amulet()'],['../namespace_b_w_a_p_i_1_1_upgrade_types.html#a64d14cbc0bccd918d2fe11cbc8004036',1,'BWAPI::UpgradeTypes::Khaydarin_Amulet()']]],
-  ['khaydarin_5fcore',['Khaydarin_Core',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1ab95b4ac83af3a1b50505f892560d6946',1,'BWAPI::UpgradeTypes::Enum::Khaydarin_Core()'],['../namespace_b_w_a_p_i_1_1_upgrade_types.html#ad36179de602690c13212e7f9f687a847',1,'BWAPI::UpgradeTypes::Khaydarin_Core()']]],
-  ['killedunitcount',['killedUnitCount',['../class_b_w_a_p_i_1_1_player_interface.html#ab76c5b4ed8fb961101e504ed464cf466',1,'BWAPI::PlayerInterface']]]
+  ['key_5fcomp',['key_comp',['http://en.cppreference.com/w/cpp/container/multiset/key_comp.html',1,'std::multiset::key_comp()'],['http://en.cppreference.com/w/cpp/container/set/key_comp.html',1,'std::set::key_comp()'],['http://en.cppreference.com/w/cpp/container/map/key_comp.html',1,'std::map::key_comp()'],['http://en.cppreference.com/w/cpp/container/multimap/key_comp.html',1,'std::multimap::key_comp()']]],
+  ['key_5feq',['key_eq',['http://en.cppreference.com/w/cpp/container/unordered_map/key_eq.html',1,'std::unordered_map::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multimap/key_eq.html',1,'std::unordered_multimap::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_multiset/key_eq.html',1,'std::unordered_multiset::key_eq()'],['http://en.cppreference.com/w/cpp/container/unordered_set/key_eq.html',1,'std::unordered_set::key_eq()']]],
+  ['khaydarin_5famulet',['Khaydarin_Amulet',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1afad009809727d766e9ecd85efc1132bf',1,'BWAPI::UpgradeTypes::Enum::Khaydarin_Amulet()'],['../namespace_b_w_a_p_i_1_1_upgrade_types.html#a74200d79b81d1759785a8e087b071e59',1,'BWAPI::UpgradeTypes::Khaydarin_Amulet()']]],
+  ['khaydarin_5fcore',['Khaydarin_Core',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1a4b4639edd43defdd88028fcfa99fc8ad',1,'BWAPI::UpgradeTypes::Enum::Khaydarin_Core()'],['../namespace_b_w_a_p_i_1_1_upgrade_types.html#a5e18f78434da31b2aee45671394cffad',1,'BWAPI::UpgradeTypes::Khaydarin_Core()']]],
+  ['kill_5fdependency',['kill_dependency',['http://en.cppreference.com/w/cpp/atomic/kill_dependency.html',1,'std']]],
+  ['killedunitcount',['killedUnitCount',['../class_b_w_a_p_i_1_1_player_interface.html#ab76c5b4ed8fb961101e504ed464cf466',1,'BWAPI::PlayerInterface']]],
+  ['kilo',['kilo',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['knuth_5fb',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine/shuffle_order_engine.html',1,'std::knuth_b']]],
+  ['knuth_5fb',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine.html',1,'std']]]
 ];

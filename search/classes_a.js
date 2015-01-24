@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['race',['Race',['../class_b_w_a_p_i_1_1_race.html',1,'BWAPI']]],
-  ['regioninterface',['RegionInterface',['../class_b_w_a_p_i_1_1_region_interface.html',1,'BWAPI']]],
-  ['regionset',['Regionset',['../class_b_w_a_p_i_1_1_regionset.html',1,'BWAPI']]]
+  ['kilo',['kilo',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['knuth_5fb',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine.html',1,'std']]]
 ];

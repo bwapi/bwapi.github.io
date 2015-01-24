@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['academics',['Academics',['../md_pages_wiki__academics.html',1,'']]]
+  ['academics',['Academics',['../md_bwapi_8wiki__academics.html',1,'']]]
 ];

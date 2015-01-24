@@ -1,17 +1,8 @@
 var searchData=
 [
-  ['interface',['Interface',['../class_b_w_a_p_i_1_1_interface.html',1,'BWAPI']]],
-  ['interface_3c_20bulletinterface_20_3e',['Interface&lt; BulletInterface &gt;',['../class_b_w_a_p_i_1_1_interface.html',1,'BWAPI']]],
-  ['interface_3c_20forceinterface_20_3e',['Interface&lt; ForceInterface &gt;',['../class_b_w_a_p_i_1_1_interface.html',1,'BWAPI']]],
-  ['interface_3c_20game_20_3e',['Interface&lt; Game &gt;',['../class_b_w_a_p_i_1_1_interface.html',1,'BWAPI']]],
-  ['interface_3c_20playerinterface_20_3e',['Interface&lt; PlayerInterface &gt;',['../class_b_w_a_p_i_1_1_interface.html',1,'BWAPI']]],
-  ['interface_3c_20regioninterface_20_3e',['Interface&lt; RegionInterface &gt;',['../class_b_w_a_p_i_1_1_interface.html',1,'BWAPI']]],
-  ['interface_3c_20unitinterface_20_3e',['Interface&lt; UnitInterface &gt;',['../class_b_w_a_p_i_1_1_interface.html',1,'BWAPI']]],
-  ['interfaceevent',['InterfaceEvent',['../class_b_w_a_p_i_1_1_interface_event.html',1,'BWAPI']]],
-  ['interfaceevent_3c_20bulletinterface_20_3e',['InterfaceEvent&lt; BulletInterface &gt;',['../class_b_w_a_p_i_1_1_interface_event.html',1,'BWAPI']]],
-  ['interfaceevent_3c_20forceinterface_20_3e',['InterfaceEvent&lt; ForceInterface &gt;',['../class_b_w_a_p_i_1_1_interface_event.html',1,'BWAPI']]],
-  ['interfaceevent_3c_20game_20_3e',['InterfaceEvent&lt; Game &gt;',['../class_b_w_a_p_i_1_1_interface_event.html',1,'BWAPI']]],
-  ['interfaceevent_3c_20playerinterface_20_3e',['InterfaceEvent&lt; PlayerInterface &gt;',['../class_b_w_a_p_i_1_1_interface_event.html',1,'BWAPI']]],
-  ['interfaceevent_3c_20regioninterface_20_3e',['InterfaceEvent&lt; RegionInterface &gt;',['../class_b_w_a_p_i_1_1_interface_event.html',1,'BWAPI']]],
-  ['interfaceevent_3c_20unitinterface_20_3e',['InterfaceEvent&lt; UnitInterface &gt;',['../class_b_w_a_p_i_1_1_interface_event.html',1,'BWAPI']]]
+  ['has_5fvirtual_5fdestructor',['has_virtual_destructor',['http://en.cppreference.com/w/cpp/types/has_virtual_destructor.html',1,'std']]],
+  ['hash',['hash',['http://en.cppreference.com/w/cpp/utility/hash.html',1,'std']]],
+  ['hecto',['hecto',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]],
+  ['high_5fresolution_5fclock',['high_resolution_clock',['http://en.cppreference.com/w/cpp/chrono/high_resolution_clock.html',1,'std::chrono']]],
+  ['hours',['hours',['http://en.cppreference.com/w/cpp/chrono/duration.html',1,'std::chrono']]]
 ];

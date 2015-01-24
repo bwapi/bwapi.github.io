@@ -11,5 +11,5 @@ var class_b_w_a_p_i_1_1_upgrade_type =
     [ "maxRepeats", "class_b_w_a_p_i_1_1_upgrade_type.html#a00371d236537a8fe4efe51e559abd186", null ],
     [ "whatUpgrades", "class_b_w_a_p_i_1_1_upgrade_type.html#abb952e547641b12764bc0c17b3e48435", null ],
     [ "whatsRequired", "class_b_w_a_p_i_1_1_upgrade_type.html#a6e42ac0e5e651de5cf96ebb47f24d210", null ],
-    [ "whatUses", "class_b_w_a_p_i_1_1_upgrade_type.html#a09d8d48730931d6997fdd03394ae7b88", null ]
+    [ "whatUses", "class_b_w_a_p_i_1_1_upgrade_type.html#aa7b46294589f18b682666035bf43553d", null ]
 ];

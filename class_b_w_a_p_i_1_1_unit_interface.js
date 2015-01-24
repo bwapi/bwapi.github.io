@@ -51,7 +51,7 @@ var class_b_w_a_p_i_1_1_unit_interface =
     [ "getStasisTimer", "class_b_w_a_p_i_1_1_unit_interface.html#a34db874fedd6cd1bea5eca266b3db5e5", null ],
     [ "getStimTimer", "class_b_w_a_p_i_1_1_unit_interface.html#aed3be9826cb8ccfc849858cc90ff0b24", null ],
     [ "getBuildType", "class_b_w_a_p_i_1_1_unit_interface.html#aae4d59f0ed68efb758120505403d4ea6", null ],
-    [ "getTrainingQueue", "class_b_w_a_p_i_1_1_unit_interface.html#a8c6e409d09057d591320e6f2c31e420b", null ],
+    [ "getTrainingQueue", "class_b_w_a_p_i_1_1_unit_interface.html#a821f4f4db0089376da4ce76f98c4e75a", null ],
     [ "getTech", "class_b_w_a_p_i_1_1_unit_interface.html#a68c6202b90a7f1c4d7d23e81f509f26d", null ],
     [ "getUpgrade", "class_b_w_a_p_i_1_1_unit_interface.html#a3cf15180fb7572985fcf6c847975c58a", null ],
     [ "getRemainingBuildTime", "class_b_w_a_p_i_1_1_unit_interface.html#aebfead2deb7f0230906f87b4c17c2b53", null ],

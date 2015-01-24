@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ostream_5fmanipulator',['ostream_manipulator',['../class_b_w_a_p_i_1_1_game_wrapper.html#a003b2a99e8f363169e6b8746dff6ae36',1,'BWAPI::GameWrapper']]]
+  ['set',['set',['../singleton_b_w_a_p_i_1_1_type.html#a84528ed932c6608197e588763fd0213c',1,'BWAPI::Type']]],
+  ['setcontainerunderlyingt',['SetContainerUnderlyingT',['../namespace_b_w_a_p_i.html#a100076cdad91c4b4a981cb34e874f86c',1,'BWAPI']]]
 ];

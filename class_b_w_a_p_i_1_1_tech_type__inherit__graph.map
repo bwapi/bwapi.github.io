@@ -1,4 +1,3 @@
 <map id="BWAPI::TechType" name="BWAPI::TechType">
-<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_type.html" title="BWAPI::Type\&lt; TechType,\l TechTypes::Enum::Unknown \&gt;" alt="" coords="5,118,213,165"/>
-<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_type.html" title="Base superclass for all BWAPI Types. " alt="" coords="5,5,213,35"/>
+<area shape="rect" id="node3" href="$singleton_b_w_a_p_i_1_1_type.html" title="Base superclass for all BWAPI Types. " alt="" coords="6,5,209,32"/>
 </map>

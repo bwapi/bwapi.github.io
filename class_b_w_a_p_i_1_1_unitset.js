@@ -1,8 +1,5 @@
 var class_b_w_a_p_i_1_1_unitset =
 [
-    [ "Unitset", "class_b_w_a_p_i_1_1_unitset.html#a7333ce98ebfdebc77d561652bb88eec6", null ],
-    [ "Unitset", "class_b_w_a_p_i_1_1_unitset.html#adbda7005d8da2b073397dcd669b69b43", null ],
-    [ "Unitset", "class_b_w_a_p_i_1_1_unitset.html#ab53bea484cb612bf669d85c7e2a535a5", null ],
     [ "getPosition", "class_b_w_a_p_i_1_1_unitset.html#a4b5940d8ee927640834a1a6a4c343528", null ],
     [ "getLoadedUnits", "class_b_w_a_p_i_1_1_unitset.html#ac8239fd3e24ebde53c07e9021d53d920", null ],
     [ "getInterceptors", "class_b_w_a_p_i_1_1_unitset.html#acf45416556a4bf46ec0ca67789d86bdb", null ],

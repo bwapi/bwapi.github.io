@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['reference',['reference',['../class_b_w_a_p_i_1_1_v_set_iterator.html#a17c64287f0cc9e4ace238954d61e5c5e',1,'BWAPI::VSetIterator']]],
-  ['region',['Region',['../namespace_b_w_a_p_i.html#ac78a71851d96c2bd3da21d4dcb632450',1,'BWAPI']]],
-  ['reverse_5fiterator',['reverse_iterator',['../class_b_w_a_p_i_1_1_const_vectorset.html#ad9c71ad34c121c44656976d2ea2630f7',1,'BWAPI::ConstVectorset']]]
+  ['unit',['Unit',['../namespace_b_w_a_p_i.html#afa82675af468ff71f8b884f63d200a54',1,'BWAPI']]],
+  ['unitfilter',['UnitFilter',['../namespace_b_w_a_p_i.html#ae155ef3afa59e0748a252274f9a635f3',1,'BWAPI']]]
 ];

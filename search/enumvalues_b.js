@@ -194,8 +194,8 @@ var searchData=
   ['k_5fy',['K_Y',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca3d292ccc26d83ee9249494472e43de13',1,'BWAPI']]],
   ['k_5fz',['K_Z',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18cad6de85d4228c00244ad2688bfda47b5c',1,'BWAPI']]],
   ['k_5fzoom',['K_ZOOM',['../namespace_b_w_a_p_i.html#a60af18fc1e748c8d041319c97535d18ca1caa62844dbc429c413b1e84051f00b7',1,'BWAPI']]],
-  ['kaiser_5fblades',['Kaiser_Blades',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1daa8b6503fcb1f05012608da8eb4b52022',1,'BWAPI::WeaponTypes::Enum']]],
-  ['kaiser_5fblades_5ftorrasque',['Kaiser_Blades_Torrasque',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1da4a7880e355e0dc720ac50fb456b3bf4c',1,'BWAPI::WeaponTypes::Enum']]],
-  ['khaydarin_5famulet',['Khaydarin_Amulet',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1a5e7a5952dd02d4152a15f41f34fa0034',1,'BWAPI::UpgradeTypes::Enum']]],
-  ['khaydarin_5fcore',['Khaydarin_Core',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1ab95b4ac83af3a1b50505f892560d6946',1,'BWAPI::UpgradeTypes::Enum']]]
+  ['kaiser_5fblades',['Kaiser_Blades',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1da3628a98e9f532a777ec830c2f0ccccc8',1,'BWAPI::WeaponTypes::Enum']]],
+  ['kaiser_5fblades_5ftorrasque',['Kaiser_Blades_Torrasque',['../namespace_b_w_a_p_i_1_1_weapon_types_1_1_enum.html#a52a5f8fd8002f74a7333144e50060d1dac10621d92da9b55458884106ca42bdfc',1,'BWAPI::WeaponTypes::Enum']]],
+  ['khaydarin_5famulet',['Khaydarin_Amulet',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1afad009809727d766e9ecd85efc1132bf',1,'BWAPI::UpgradeTypes::Enum']]],
+  ['khaydarin_5fcore',['Khaydarin_Core',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1a4b4639edd43defdd88028fcfa99fc8ad',1,'BWAPI::UpgradeTypes::Enum']]]
 ];

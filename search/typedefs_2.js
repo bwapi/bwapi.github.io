@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['difference_5ftype',['difference_type',['../class_b_w_a_p_i_1_1_v_set_iterator.html#a761f3c50d3b31554cb3d73a78f29bbe4',1,'BWAPI::VSetIterator']]]
+  ['list',['list',['../singleton_b_w_a_p_i_1_1_point.html#a34cd51ee137b6957d4bb1c772f9853ab',1,'BWAPI::Point::list()'],['../singleton_b_w_a_p_i_1_1_type.html#a284874242a6b836d904e54cdf42d1df7',1,'BWAPI::Type::list()']]]
 ];

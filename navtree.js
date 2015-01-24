@@ -11,7 +11,7 @@ var NAVTREE =
       [ "Issues", "index.html#issues", null ],
       [ "Legal", "index.html#legal", null ]
     ] ],
-    [ "Academics", "md_pages_wiki__academics.html", null ],
+    [ "Academics", "md_bwapi_8wiki__academics.html", null ],
     [ "Developing BWAPI", "develop.html", [
       [ "Coding Standards", "develop.html#dev-coding", [
         [ "Spacing", "develop.html#dev-code-spacing", null ],
@@ -21,10 +21,22 @@ var NAVTREE =
         [ "Documentation", "develop.html#dev-code-docs", null ],
         [ "Language Features", "develop.html#dev-code-lang", null ]
       ] ],
+      [ "Prerequisites", "develop.html#dev-prereq", null ],
       [ "Creating a Release", "develop.html#dev-release", [
+        [ "Building Binaries (Windows)", "develop.html#dev-bin", [
+          [ "Requirements", "develop.html#dev-bin-req", null ],
+          [ "Instructions", "develop.html#dev-bin-inst", null ]
+        ] ],
         [ "Generating Documentation (Any OS)", "develop.html#dev-gen-doc", [
           [ "Requirements", "develop.html#dev-gen-doc-req", null ],
-          [ "Instructions", "develop.html#dev-gen-doc-instruct", null ]
+          [ "Instructions", "develop.html#dev-gen-doc-instruct", [
+            [ "With Python", "develop.html#dev-gen-doc-instruct-py", null ],
+            [ "Without Python", "develop.html#dev-gen-doc-instruct-npy", null ]
+          ] ]
+        ] ],
+        [ "Building Installer (Windows)", "develop.html#dev-install", [
+          [ "Requirements", "develop.html#dev-install-req", null ],
+          [ "Instructions", "develop.html#dev-install-ins", null ]
         ] ]
       ] ]
     ] ],
@@ -40,6 +52,47 @@ var NAVTREE =
         [ "Command Line Options", "commands.html#cmd-cmdline", null ]
       ] ]
     ] ],
+    [ "Configuration", "config.html", [
+      [ "Configuration Settings", "config.html#config-main", [
+        [ "ai", "config.html#config-ai", [
+          [ "ai", "config.html#config-ai-ai", null ],
+          [ "ai_dbg", "config.html#config-ai-aidbg", null ],
+          [ "tournament", "config.html#config-ai-tournament", null ]
+        ] ],
+        [ "auto_menu", "config.html#config-auto-menu", [
+          [ "auto_menu", "config.html#config-auto-auto", null ],
+          [ "pause_dbg", "config.html#config-auto-pausedbg", null ],
+          [ "lan_mode", "config.html#config-auto-lanmode", null ],
+          [ "auto_restart", "config.html#config-auto-restart", null ],
+          [ "map", "config.html#config-auto-map", null ],
+          [ "game", "config.html#config-auto-game", null ],
+          [ "mapiteration", "config.html#config-auto-mapiteration", null ],
+          [ "race", "config.html#config-auto-race", null ],
+          [ "enemy_count", "config.html#config-auto-enemycount", null ],
+          [ "enemy_race", "config.html#config-auto-enemyrace", null ],
+          [ "enemy_race_", "config.html#config-auto-enemyraceno", null ],
+          [ "game_type", "config.html#config-auto-gametype", null ],
+          [ "save_replay", "config.html#config-auto-savereplay", null ],
+          [ "wait_for_min_players", "config.html#config-auto-waitmin", null ],
+          [ "wait_for_max_players", "config.html#config-auto-waitmax", null ],
+          [ "wait_for_time", "config.html#config-auto-waittime", null ]
+        ] ],
+        [ "config", "config.html#config-config", [
+          [ "holiday", "config.html#config-holiday", null ],
+          [ "shared_memory", "config.html#config-sharedmem", null ]
+        ] ],
+        [ "window", "config.html#config-window", [
+          [ "windowed", "config.html#config-window-on", null ],
+          [ "Window settings", "config.html#config-window-other", null ]
+        ] ],
+        [ "starcraft", "config.html#config-starcraft", [
+          [ "sound", "config.html#config-sc-sound", null ],
+          [ "screenshots", "config.html#config-sc-screenshot", null ],
+          [ "seed_override", "config.html#config-sc-seed", null ]
+        ] ]
+      ] ],
+      [ "Default Configuration", "config.html#def_config", null ]
+    ] ],
     [ "FAQ", "faq.html", [
       [ "Will there be an API like this for Starcraft II?", "faq.html#faq-sc2", null ],
       [ "When are units deleted? When do Unit pointers become invalid?", "faq.html#faq-units-invalid", null ],
@@ -53,47 +106,25 @@ var NAVTREE =
       [ "What is a Force?", "faq.html#faq-force", null ],
       [ "Where is Heal Move?", "faq.html#faq-heal-move", null ]
     ] ],
+    [ "Home", "md_bwapi_8wiki__home.html", null ],
     [ "Troubleshooting", "troubleshoot.html", [
       [ "Fatal Error: C1047", "troubleshoot.html#err-c1047", null ],
       [ "Error: This application has failed to start ... problem. (14001)", "troubleshoot.html#err-14001", null ]
     ] ],
-    [ "Changes", "changes_top.html", [
-      [ "Current (Tue Apr 15 20:59:42 EDT 2014) ", "changes_top.html#current", null ],
-      [ "BWAPI 4.0.1 Beta (r4453) ", "changes_top.html#changes_401b", null ],
-      [ "BWAPI 4.0.0 Beta (r4350) ", "changes_top.html#changes_400b", null ],
-      [ "BWAPI 3.7.4 (r4160) ", "changes_top.html#changes_374", null ],
-      [ "BWAPI 3.7.3 (r4111) ", "changes_top.html#changes_373", null ],
-      [ "BWAPI 3.7.2 (r4025) ", "changes_top.html#changes_372", null ],
-      [ "BWAPI 3.7.1 (r4000) ", "changes_top.html#changes_371", null ],
-      [ "BWAPI 3.7 (3969) ", "changes_top.html#changes_370", null ],
-      [ "BWAPI 3.6.1 (r3769) ", "changes_top.html#changes_361", null ],
-      [ "BWAPI 3.6 (r3745) ", "changes_top.html#changes_360", null ],
-      [ "BWAPI 3.5.4 (r3597) ", "changes_top.html#changes_354", null ],
-      [ "BWAPI 3.5.3 (r3589) ", "changes_top.html#changes_353", null ],
-      [ "BWAPI 3.5.2 (r3586) ", "changes_top.html#changes_352", null ],
-      [ "BWAPI 3.5.1 (r3584) ", "changes_top.html#changes_351", null ],
-      [ "BWAPI 3.5 (r3577) ", "changes_top.html#changes_350", null ],
-      [ "BWAPI Beta 3.4 (r3347) ", "changes_top.html#changes_340b", null ],
-      [ "BWAPI Beta 3.3 (r3163) ", "changes_top.html#changes_330b", null ],
-      [ "BWAPI Beta 3.2 (r2917) ", "changes_top.html#changes_320b", null ],
-      [ "BWAPI Beta 3.1.1 (r2864) ", "changes_top.html#changes_311b", null ],
-      [ "BWAPI Beta 3.0.3 (r2639) ", "changes_top.html#changes_303b", null ],
-      [ "BWAPI Beta 3.0.2 (r2635) ", "changes_top.html#changes_302b", null ],
-      [ "BWAPI Beta 3.0.1 (r2630) ", "changes_top.html#changes_301b", null ],
-      [ "BWAPI Beta 3.0 (r2627) ", "changes_top.html#changes_300b", null ],
-      [ "BWAPI Beta 2.8 (r2422) ", "changes_top.html#changes_280b", null ],
-      [ "BWAPI Beta 2.7.2 (r2239) ", "changes_top.html#changes_272b", null ],
-      [ "BWAPI Beta 2.7.1 (r2224) ", "changes_top.html#changes_271b", null ],
-      [ "BWAPI Beta 2.6.1 (r1914) ", "changes_top.html#changes_261b", null ],
-      [ "BWAPI Beta 2.6 (r1910) ", "changes_top.html#changes_260b", null ],
-      [ "BWAPI Beta 2.5 (r1830) ", "changes_top.html#changes_250b", null ],
-      [ "BWAPI Beta 2.4 (r1689) ", "changes_top.html#changes_240b", null ],
-      [ "BWAPI Beta 2.3 (r1610) ", "changes_top.html#changes_230b", null ],
-      [ "BWAPI Beta 2.2 (r1491) ", "changes_top.html#changes_220b", null ],
-      [ "BWAPI Beta 2.1 (r1416) ", "changes_top.html#changes_210b", null ],
-      [ "BWAPI Beta 2 (r1400) ", "changes_top.html#changes_200b", null ]
+    [ "Useful Links", "ulink.html", [
+      [ "Competitions", "ulink.html#ulink-comp", null ],
+      [ "Other links", "ulink.html#ulink-other", null ],
+      [ "Important links", "ulink.html#ulink-important", null ]
     ] ],
-    [ "GNU Lesser General Public License", "md__home_heinermann_bwapi_bwapi__l_i_c_e_n_s_e.html", null ],
+    [ "GNU Lesser General Public License", "_l_g_p_l.html", [
+      [ "0. Additional Definitions.", "_l_g_p_l.html#LGPL-0", null ],
+      [ "1. Exception to Section 3 of the GNU GPL.", "_l_g_p_l.html#LGPL-1", null ],
+      [ "2. Conveying Modified Versions.", "_l_g_p_l.html#LGPL-2", null ],
+      [ "3. Object Code Incorporating Material from Library Header Files.", "_l_g_p_l.html#LGPL-3", null ],
+      [ "4. Combined Works.", "_l_g_p_l.html#LGPL-4", null ],
+      [ "5. Combined Libraries.", "_l_g_p_l.html#LGPL-5", null ],
+      [ "6. Revised Versions of the GNU Lesser General Public License.", "_l_g_p_l.html#LGPL-6", null ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Namespaces", null, [
@@ -124,16 +155,14 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_b_w_a_p_i_1_1_game.html#a3e27b75d34b7df3992cfb13eef48d6b4",
-"class_b_w_a_p_i_1_1_point.html#a98fbef9413206b8f7ff8ddfca01f0c72",
-"class_b_w_a_p_i_1_1_unit_interface.html#a3997087321e3d6e9d5b69676c1491080",
-"class_b_w_a_p_i_1_1_unit_type.html#a9ec42278ba3baf73a93bed716ce59701",
-"functions_rela.html"
+"_l_g_p_l.html",
+"class_b_w_a_p_i_1_1_game.html#a9cc83f43d88cc2c79d7f4e7bb5a81746",
+"class_b_w_a_p_i_1_1_unit_command.html#a2a4a0c222c6be1dcf76de9e44e714321",
+"class_b_w_a_p_i_1_1_unit_interface.html#ac016e5f7f1ca820512e4adc48fce8b27",
+"config.html#config-auto-gametype",
+"namespacemembers_vars_s.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
 var SYNCONMSG = 'click to disable panel synchronisation';
 var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
@@ -158,6 +187,21 @@ function stripPath2(uri)
   return m ? uri.substring(i-6) : s;
 }
 
+function hashValue()
+{
+  return $(location).attr('hash').substring(1).replace(/[^\w\-]/g,'');
+}
+
+function hashUrl()
+{
+  return '#'+hashValue();
+}
+
+function pathName()
+{
+  return $(location).attr('pathname').replace(/[^-A-Za-z0-9+&@#/%?=~_|!:,.;\(\)]/g, '');
+}
+
 function localStorageSupported()
 {
   try {
@@ -180,7 +224,7 @@ function deleteLink()
 {
   if (localStorageSupported()) {
     window.localStorage.setItem('navpath','');
-  } 
+  }
 }
 
 function cachedLink()
@@ -316,7 +360,7 @@ function newNode(o, po, text, link, childrenData, lastNode)
     a.className = stripPath(link.replace('#',':'));
     if (link.indexOf('#')!=-1) {
       var aname = '#'+link.split('#')[1];
-      var srcPage = stripPath($(location).attr('pathname'));
+      var srcPage = stripPath(pathName());
       var targetPage = stripPath(link.split('#')[0]);
       a.href = srcPage!=targetPage ? url : "javascript:void(0)"; 
       a.onclick = function(){
@@ -410,11 +454,10 @@ function glowEffect(n,duration)
 
 function highlightAnchor()
 {
-  var aname = $(location).attr('hash');
+  var aname = hashUrl();
   var anchor = $(aname);
   if (anchor.parent().attr('class')=='memItemLeft'){
-    var rows = $('.memberdecls tr[class$="'+
-               window.location.hash.substring(1).replace(/</g,'\\3c ')+'"]');
+    var rows = $('.memberdecls tr[class$="'+hashValue()+'"]');
     glowEffect(rows.children(),300); // member without details
   } else if (anchor.parent().attr('class')=='fieldname'){
     glowEffect(anchor.parent().parent(),1000); // enum value
@@ -432,8 +475,8 @@ function selectAndHighlight(hash,n)
 {
   var a;
   if (hash) {
-    var link=stripPath($(location).attr('pathname'))+':'+hash.substring(1);
-    a=$('.item a[class$="'+link.replace(/</g,'\\3c ')+'"]');
+    var link=stripPath(pathName())+':'+hash.substring(1);
+    a=$('.item a[class$="'+link+'"]');
   }
   if (a && a.length) {
     a.parent().parent().addClass('selected');
@@ -543,14 +586,13 @@ function navTo(o,root,hash,relpath)
   if (link) {
     var parts = link.split('#');
     root = parts[0];
-    if (parts.length>1) hash = '#'+parts[1];
+    if (parts.length>1) hash = '#'+parts[1].replace(/[^\w\-]/g,'');
     else hash='';
   }
   if (hash.match(/^#l\d+$/)) {
     var anchor=$('a[name='+hash.substring(1)+']');
     glowEffect(anchor.parent(),1000); // line number
     hash=''; // strip line number anchors
-    //root=root.replace(/_source\./,'.'); // source link to doc link
   }
   var url=root+hash;
   var i=-1;
@@ -584,7 +626,7 @@ function toggleSyncButton(relpath)
   if (navSync.hasClass('sync')) {
     navSync.removeClass('sync');
     showSyncOff(navSync,relpath);
-    storeLink(stripPath2($(location).attr('pathname'))+$(location).attr('hash'));
+    storeLink(stripPath2(pathName())+hashUrl());
   } else {
     navSync.addClass('sync');
     showSyncOn(navSync,relpath);
@@ -624,7 +666,7 @@ function initNavTree(toroot,relpath)
   }
 
   $(window).load(function(){
-    navTo(o,toroot,window.location.hash,relpath);
+    navTo(o,toroot,hashUrl(),relpath);
     showRoot();
   });
 
@@ -632,21 +674,20 @@ function initNavTree(toroot,relpath)
      if (window.location.hash && window.location.hash.length>1){
        var a;
        if ($(location).attr('hash')){
-         var clslink=stripPath($(location).attr('pathname'))+':'+
-                               $(location).attr('hash').substring(1);
+         var clslink=stripPath(pathName())+':'+hashValue();
          a=$('.item a[class$="'+clslink.replace(/</g,'\\3c ')+'"]');
        }
        if (a==null || !$(a).parent().parent().hasClass('selected')){
          $('.item').removeClass('selected');
          $('.item').removeAttr('id');
        }
-       var link=stripPath2($(location).attr('pathname'));
-       navTo(o,link,$(location).attr('hash'),relpath);
+       var link=stripPath2(pathName());
+       navTo(o,link,hashUrl(),relpath);
      } else if (!animationInProgress) {
        $('#doc-content').scrollTop(0);
        $('.item').removeClass('selected');
        $('.item').removeAttr('id');
-       navTo(o,toroot,window.location.hash,relpath);
+       navTo(o,toroot,hashUrl(),relpath);
      }
   })
 }

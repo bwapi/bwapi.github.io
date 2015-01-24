@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iterator',['iterator',['../class_b_w_a_p_i_1_1_const_vectorset.html#a9c144b78c2caf3ad30f7a114ca88d23b',1,'BWAPI::ConstVectorset::iterator()'],['../class_b_w_a_p_i_1_1_vectorset.html#adeb0b12f872d0a811245819446594e1f',1,'BWAPI::Vectorset::iterator()']]]
+  ['region',['Region',['../namespace_b_w_a_p_i.html#ac78a71851d96c2bd3da21d4dcb632450',1,'BWAPI']]]
 ];

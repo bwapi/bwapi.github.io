@@ -1,0 +1,8 @@
+<map id="BWAPI::SetContainer&lt; T, HashT &gt;" name="BWAPI::SetContainer&lt; T, HashT &gt;">
+<area shape="rect" id="node2" href="C:/Users/Adam/bwapi/Documentation/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set.html" title="STL class. " alt="" coords="5,173,171,214"/>
+<area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_regionset.html" title="BWAPI::Regionset" alt="" coords="749,20,880,47"/>
+<area shape="rect" id="node6" href="$class_b_w_a_p_i_1_1_bulletset.html" title="BWAPI::Bulletset" alt="" coords="753,100,877,127"/>
+<area shape="rect" id="node8" href="$class_b_w_a_p_i_1_1_forceset.html" title="A container that holds a group of Forces. " alt="" coords="753,180,877,207"/>
+<area shape="rect" id="node10" href="$class_b_w_a_p_i_1_1_unitset.html" title="The Unitset is a container for a set of pointers to Unit objects. " alt="" coords="757,260,872,287"/>
+<area shape="rect" id="node12" href="$class_b_w_a_p_i_1_1_playerset.html" title="BWAPI::Playerset" alt="" coords="751,340,879,367"/>
+</map>

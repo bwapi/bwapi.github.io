@@ -10,6 +10,6 @@ var class_b_w_a_p_i_1_1_tech_type =
     [ "getWeapon", "class_b_w_a_p_i_1_1_tech_type.html#a4e088572c70468cdb7e3633790d4ead6", null ],
     [ "targetsUnit", "class_b_w_a_p_i_1_1_tech_type.html#ad881d61f897cbf5517665b8c06e643dc", null ],
     [ "targetsPosition", "class_b_w_a_p_i_1_1_tech_type.html#aa6a171b92becb47b7a9978b1b9519a21", null ],
-    [ "whatUses", "class_b_w_a_p_i_1_1_tech_type.html#acdaa81b271e66d4bf1a1107e7c316b1a", null ],
+    [ "whatUses", "class_b_w_a_p_i_1_1_tech_type.html#a8d5edf3174017a76947157ab9d4497bd", null ],
     [ "getOrder", "class_b_w_a_p_i_1_1_tech_type.html#ac65e476b7305bb0e6a5113ebc4a9e8d2", null ]
 ];

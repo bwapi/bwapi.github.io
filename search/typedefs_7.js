@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['player',['Player',['../namespace_b_w_a_p_i.html#ab8daa67d10dc7eaa154a2636ec1784f8',1,'BWAPI']]],
-  ['pointer',['pointer',['../class_b_w_a_p_i_1_1_v_set_iterator.html#aca44725bcf2fcd413b4066e65aff4978',1,'BWAPI::VSetIterator']]],
-  ['position',['Position',['../namespace_b_w_a_p_i.html#a7ab9fb7a6b34443a6e881beb4eee0302',1,'BWAPI']]],
-  ['ptrintcompareunitfilter',['PtrIntCompareUnitFilter',['../namespace_b_w_a_p_i.html#af2951bfa363dae63669e3ae6aef40832',1,'BWAPI']]],
-  ['ptrunitfilter',['PtrUnitFilter',['../namespace_b_w_a_p_i.html#a116ce3bb14a2b96598ff76925f8078c5',1,'BWAPI']]]
+  ['tileposition',['TilePosition',['../namespace_b_w_a_p_i.html#aa4c4e6f17ac9c8c98b1802a916d28156',1,'BWAPI']]],
+  ['typemapt',['typeMapT',['../singleton_b_w_a_p_i_1_1_type.html#aaf9ccbaca4f7bcfb9eac03f795b8a55b',1,'BWAPI::Type']]]
 ];

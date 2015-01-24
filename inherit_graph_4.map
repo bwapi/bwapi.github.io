@@ -1,15 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_b_w_a_p_i_1_1_const_vectorset.html" title="BWAPI::ConstVectorset\l\&lt; _T \&gt;" alt="" coords="5,162,171,209"/>
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_vectorset.html" title="The Vectorset is a class template designed specifically for trivial classes or PODs and performance..." alt="" coords="231,5,393,35"/>
-<area shape="rect" id="node7" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Bullet \&gt;" alt="" coords="219,58,405,105"/>
-<area shape="rect" id="node11" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Force \&gt;" alt="" coords="219,127,405,174"/>
-<area shape="rect" id="node15" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Player \&gt;" alt="" coords="219,197,405,243"/>
-<area shape="rect" id="node19" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Region \&gt;" alt="" coords="219,266,405,313"/>
-<area shape="rect" id="node23" href="$class_b_w_a_p_i_1_1_vectorset.html" title="BWAPI::Vectorset\&lt; BWAPI\l::Unit \&gt;" alt="" coords="219,335,405,382"/>
-<area shape="rect" id="node5" href="$class_b_w_a_p_i_1_1_typeset.html" title="BWAPI::Typeset\&lt; T \&gt;" alt="" coords="455,5,607,35"/>
-<area shape="rect" id="node9" href="$class_b_w_a_p_i_1_1_bulletset.html" title="BWAPI::Bulletset" alt="" coords="468,67,593,96"/>
-<area shape="rect" id="node13" href="$class_b_w_a_p_i_1_1_forceset.html" title="A container that holds a group of Forces. " alt="" coords="468,136,593,165"/>
-<area shape="rect" id="node17" href="$class_b_w_a_p_i_1_1_playerset.html" title="BWAPI::Playerset" alt="" coords="467,205,595,235"/>
-<area shape="rect" id="node21" href="$class_b_w_a_p_i_1_1_regionset.html" title="BWAPI::Regionset" alt="" coords="464,275,597,304"/>
-<area shape="rect" id="node25" href="$class_b_w_a_p_i_1_1_unitset.html" title="The Unitset is a container for a set of pointers to Unit objects. " alt="" coords="473,344,588,373"/>
+<area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_color.html" title="The Color object is used in drawing routines to specify the color to use. " alt="" coords="200,13,303,39"/>
 </map>
