@@ -12,6 +12,43 @@ var NAVTREE =
       [ "Legal", "index.html#legal", null ]
     ] ],
     [ "Academics", "md_bwapi_8wiki__academics.html", null ],
+    [ "Changes", "changes_top.html", [
+      [ "BWAPI 4.1.0 Beta ", "changes_top.html#changes_410b", null ],
+      [ "BWAPI 4.0.1 Beta (r4453) ", "changes_top.html#changes_401b", null ],
+      [ "BWAPI 4.0.0 Beta (r4350) ", "changes_top.html#changes_400b", null ],
+      [ "BWAPI 3.7.4 (r4160) ", "changes_top.html#changes_374", null ],
+      [ "BWAPI 3.7.3 (r4111) ", "changes_top.html#changes_373", null ],
+      [ "BWAPI 3.7.2 (r4025) ", "changes_top.html#changes_372", null ],
+      [ "BWAPI 3.7.1 (r4000) ", "changes_top.html#changes_371", null ],
+      [ "BWAPI 3.7 (3969) ", "changes_top.html#changes_370", null ],
+      [ "BWAPI 3.6.1 (r3769) ", "changes_top.html#changes_361", null ],
+      [ "BWAPI 3.6 (r3745) ", "changes_top.html#changes_360", null ],
+      [ "BWAPI 3.5.4 (r3597) ", "changes_top.html#changes_354", null ],
+      [ "BWAPI 3.5.3 (r3589) ", "changes_top.html#changes_353", null ],
+      [ "BWAPI 3.5.2 (r3586) ", "changes_top.html#changes_352", null ],
+      [ "BWAPI 3.5.1 (r3584) ", "changes_top.html#changes_351", null ],
+      [ "BWAPI 3.5 (r3577) ", "changes_top.html#changes_350", null ],
+      [ "BWAPI Beta 3.4 (r3347) ", "changes_top.html#changes_340b", null ],
+      [ "BWAPI Beta 3.3 (r3163) ", "changes_top.html#changes_330b", null ],
+      [ "BWAPI Beta 3.2 (r2917) ", "changes_top.html#changes_320b", null ],
+      [ "BWAPI Beta 3.1.1 (r2864) ", "changes_top.html#changes_311b", null ],
+      [ "BWAPI Beta 3.1 (r2796) ", "changes_top.html#changes_310b", null ],
+      [ "BWAPI Beta 3.0.3 (r2639) ", "changes_top.html#changes_303b", null ],
+      [ "BWAPI Beta 3.0.2 (r2635) ", "changes_top.html#changes_302b", null ],
+      [ "BWAPI Beta 3.0.1 (r2630) ", "changes_top.html#changes_301b", null ],
+      [ "BWAPI Beta 3.0 (r2627) ", "changes_top.html#changes_300b", null ],
+      [ "BWAPI Beta 2.8 (r2422) ", "changes_top.html#changes_280b", null ],
+      [ "BWAPI Beta 2.7.2 (r2239) ", "changes_top.html#changes_272b", null ],
+      [ "BWAPI Beta 2.7.1 (r2224) ", "changes_top.html#changes_271b", null ],
+      [ "BWAPI Beta 2.6.1 (r1914) ", "changes_top.html#changes_261b", null ],
+      [ "BWAPI Beta 2.6 (r1910) ", "changes_top.html#changes_260b", null ],
+      [ "BWAPI Beta 2.5 (r1830) ", "changes_top.html#changes_250b", null ],
+      [ "BWAPI Beta 2.4 (r1689) ", "changes_top.html#changes_240b", null ],
+      [ "BWAPI Beta 2.3 (r1610) ", "changes_top.html#changes_230b", null ],
+      [ "BWAPI Beta 2.2 (r1491) ", "changes_top.html#changes_220b", null ],
+      [ "BWAPI Beta 2.1 (r1416) ", "changes_top.html#changes_210b", null ],
+      [ "BWAPI Beta 2 (r1400) ", "changes_top.html#changes_200b", null ]
+    ] ],
     [ "Developing BWAPI", "develop.html", [
       [ "Coding Standards", "develop.html#dev-coding", [
         [ "Spacing", "develop.html#dev-code-spacing", null ],
@@ -88,7 +125,8 @@ var NAVTREE =
         [ "starcraft", "config.html#config-starcraft", [
           [ "sound", "config.html#config-sc-sound", null ],
           [ "screenshots", "config.html#config-sc-screenshot", null ],
-          [ "seed_override", "config.html#config-sc-seed", null ]
+          [ "seed_override", "config.html#config-sc-seed", null ],
+          [ "speed_override", "config.html#config-sc-speed", null ]
         ] ]
       ] ],
       [ "Default Configuration", "config.html#def_config", null ]
@@ -106,7 +144,6 @@ var NAVTREE =
       [ "What is a Force?", "faq.html#faq-force", null ],
       [ "Where is Heal Move?", "faq.html#faq-heal-move", null ]
     ] ],
-    [ "Home", "md_bwapi_8wiki__home.html", null ],
     [ "Troubleshooting", "troubleshoot.html", [
       [ "Fatal Error: C1047", "troubleshoot.html#err-c1047", null ],
       [ "Error: This application has failed to start ... problem. (14001)", "troubleshoot.html#err-14001", null ]
@@ -156,11 +193,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_l_g_p_l.html",
-"class_b_w_a_p_i_1_1_game.html#a9cc83f43d88cc2c79d7f4e7bb5a81746",
-"class_b_w_a_p_i_1_1_unit_command.html#a2a4a0c222c6be1dcf76de9e44e714321",
-"class_b_w_a_p_i_1_1_unit_interface.html#ac016e5f7f1ca820512e4adc48fce8b27",
-"config.html#config-auto-gametype",
-"namespacemembers_vars_s.html"
+"class_b_w_a_p_i_1_1_game.html#a69b366ffecdfac5a0d36eecc41c4b29b",
+"class_b_w_a_p_i_1_1_tech_type.html#a3ea7f3918bbf30bfede26403af4493bb",
+"class_b_w_a_p_i_1_1_unit_interface.html#aa0a1d01af63060fd80a1a126c90cc023",
+"class_b_w_a_p_i_1_1_weapon_type.html#a4d56245b93d06f458f11e780743bc00c",
+"namespacemembers_g.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

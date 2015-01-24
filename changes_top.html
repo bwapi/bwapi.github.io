@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('changes_top.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#current">Latest </a></li>
+<ul><li class="level1"><a href="#changes_410b">BWAPI 4.1.0 Beta </a></li>
 <li class="level1"><a href="#changes_401b">BWAPI 4.0.1 Beta (r4453) </a></li>
 <li class="level1"><a href="#changes_400b">BWAPI 4.0.0 Beta (r4350) </a></li>
 <li class="level1"><a href="#changes_374">BWAPI 3.7.4 (r4160) </a></li>
@@ -140,18 +140,28 @@ $(document).ready(function(){initNavTree('changes_top.html','');});
 <li class="level1"><a href="#changes_200b">BWAPI Beta 2 (r1400) </a></li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="current"></a>
-Latest </h1>
-<p><a href="https://github.com/bwapi/bwapi/commit/fe18f08ac4bd4e954ab2b6c5a740f964b65751e1">fe18f08a</a></p>
-<p>Changes:</p><ul>
+<div class="textblock"><h1><a class="anchor" id="changes_410b"></a>
+BWAPI 4.1.0 Beta </h1>
+<p><a href="https://github.com/bwapi/bwapi/tree/v4.1.0-Beta-branch">branch</a> - <a href="https://github.com/bwapi/bwapi/releases/tag/v4.1.0-Beta">release</a></p>
+<p>Project Changes:</p><ul>
 <li><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> has migrated from Google Code to GitHub.</li>
-<li><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> has been updated to use Visual C++ 2013.</li>
-<li>The video commands have been removed.</li>
-<li>Removed the underlying <code>Vectorset</code> container, replacing it with <code><a class="elRef" doxygen="C:/Users/Adam/bwapi/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/container/unordered_set.html" title="STL class. ">std::unordered_set</a></code>.</li>
+<li><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a> now uses Visual C++ 2013 Express for Windows Desktop.</li>
+<li>The project now has an automated build server.</li>
+<li>BWAPILib and BWAPIClient are now bundled with the installer so users can compile their AI under a different compiler.</li>
+</ul>
+<p>Enhancements:</p><ul>
 <li>Starcraft can now load <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a>'s custom network providers (Direct IP and Local PC) without using <a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a>.</li>
-<li>Added a <code>seed_override</code> option to the configuration, allowing users to fix the random seed and have predetermined behaviour.</li>
-<li>Multiple instances can now be executed without having to run a patcher for an alternative executable.</li>
-<li></li>
+<li>Added a <code>seed_override</code> option to the configuration, allowing users to fix the random seed at the start of a game (including multi-player).</li>
+<li>Multiple instances can now be executed without having to run a patcher.</li>
+<li>Added a <code>speed_override</code> option to the configuration, allowing users to prevent bots they don't own the source to from changing the speed.</li>
+<li>Added constants <a class="el" href="namespace_b_w_a_p_i.html#acd356ff7df07a4a1cfd531d7291c0f1a" title="The amount of shield points that a unit recovers over 256 frames. That is, 7/256 shields are regenera...">BWAPI::SHIELD_REGEN_RATE</a>, <a class="el" href="namespace_b_w_a_p_i.html#a4299361736e077f0b06dd1cd6d358915" title="The amount of energy that a unit with special abilities recovers over 256 frames. That is...">BWAPI::ENERGY_REGEN_RATE</a>, and <a class="el" href="namespace_b_w_a_p_i.html#ab3ba2f23ed9fc8cc650df60906a8bd2f" title="The amount of life that a zerg unit recovers over 256 frames. That is, 4/256 life is regenerated per ...">BWAPI::LIFE_REGEN_RATE</a>.</li>
+<li><a class="el" href="class_b_w_a_p_i_1_1_game.html#aeb27c5ae787797bd151fbb6998ee0d9d" title="Checks if the given unit type can be built at the given build tile position. ">BWAPI::Game::canBuildHere</a> now checks addon placement from the top left of the builder's type rather than from the addon's type.</li>
+<li>Types and Positions now implement the wide character iostream operators (<a class="elRef" doxygen="C:/Users/Adam/bwapi/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/io/basic_istream.html" title="STL class. ">std::wistream</a> and <a class="elRef" doxygen="C:/Users/Adam/bwapi/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" title="STL class. ">std::wostream</a>).</li>
+</ul>
+<p>Regressions:</p><ul>
+<li>The video commands have been removed.</li>
+<li>The <code>Vectorset</code> container has been removed and replaced with <code><a class="elRef" doxygen="C:/Users/Adam/bwapi/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/container/unordered_set.html" title="STL class. ">std::unordered_set</a></code>.</li>
+<li>Removed a feature that changed the game speed when the window was minimized.</li>
 </ul>
 <p>Documentation:</p><ul>
 <li>Types are now documented with information, visuals, and external references to Liquipedia, Staredit Network, Wikia, and Blizzard's Starcraft Compendium.</li>
@@ -160,7 +170,7 @@ Latest </h1>
 </ul>
 <p>Bug Fixes:</p><ul>
 <li>Fixed a bug where some replays would be skipped when <code>auto_menu</code> iterated through them.</li>
-<li>Fixed a major bug that could cause crashes or produce undefined results on larger maps when using <code><a class="el" href="class_b_w_a_p_i_1_1_game.html#a3f16dd1c353be2f40a20f51530cc60f4" title="Checks if there is a path from source to destination. ">BWAPI::Game::hasPath</a></code> or <code><a class="el" href="class_b_w_a_p_i_1_1_game.html#adb40aab384061cce4dfa345bf69f55d2" title="Retrieves the Region interface object associated with a given identifier. ">BWAPI::Game::getRegion</a></code>.</li>
+<li>Fixed a major bug that could cause crashes or produce undefined results on larger maps when using <code><a class="el" href="class_b_w_a_p_i_1_1_game.html#af5892c4c0aecc7fe230d2acfdf6ed94b" title="Checks if there is a path from source to destination. ">BWAPI::Game::hasPath</a></code> or <code><a class="el" href="class_b_w_a_p_i_1_1_game.html#adb40aab384061cce4dfa345bf69f55d2" title="Retrieves the Region interface object associated with a given identifier. ">BWAPI::Game::getRegion</a></code>.</li>
 <li>Fixed a crash when the <code>save_replay</code> configuration option contained extended ASCII characters.</li>
 <li>Fixed a crash when retrieving the name of a force in BWAPIClient.</li>
 <li>Fixed a regression where replays would fail to load when <code>auto_menu</code> was set to <code>SINGLE_PLAYER</code>.</li>
@@ -173,6 +183,11 @@ Latest </h1>
 <li>Fixed missing names and typos for various <a class="el" href="namespace_b_w_a_p_i_1_1_orders.html" title="Namespace containing unit orders. ">BWAPI::Orders</a>.</li>
 <li>Fixed a bug where <code><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a309087d41852543874b909537ed3ecad" title="Checks if the player is an observer player, typically in a Use Map Settings observer game...">BWAPI::Player::isObserver</a></code> would return <code>true</code> in some <a class="el" href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008">Use Map Settings</a> maps.</li>
 <li>Fixed an issue where drawing text would cut off at 256 characters. It is now extended to 1024.</li>
+<li>Fixed a bug where <a class="el" href="namespace_b_w_a_p_i.html#a7ab9fb7a6b34443a6e881beb4eee0302">BWAPI::Position</a> could be initialized incorrectly when doing position arithmetic.</li>
+<li>Fixed several issues with <a class="el" href="class_b_w_a_p_i_1_1_game.html#aeb27c5ae787797bd151fbb6998ee0d9d" title="Checks if the given unit type can be built at the given build tile position. ">BWAPI::Game::canBuildHere</a>.</li>
+<li>Fixed a bug where <a class="el" href="class_b_w_a_p_i_1_1_game.html#a69c3a99f2e3374e5bfffd430ec5a4f32" title="Moves the top left corner of the viewport to the provided position relative to the map&#39;s origin (top ...">BWAPI::Game::setScreenPosition</a> would not move the screen all the way to the bottom of the map.</li>
+<li>Fixed a bug where <a class="el" href="class_b_w_a_p_i_1_1_unit_interface.html#a8a91b1dc8359bc18dc8edb82798e38f1" title="Checks if this unit is currently attacking something. ">BWAPI::Unit::isAttacking</a> would always return true for units that are holding position (and have attacked something at least once).</li>
+<li>Fixed a bug where <a class="el" href="class_b_w_a_p_i_1_1_unit_interface.html#a8a91b1dc8359bc18dc8edb82798e38f1" title="Checks if this unit is currently attacking something. ">BWAPI::Unit::isAttacking</a> would always return false for the <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#a73217a0a781f33eb50569a7c87093b01">Goliath</a> and <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#a8bd8d8aa10c9bcdb9902b87c23dc5546">Siege Tank</a>.</li>
 </ul>
 <h1><a class="anchor" id="changes_401b"></a>
 BWAPI 4.0.1 Beta (r4453) </h1>
@@ -1343,7 +1358,7 @@ BWAPI Beta 2 (r1400) </h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 1 2015 02:15:17 for BWAPI by
+    <li class="footer">Generated on Sat Jan 24 2015 15:43:38 for BWAPI by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -83,12 +83,11 @@ var searchData=
   ['highest',['Highest',['../namespace_b_w_a_p_i.html#abe6331bc2d2542ac314531342eec1fe1',1,'BWAPI']]],
   ['hold_5fposition',['Hold_Position',['../namespace_b_w_a_p_i_1_1_unit_command_types_1_1_enum.html#a9911e96eb2b58a13aa7476f62edb3956ae94a0dd81a62e83355bd51b0c97d0177',1,'BWAPI::UnitCommandTypes::Enum::Hold_Position()'],['../namespace_b_w_a_p_i_1_1_unit_command_types.html#add0c01431198fe0e1bc442bda9df2481',1,'BWAPI::UnitCommandTypes::Hold_Position()']]],
   ['holdposition',['holdPosition',['../class_b_w_a_p_i_1_1_unit_interface.html#adee5a85641866ec1790d29809d940358',1,'BWAPI::UnitInterface::holdPosition()'],['../class_b_w_a_p_i_1_1_unit_command.html#a1c5316b89b9dcc80968d9d3550791c81',1,'BWAPI::UnitCommand::holdPosition()'],['../class_b_w_a_p_i_1_1_unitset.html#af3598fa39daf0375a5a5a8425351c57c',1,'BWAPI::Unitset::holdPosition()'],['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137a5ee988dc75478ed640a2c64a08d85ca9',1,'BWAPI::Orders::Enum::HoldPosition()'],['../namespace_b_w_a_p_i_1_1_orders.html#a5ba7eb28d013844a575eb70f4dd18c69',1,'BWAPI::Orders::HoldPosition()']]],
-  ['hours',['hours',['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',1,'std::chrono::hours']]],
   ['hours',['hours',['http://en.cppreference.com/w/cpp/chrono/duration.html',1,'std::chrono']]],
+  ['hours',['hours',['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',1,'std::chrono::hours']]],
   ['hover',['Hover',['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137add1b69657ca05e54018e8e584e790372',1,'BWAPI::Orders::Enum::Hover()'],['../namespace_b_w_a_p_i_1_1_orders.html#ad23f99797a8c179d157575ae2428771f',1,'BWAPI::Orders::Hover()']]],
   ['hp',['HP',['../namespace_b_w_a_p_i_1_1_filter.html#a3bb873e198a5126715d1d6956f816ee3',1,'BWAPI::Filter']]],
   ['hp_5fpercent',['HP_Percent',['../namespace_b_w_a_p_i_1_1_filter.html#ac813b91123276bc9540d239ea1aa28c3',1,'BWAPI::Filter']]],
   ['huge',['Huge',['../namespace_b_w_a_p_i_1_1_text_1_1_size.html#a3a0e4e831aac8352247a1e559eab2588a9ca44cadf99065b5ff2eb47c183799eb',1,'BWAPI::Text::Size']]],
-  ['hypot',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',1,'std']]],
-  ['home',['Home',['../md_bwapi_8wiki__home.html',1,'']]]
+  ['hypot',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',1,'std']]]
 ];
