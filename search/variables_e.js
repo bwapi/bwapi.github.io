@@ -8,5 +8,6 @@ var searchData=
   ['orange',['Orange',['../namespace_b_w_a_p_i_1_1_colors.html#aa7c8ce772b1355a713b30558941135b9',1,'BWAPI::Colors']]],
   ['ordertarget',['OrderTarget',['../namespace_b_w_a_p_i_1_1_filter.html#a5bc79f88b754593e0e8cb5fd79a9e01b',1,'BWAPI::Filter']]],
   ['ordertime',['OrderTime',['../namespace_b_w_a_p_i_1_1_filter.html#af5403512bba5cc2a337835d8566efbd4',1,'BWAPI::Filter']]],
+  ['origin',['Origin',['../namespace_b_w_a_p_i_1_1_positions.html#afbb0901720907502320ccaeaf0e5484a',1,'BWAPI::Positions::Origin()'],['../namespace_b_w_a_p_i_1_1_walk_positions.html#a4ae4d17261d02f265886d410e23cd3cc',1,'BWAPI::WalkPositions::Origin()'],['../namespace_b_w_a_p_i_1_1_tile_positions.html#a1bf6a852e9ad6347fa37028b23cacf67',1,'BWAPI::TilePositions::Origin()']]],
   ['out_5fof_5frange',['Out_Of_Range',['../namespace_b_w_a_p_i_1_1_errors.html#af6925d7cb14a06ed3eb12ecb50ee191a',1,'BWAPI::Errors']]]
 ];

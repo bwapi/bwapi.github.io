@@ -18,7 +18,7 @@ var searchData=
   ['playertype',['PlayerType',['../class_b_w_a_p_i_1_1_player_type.html',1,'BWAPI']]],
   ['plus',['plus',['http://en.cppreference.com/w/cpp/utility/functional/plus.html',1,'std']]],
   ['point',['Point',['../singleton_b_w_a_p_i_1_1_point.html',1,'BWAPI']]],
-  ['point_3c_20int_2c_201_20_3e',['Point&lt; int, 1 &gt;',['../singleton_b_w_a_p_i_1_1_point.html',1,'BWAPI']]],
+  ['point_3c_20int_2c_20position_5fscale_20_3e',['Point&lt; int, POSITION_SCALE &gt;',['../singleton_b_w_a_p_i_1_1_point.html',1,'BWAPI']]],
   ['pointer_5fsafety',['pointer_safety',['http://en.cppreference.com/w/cpp/memory/gc/pointer_safety.html',1,'std']]],
   ['pointer_5ftraits',['pointer_traits',['http://en.cppreference.com/w/cpp/memory/pointer_traits.html',1,'std']]],
   ['poisson_5fdistribution',['poisson_distribution',['http://en.cppreference.com/w/cpp/numeric/random/poisson_distribution.html',1,'std']]],

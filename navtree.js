@@ -13,6 +13,7 @@ var NAVTREE =
     ] ],
     [ "Academics", "md_bwapi_8wiki__academics.html", null ],
     [ "Changes", "changes_top.html", [
+      [ "BWAPI 4.1.1 Beta ", "changes_top.html#changes_411b", null ],
       [ "BWAPI 4.1.0 Beta ", "changes_top.html#changes_410b", null ],
       [ "BWAPI 4.0.1 Beta (r4453) ", "changes_top.html#changes_401b", null ],
       [ "BWAPI 4.0.0 Beta (r4350) ", "changes_top.html#changes_400b", null ],
@@ -126,7 +127,8 @@ var NAVTREE =
           [ "sound", "config.html#config-sc-sound", null ],
           [ "screenshots", "config.html#config-sc-screenshot", null ],
           [ "seed_override", "config.html#config-sc-seed", null ],
-          [ "speed_override", "config.html#config-sc-speed", null ]
+          [ "speed_override", "config.html#config-sc-speed", null ],
+          [ "drop_players", "config.html#config-sc-drop", null ]
         ] ]
       ] ],
       [ "Default Configuration", "config.html#def_config", null ]
@@ -164,6 +166,7 @@ var NAVTREE =
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
+    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -193,11 +196,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_l_g_p_l.html",
-"class_b_w_a_p_i_1_1_game.html#a69b366ffecdfac5a0d36eecc41c4b29b",
-"class_b_w_a_p_i_1_1_tech_type.html#a3ea7f3918bbf30bfede26403af4493bb",
-"class_b_w_a_p_i_1_1_unit_interface.html#aa0a1d01af63060fd80a1a126c90cc023",
-"class_b_w_a_p_i_1_1_weapon_type.html#a4d56245b93d06f458f11e780743bc00c",
-"namespacemembers_g.html"
+"class_b_w_a_p_i_1_1_game.html#a6bcfa533499a3ef38479f49e26418e33",
+"class_b_w_a_p_i_1_1_unit_command.html#a1d368f30cc2d110ebf7e6e90d451738e",
+"class_b_w_a_p_i_1_1_unit_interface.html#abe48f583c9f5fb4f4081d38bf14fd0f8",
+"config.html#config-auto-enemyrace",
+"namespacemembers_vars_o.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

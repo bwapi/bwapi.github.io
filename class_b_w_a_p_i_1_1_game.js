@@ -1,6 +1,7 @@
 var class_b_w_a_p_i_1_1_game =
 [
-    [ "~Game", "class_b_w_a_p_i_1_1_game.html#acd4ea5d3e02870eddd71db0eee80d470", null ],
+    [ "operator=", "class_b_w_a_p_i_1_1_game.html#a043b40ee231d630d531e29d06ff32b2a", null ],
+    [ "operator=", "class_b_w_a_p_i_1_1_game.html#ab83b7303dea28175b156ebb8852e9e5f", null ],
     [ "getForces", "class_b_w_a_p_i_1_1_game.html#a76917d50d35da0eb0635f8b283effcef", null ],
     [ "getPlayers", "class_b_w_a_p_i_1_1_game.html#afbc71f3d527cc178af29f016e25d8718", null ],
     [ "getAllUnits", "class_b_w_a_p_i_1_1_game.html#a825da376748a6acc6672d9828c22056d", null ],

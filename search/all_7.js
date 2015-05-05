@@ -1,7 +1,6 @@
 var searchData=
 [
   ['game',['Game',['../class_b_w_a_p_i_1_1_game.html',1,'BWAPI']]],
-  ['gameimpl',['GameImpl',['../class_b_w_a_p_i_1_1_interface.html#a0d3593a2910fa778d710ff6c406347ed',1,'BWAPI::Interface']]],
   ['gamete_5fmeiosis',['Gamete_Meiosis',['../namespace_b_w_a_p_i_1_1_upgrade_types_1_1_enum.html#ad9de0f5d0ba53357035300c2337333c1a1249671e2868af0a9bb5b5fcfc42bb10',1,'BWAPI::UpgradeTypes::Enum::Gamete_Meiosis()'],['../namespace_b_w_a_p_i_1_1_upgrade_types.html#adb1a312b18a8087b6a374ce37e504409',1,'BWAPI::UpgradeTypes::Gamete_Meiosis()']]],
   ['gametype',['GameType',['../class_b_w_a_p_i_1_1_game_type.html',1,'BWAPI']]],
   ['gametype',['GameType',['../class_b_w_a_p_i_1_1_game_type.html#a85cb21e6af1aa52087c833c5e4e92b94',1,'BWAPI::GameType']]],

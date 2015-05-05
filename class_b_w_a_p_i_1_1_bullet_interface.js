@@ -1,6 +1,5 @@
 var class_b_w_a_p_i_1_1_bullet_interface =
 [
-    [ "~BulletInterface", "class_b_w_a_p_i_1_1_bullet_interface.html#ae51fc3232e23fdb2fab6812ffb1d5354", null ],
     [ "getID", "class_b_w_a_p_i_1_1_bullet_interface.html#a84aba804a23418b1d82a97f234f7dae4", null ],
     [ "exists", "class_b_w_a_p_i_1_1_bullet_interface.html#a82e8e59a4b76c12371676710b4992ff6", null ],
     [ "getPlayer", "class_b_w_a_p_i_1_1_bullet_interface.html#aff08b5f5ea96e79fc6488ca532016df9", null ],

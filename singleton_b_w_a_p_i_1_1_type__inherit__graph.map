@@ -1,17 +1,17 @@
 <map id="BWAPI::Type&lt; T, UnknownId &gt;" name="BWAPI::Type&lt; T, UnknownId &gt;">
-<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_explosion_type.html" title="BWAPI::ExplosionType" alt="" coords="735,32,893,59"/>
+<area shape="rect" id="node3" href="$class_b_w_a_p_i_1_1_explosion_type.html" title="A representation of a weapon&#39;s explosion type. " alt="" coords="735,32,893,59"/>
 <area shape="rect" id="node5" href="$class_b_w_a_p_i_1_1_color.html" title="The Color object is used in drawing routines to specify the color to use. " alt="" coords="763,97,865,124"/>
 <area shape="rect" id="node7" href="$class_b_w_a_p_i_1_1_race.html" title="The Race object is used to get information about a particular race. " alt="" coords="763,163,865,189"/>
 <area shape="rect" id="node9" href="$class_b_w_a_p_i_1_1_tech_type.html" title="The TechType (or Technology Type, also referred to as an Ability) represents a Unit&#39;s ability which c..." alt="" coords="749,228,879,255"/>
 <area shape="rect" id="node11" href="$class_b_w_a_p_i_1_1_error.html" title="The Error object is generally used to determine why certain functions in BWAPI have failed..." alt="" coords="763,293,865,320"/>
-<area shape="rect" id="node13" href="$class_b_w_a_p_i_1_1_weapon_type.html" title="BWAPI::WeaponType" alt="" coords="739,359,889,385"/>
+<area shape="rect" id="node13" href="$class_b_w_a_p_i_1_1_weapon_type.html" title="This object identifies a weapon type used by a unit to attack and deal damage. " alt="" coords="739,359,889,385"/>
 <area shape="rect" id="node15" href="$class_b_w_a_p_i_1_1_unit_type.html" title="The UnitType is used to get information about a particular type of unit, such as its cost..." alt="" coords="752,424,876,451"/>
-<area shape="rect" id="node17" href="$class_b_w_a_p_i_1_1_player_type.html" title="BWAPI::PlayerType" alt="" coords="745,489,883,516"/>
-<area shape="rect" id="node19" href="$class_b_w_a_p_i_1_1_bullet_type.html" title="BWAPI::BulletType" alt="" coords="747,555,881,581"/>
+<area shape="rect" id="node17" href="$class_b_w_a_p_i_1_1_player_type.html" title="Represents the type of controller for the player slot (i.e. " alt="" coords="745,489,883,516"/>
+<area shape="rect" id="node19" href="$class_b_w_a_p_i_1_1_bullet_type.html" title="This class represents a type of bullet. " alt="" coords="747,555,881,581"/>
 <area shape="rect" id="node21" href="$class_b_w_a_p_i_1_1_order.html" title="An Order (Order type) represents a Unit&#39;s current action and can be retrieved with UnitInterface::get..." alt="" coords="761,620,867,647"/>
-<area shape="rect" id="node23" href="$class_b_w_a_p_i_1_1_upgrade_type.html" title="BWAPI::UpgradeType" alt="" coords="739,685,889,712"/>
-<area shape="rect" id="node25" href="$class_b_w_a_p_i_1_1_damage_type.html" title="BWAPI::DamageType" alt="" coords="739,751,889,777"/>
-<area shape="rect" id="node27" href="$class_b_w_a_p_i_1_1_unit_size_type.html" title="BWAPI::UnitSizeType" alt="" coords="739,816,889,843"/>
-<area shape="rect" id="node29" href="$class_b_w_a_p_i_1_1_unit_command_type.html" title="BWAPI::UnitCommandType" alt="" coords="723,889,905,916"/>
-<area shape="rect" id="node31" href="$class_b_w_a_p_i_1_1_game_type.html" title="BWAPI::GameType" alt="" coords="746,963,882,989"/>
+<area shape="rect" id="node23" href="$class_b_w_a_p_i_1_1_upgrade_type.html" title="The upgrade type represents a passive upgrade that can be obtained with UnitInterface::upgrade. " alt="" coords="739,685,889,712"/>
+<area shape="rect" id="node25" href="$class_b_w_a_p_i_1_1_damage_type.html" title="Damage types are used in Broodwar to determine the amount of damage that will be done to a unit..." alt="" coords="739,751,889,777"/>
+<area shape="rect" id="node27" href="$class_b_w_a_p_i_1_1_unit_size_type.html" title="Size types are used by unit types in Broodwar to determine how much damage will be applied..." alt="" coords="739,816,889,843"/>
+<area shape="rect" id="node29" href="$class_b_w_a_p_i_1_1_unit_command_type.html" title="A representation of a unit command in BWAPI. " alt="" coords="723,889,905,916"/>
+<area shape="rect" id="node31" href="$class_b_w_a_p_i_1_1_game_type.html" title="A class that represents game types in Broodwar. " alt="" coords="746,963,882,989"/>
 </map>

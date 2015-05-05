@@ -1,7 +1,6 @@
 var class_b_w_a_p_i_1_1_event =
 [
-    [ "Event", "class_b_w_a_p_i_1_1_event.html#a485dcddcc8754e7be5b7b308d7397ab6", null ],
-    [ "~Event", "class_b_w_a_p_i_1_1_event.html#a42cc72714c496cb82f394f70abd8baf3", null ],
+    [ "Event", "class_b_w_a_p_i_1_1_event.html#a4ecca05516dded2d25adc7210948adb6", null ],
     [ "Event", "class_b_w_a_p_i_1_1_event.html#ae72534b076d82d79ef1cad1bb16b67f4", null ],
     [ "Event", "class_b_w_a_p_i_1_1_event.html#a4821d1e925976f1aa2b12be49fee96d0", null ],
     [ "operator=", "class_b_w_a_p_i_1_1_event.html#ad2f26396116910a024ccba9b5016c0b4", null ],

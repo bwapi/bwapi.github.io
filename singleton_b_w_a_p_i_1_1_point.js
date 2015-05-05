@@ -1,10 +1,10 @@
 var singleton_b_w_a_p_i_1_1_point =
 [
     [ "list", "singleton_b_w_a_p_i_1_1_point.html#a34cd51ee137b6957d4bb1c772f9853ab", null ],
-    [ "Point", "singleton_b_w_a_p_i_1_1_point.html#aff33a87d9531f841833ec4dc974704f7", null ],
+    [ "Point", "singleton_b_w_a_p_i_1_1_point.html#aa6e3ea00f3df16c6f6836e393b73f8e3", null ],
     [ "Point", "singleton_b_w_a_p_i_1_1_point.html#a7f24819b01f666061372fb55069083e0", null ],
-    [ "Point", "singleton_b_w_a_p_i_1_1_point.html#ae9837cec5ee518be071924d5727d1a5b", null ],
-    [ "Point", "singleton_b_w_a_p_i_1_1_point.html#a06c5bf38ed74d5d3fd87505813a8bca5", null ],
+    [ "Point", "singleton_b_w_a_p_i_1_1_point.html#ac0f2ffbe6c26221c3c0254a2abaa932a", null ],
+    [ "Point", "singleton_b_w_a_p_i_1_1_point.html#a41175b1ac40d789c6fb17ee5ce01ec22", null ],
     [ "operator bool", "singleton_b_w_a_p_i_1_1_point.html#a46e2800a5a3f382cb34bf6f537d86404", null ],
     [ "operator==", "singleton_b_w_a_p_i_1_1_point.html#a269001aded571799504c24acaab32bf7", null ],
     [ "operator!=", "singleton_b_w_a_p_i_1_1_point.html#a6d1ac0168426223ffbd07f68af7858c6", null ],

@@ -1,6 +1,5 @@
 var class_b_w_a_p_i_1_1_region_interface =
 [
-    [ "~RegionInterface", "class_b_w_a_p_i_1_1_region_interface.html#a82b757fe98dc448994cc16fded50f4f8", null ],
     [ "getID", "class_b_w_a_p_i_1_1_region_interface.html#a07d9368c3e0e58b2896102cb87bc4a49", null ],
     [ "getRegionGroupID", "class_b_w_a_p_i_1_1_region_interface.html#a616e28dc1fa44a42b46042f687ee22fb", null ],
     [ "getCenter", "class_b_w_a_p_i_1_1_region_interface.html#a1be839d726e1cac7945494b305cf0368", null ],

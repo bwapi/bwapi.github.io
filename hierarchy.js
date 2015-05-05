@@ -24,7 +24,6 @@ var hierarchy =
     [ "BWAPI::Interface< UnitInterface >", "class_b_w_a_p_i_1_1_interface.html", [
       [ "BWAPI::UnitInterface", "class_b_w_a_p_i_1_1_unit_interface.html", null ]
     ] ],
-    [ "BWAPI::InterfaceEvent< T >", "class_b_w_a_p_i_1_1_interface_event.html", null ],
     [ "BWAPI::Point< T, Scale >", "singleton_b_w_a_p_i_1_1_point.html", null ],
     [ "BWAPI::PositionOrUnit", "class_b_w_a_p_i_1_1_position_or_unit.html", null ],
     [ "BWAPI::TournamentModule", "class_b_w_a_p_i_1_1_tournament_module.html", null ],
@@ -93,7 +92,5 @@ var hierarchy =
       [ "BWAPI::SetContainer< BWAPI::Unit, std::hash< void * > >", "class_b_w_a_p_i_1_1_set_container.html", [
         [ "BWAPI::Unitset", "class_b_w_a_p_i_1_1_unitset.html", null ]
       ] ]
-    ] ],
-    [ "int", "classint.html", null ],
-    [ "void *", "classvoid_01_5.html", null ]
+    ] ]
 ];

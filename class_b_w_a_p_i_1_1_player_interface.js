@@ -1,6 +1,5 @@
 var class_b_w_a_p_i_1_1_player_interface =
 [
-    [ "~PlayerInterface", "class_b_w_a_p_i_1_1_player_interface.html#a0b96cf6813c42ce82880b2069bb068eb", null ],
     [ "getID", "class_b_w_a_p_i_1_1_player_interface.html#a7f69c68141ad43542d535e184a3d6fe0", null ],
     [ "getName", "class_b_w_a_p_i_1_1_player_interface.html#aa3beed81d91e2f44274a32afb5e77e71", null ],
     [ "getUnits", "class_b_w_a_p_i_1_1_player_interface.html#ad1143f20057c5d6f46c8b9cd0991dd99", null ],

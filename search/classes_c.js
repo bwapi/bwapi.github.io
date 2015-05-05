@@ -3,7 +3,6 @@ var searchData=
   ['make_5fsigned',['make_signed',['http://en.cppreference.com/w/cpp/types/make_signed.html',1,'std']]],
   ['make_5funsigned',['make_unsigned',['http://en.cppreference.com/w/cpp/types/make_unsigned.html',1,'std']]],
   ['map',['map',['http://en.cppreference.com/w/cpp/container/map.html',1,'std']]],
-  ['map_3c_20int_2c_20void_20_2a_20_3e',['map&lt; int, void * &gt;',['http://en.cppreference.com/w/cpp/container/map.html',1,'std']]],
   ['mask',['mask',['http://en.cppreference.com/w/cpp/locale/ctype_base.html',1,'std::ctype']]],
   ['mask',['mask',['http://en.cppreference.com/w/cpp/locale/ctype_base.html',1,'std::ctype_byname']]],
   ['mask',['mask',['http://en.cppreference.com/w/cpp/locale/ctype_base.html',1,'std::ctype_base']]],

@@ -32,7 +32,6 @@ var namespace_b_w_a_p_i =
     [ "GameType", "class_b_w_a_p_i_1_1_game_type.html", "class_b_w_a_p_i_1_1_game_type" ],
     [ "GameWrapper", "class_b_w_a_p_i_1_1_game_wrapper.html", "class_b_w_a_p_i_1_1_game_wrapper" ],
     [ "Interface", "class_b_w_a_p_i_1_1_interface.html", "class_b_w_a_p_i_1_1_interface" ],
-    [ "InterfaceEvent", "class_b_w_a_p_i_1_1_interface_event.html", "class_b_w_a_p_i_1_1_interface_event" ],
     [ "Order", "class_b_w_a_p_i_1_1_order.html", "class_b_w_a_p_i_1_1_order" ],
     [ "PlayerInterface", "class_b_w_a_p_i_1_1_player_interface.html", "class_b_w_a_p_i_1_1_player_interface" ],
     [ "Playerset", "class_b_w_a_p_i_1_1_playerset.html", "class_b_w_a_p_i_1_1_playerset" ],

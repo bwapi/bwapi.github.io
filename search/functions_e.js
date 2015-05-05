@@ -20,7 +20,7 @@ var searchData=
   ['nextafter',['nextafter',['http://en.cppreference.com/w/cpp/numeric/math/nextafter.html',1,'std']]],
   ['nexttoward',['nexttoward',['http://en.cppreference.com/w/cpp/numeric/math/nextafter.html',1,'std']]],
   ['noboolalpha',['noboolalpha',['http://en.cppreference.com/w/cpp/io/manip/boolalpha.html',1,'std']]],
-  ['none',['none',['http://en.cppreference.com/w/cpp/utility/bitset/all_any_none.html',1,'std::bitset::none()'],['../namespace_b_w_a_p_i_1_1_walk_positions.html#ad818a9a90bb7d11675f69901e53d82c8',1,'BWAPI::WalkPositions::None()'],['../namespace_b_w_a_p_i_1_1_positions.html#a53a0d26394a8e9005ed79bab765eafa8',1,'BWAPI::Positions::None()'],['../namespace_b_w_a_p_i_1_1_tile_positions.html#af002f63a48fea44ea63d3948cc2092a7',1,'BWAPI::TilePositions::None()']]],
+  ['none',['none',['http://en.cppreference.com/w/cpp/utility/bitset/all_any_none.html',1,'std::bitset']]],
   ['none_5fof',['none_of',['http://en.cppreference.com/w/cpp/algorithm/all_any_none_of.html',1,'std']]],
   ['normal_5fdistribution',['normal_distribution',['http://en.cppreference.com/w/cpp/numeric/random/normal_distribution/normal_distribution.html',1,'std::normal_distribution']]],
   ['normalweapontypes',['normalWeaponTypes',['../namespace_b_w_a_p_i_1_1_weapon_types.html#ac169d89831d1aecdef6c345ea0849263',1,'BWAPI::WeaponTypes']]],

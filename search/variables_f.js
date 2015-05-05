@@ -24,7 +24,7 @@ var searchData=
   ['playerguard',['PlayerGuard',['../namespace_b_w_a_p_i_1_1_orders.html#ad3f4c2adf7f19ca4a82a43c389119f7d',1,'BWAPI::Orders']]],
   ['playerleft',['PlayerLeft',['../namespace_b_w_a_p_i_1_1_player_types.html#ae3b438d75808e37816c4710e3a11bac4',1,'BWAPI::PlayerTypes']]],
   ['pneumatized_5fcarapace',['Pneumatized_Carapace',['../namespace_b_w_a_p_i_1_1_upgrade_types.html#a0e0de6cffc39f3c1fb492867a8f6da58',1,'BWAPI::UpgradeTypes']]],
-  ['position',['position',['../class_b_w_a_p_i_1_1_position_or_unit.html#a398f407f715aba2f3d2c8d627f0d7909',1,'BWAPI::PositionOrUnit']]],
+  ['position_5fscale',['POSITION_SCALE',['../namespace_b_w_a_p_i.html#a491e55082821dbab2ea609f2e11422a4',1,'BWAPI']]],
   ['powerup_5fdata_5fdisk',['Powerup_Data_Disk',['../namespace_b_w_a_p_i_1_1_unit_types.html#a4b3bb688b47dae67a7001a71899fde2f',1,'BWAPI::UnitTypes']]],
   ['powerup_5fflag',['Powerup_Flag',['../namespace_b_w_a_p_i_1_1_unit_types.html#ad0b730d59378b2a556025fdd713025a4',1,'BWAPI::UnitTypes']]],
   ['powerup_5fkhalis_5fcrystal',['Powerup_Khalis_Crystal',['../namespace_b_w_a_p_i_1_1_unit_types.html#a05afe39e11f97dabd0bca21d64f341b7',1,'BWAPI::UnitTypes']]],
@@ -88,6 +88,5 @@ var searchData=
   ['psionic_5fshockwave_5ftz_5farchon',['Psionic_Shockwave_TZ_Archon',['../namespace_b_w_a_p_i_1_1_weapon_types.html#a4c550b1193dced5196e6e5a6bd7bd681',1,'BWAPI::WeaponTypes']]],
   ['psionic_5fstorm',['Psionic_Storm',['../namespace_b_w_a_p_i_1_1_bullet_types.html#a17fd08e484924403436b88c7755261c9',1,'BWAPI::BulletTypes::Psionic_Storm()'],['../namespace_b_w_a_p_i_1_1_tech_types.html#a2bbd3bc077d31fc2f34ca811d1f6cfca',1,'BWAPI::TechTypes::Psionic_Storm()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#a23dbee9fc322529481b7c8d1d8accf0f',1,'BWAPI::WeaponTypes::Psionic_Storm()']]],
   ['pulse_5fcannon',['Pulse_Cannon',['../namespace_b_w_a_p_i_1_1_bullet_types.html#aa59b53b3cb2a8b4d858e26fd686ebc04',1,'BWAPI::BulletTypes::Pulse_Cannon()'],['../namespace_b_w_a_p_i_1_1_weapon_types.html#a7a5d0af5dd5398828ea07d7c65c5c794',1,'BWAPI::WeaponTypes::Pulse_Cannon()']]],
-  ['punit',['pUnit',['../class_b_w_a_p_i_1_1_position_or_unit.html#a51227b0280bb8ff45716a01437b6934b',1,'BWAPI::PositionOrUnit']]],
   ['purple',['Purple',['../namespace_b_w_a_p_i_1_1_colors.html#acc9ea0c84ddab3fea6d3039981db6ba8',1,'BWAPI::Colors']]]
 ];

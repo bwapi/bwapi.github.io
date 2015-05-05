@@ -1,6 +1,5 @@
 var class_b_w_a_p_i_1_1_unit_interface =
 [
-    [ "~UnitInterface", "class_b_w_a_p_i_1_1_unit_interface.html#ada5954ebc712c31fc70491fe13f0c294", null ],
     [ "getID", "class_b_w_a_p_i_1_1_unit_interface.html#ad09feb33c36ce87b8146b512ed978e49", null ],
     [ "exists", "class_b_w_a_p_i_1_1_unit_interface.html#aaf3674a427d63eb5a728b7361b112b16", null ],
     [ "getReplayID", "class_b_w_a_p_i_1_1_unit_interface.html#ae77e93a2f00ab7aff9466b28e911a186", null ],

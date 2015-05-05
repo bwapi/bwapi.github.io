@@ -1,7 +1,6 @@
 var class_b_w_a_p_i_1_1_a_i_module =
 [
     [ "AIModule", "class_b_w_a_p_i_1_1_a_i_module.html#a514f4dbd1419bb16e2c45bfa58914d8f", null ],
-    [ "~AIModule", "class_b_w_a_p_i_1_1_a_i_module.html#aeaaa08e378d92cbf8145d43ec9e6a930", null ],
     [ "onStart", "class_b_w_a_p_i_1_1_a_i_module.html#aa1068e4f30fd50cb52a678bbf7a7c6f9", null ],
     [ "onEnd", "class_b_w_a_p_i_1_1_a_i_module.html#ab7954d4a94a358482fa3a857d756797e", null ],
     [ "onFrame", "class_b_w_a_p_i_1_1_a_i_module.html#a5fd6ec7878a556942a7666c5e68141ab", null ],

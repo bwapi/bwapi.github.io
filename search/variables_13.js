@@ -49,7 +49,7 @@ var searchData=
   ['terran_5fvulture',['Terran_Vulture',['../namespace_b_w_a_p_i_1_1_unit_types.html#a37569808faa97408c7a86f30c46aa1ac',1,'BWAPI::UnitTypes']]],
   ['terran_5fvulture_5fspider_5fmine',['Terran_Vulture_Spider_Mine',['../namespace_b_w_a_p_i_1_1_unit_types.html#a45fbd46c0b633b3aa3c06869f9b0fd6c',1,'BWAPI::UnitTypes']]],
   ['terran_5fwraith',['Terran_Wraith',['../namespace_b_w_a_p_i_1_1_unit_types.html#a3601706029b2afcd0ea2663f129c3183',1,'BWAPI::UnitTypes']]],
-  ['tid',['tid',['../singleton_b_w_a_p_i_1_1_type.html#ab66dcd3d42ccdf8da7ff8af157bd2204',1,'BWAPI::Type']]],
+  ['tileposition_5fscale',['TILEPOSITION_SCALE',['../namespace_b_w_a_p_i.html#a5d22aa82cc4e2fb94f0bbfe146d7dd0c',1,'BWAPI']]],
   ['titan_5freactor',['Titan_Reactor',['../namespace_b_w_a_p_i_1_1_upgrade_types.html#a581fa9a1e0edb64a7d20376cf9721479',1,'BWAPI::UpgradeTypes']]],
   ['top_5fvs_5fbottom',['Top_vs_Bottom',['../namespace_b_w_a_p_i_1_1_game_types.html#a150ff5f9a25a8bb88f35087815ad6dac',1,'BWAPI::GameTypes']]],
   ['topspeed',['TopSpeed',['../namespace_b_w_a_p_i_1_1_filter.html#ae508f378c6bc0f2b2b9f776841945fbc',1,'BWAPI::Filter']]],
@@ -61,6 +61,5 @@ var searchData=
   ['twin_5fautocannons',['Twin_Autocannons',['../namespace_b_w_a_p_i_1_1_weapon_types.html#a7c6756974a320c1c90da50428d394e3f',1,'BWAPI::WeaponTypes']]],
   ['twin_5fautocannons_5falan_5fschezar',['Twin_Autocannons_Alan_Schezar',['../namespace_b_w_a_p_i_1_1_weapon_types.html#a0fbd1930f9d64cb34f075764f8d2ce8a',1,'BWAPI::WeaponTypes']]],
   ['twin_5fautocannons_5ffloor_5ftrap',['Twin_Autocannons_Floor_Trap',['../namespace_b_w_a_p_i_1_1_weapon_types.html#aea464153b8dce513ff77997a2c48c397',1,'BWAPI::WeaponTypes']]],
-  ['type',['type',['../class_b_w_a_p_i_1_1_unit_command.html#a2e59abfa4f3cc2d0995b04d19c311c69',1,'BWAPI::UnitCommand']]],
-  ['typenames',['typeNames',['../singleton_b_w_a_p_i_1_1_type.html#aa8ac58d7d469608919bc3af3e17b5119',1,'BWAPI::Type']]]
+  ['type',['type',['../class_b_w_a_p_i_1_1_unit_command.html#a2e59abfa4f3cc2d0995b04d19c311c69',1,'BWAPI::UnitCommand']]]
 ];
