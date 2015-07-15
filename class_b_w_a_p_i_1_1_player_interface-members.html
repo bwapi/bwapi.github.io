@@ -10,13 +10,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -24,6 +17,14 @@
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-11415685-4', 'auto');
+  ga('send', 'pageview');
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,7 +35,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BWAPI
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">4.1.2</span>
    </div>
    <div id="projectbrief">An API for interacting with Starcraft: Broodwar (1.16.1)</div>
   </td>
@@ -53,10 +54,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="https://github.com/bwapi/bwapi/issues"><span>Issues</span></a></li>
+      <li><a href="https://github.com/bwapi/bwapi/wiki"><span>Wiki</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -83,27 +85,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_b_w_a_p_i_1_1_player_interface.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Modules</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,6 +99,11 @@ $(document).ready(function(){initNavTree('class_b_w_a_p_i_1_1_player_interface.h
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a></li><li class="navelem"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">PlayerInterface</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">BWAPI::PlayerInterface Member List</div>  </div>
@@ -145,44 +137,42 @@ $(document).ready(function(){initNavTree('class_b_w_a_p_i_1_1_player_interface.h
   <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a50702ed81b54f1f78d5442e42a5e5e99">getUnitScore</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a0cc62902570e55190adb8b3e8ad13f2c">getUpgradeLevel</a>(UpgradeType upgrade) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ab8b85f36a7f63585ad0706e1252865d8">hasResearched</a>(TechType tech) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a03c0ccd4319cdcbf4b83a8af2ee94ef5">incompleteUnitCount</a>(UnitType unit=UnitTypes::AllUnits) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ae13975529008ac2e8ad71ddddb40e8d2">isAlly</a>(const Player player) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a1b38693857c6936ccf90e664422c6633">isDefeated</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a2ecc39f1f880a4b1d098ec9baa476e7a">isEnemy</a>(const Player player) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3b40af8ac67051921aa249315bd60ff7">isNeutral</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a309087d41852543874b909537ed3ecad">isObserver</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a856e8d86a76ac9c6fdda694496f0f2ff">isResearchAvailable</a>(TechType tech) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#abcfabf9fc128cf4ecd95a576fc459583">isResearching</a>(TechType tech) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3db2170091afa9e02e4a0f8b427140cd">isUnitAvailable</a>(UnitType unit) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ad14d64ab421760abcc054fb910720477">isUpgrading</a>(UpgradeType upgrade) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a8db76f2cfee187a3d2f5a59793cb6776">isVictorious</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ab76c5b4ed8fb961101e504ed464cf466">killedUnitCount</a>(UnitType unit=UnitTypes::AllUnits) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#afa465be7348c7fefd6eb6a48663298dc">leftGame</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a2bac79e0c02b668b4bb1b62c3487d55a">maxEnergy</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a5ccff87ffd3e4a049efc128efc37d7fe">minerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a12b92be6f436b4a725b34c02a3d4d4d8">refundedGas</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a081936a2f743365157394f7e4d980ce7">refundedMinerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a54a49614debd1d15fc93784ed52613c2">repairedGas</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a1924e4db4876d3e42398865876bd6d94">repairedMinerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ab7a8f3a71aa9d8263c57624043c6e630">sightRange</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a427238edd8823f5b0eda4da50824574c">spentGas</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a10ddd11af600600733f07b2b062ae94b">spentMinerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#adbaf9b3cd274ea7de02022d487f623fa">supplyTotal</a>(Race race=Races::None) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ad3123ca1484b9bbb96ea827a0eff74b4">supplyUsed</a>(Race race=Races::None) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a328b39f56a6bb6cdef426dcdbde4e533">topSpeed</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3144c3d974ad5dc0eb8837af89d79afd">visibleUnitCount</a>(UnitType unit=UnitTypes::AllUnits) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a201505286ef56cbbe540f05f76e50624">weaponDamageCooldown</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a81ed329622222bfd53dc1088dba32642">weaponMaxRange</a>(WeaponType weapon) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#af1bbbc518426ad4119f52549548a8c91">hasUnitTypeRequirement</a>(UnitType unit, int amount=1) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a03c0ccd4319cdcbf4b83a8af2ee94ef5">incompleteUnitCount</a>(UnitType unit=UnitTypes::AllUnits) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ae13975529008ac2e8ad71ddddb40e8d2">isAlly</a>(const Player player) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a1b38693857c6936ccf90e664422c6633">isDefeated</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a2ecc39f1f880a4b1d098ec9baa476e7a">isEnemy</a>(const Player player) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3b40af8ac67051921aa249315bd60ff7">isNeutral</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a309087d41852543874b909537ed3ecad">isObserver</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a856e8d86a76ac9c6fdda694496f0f2ff">isResearchAvailable</a>(TechType tech) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#abcfabf9fc128cf4ecd95a576fc459583">isResearching</a>(TechType tech) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3db2170091afa9e02e4a0f8b427140cd">isUnitAvailable</a>(UnitType unit) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ad14d64ab421760abcc054fb910720477">isUpgrading</a>(UpgradeType upgrade) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a8db76f2cfee187a3d2f5a59793cb6776">isVictorious</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ab76c5b4ed8fb961101e504ed464cf466">killedUnitCount</a>(UnitType unit=UnitTypes::AllUnits) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#afa465be7348c7fefd6eb6a48663298dc">leftGame</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a2bac79e0c02b668b4bb1b62c3487d55a">maxEnergy</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a5ccff87ffd3e4a049efc128efc37d7fe">minerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a12b92be6f436b4a725b34c02a3d4d4d8">refundedGas</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a081936a2f743365157394f7e4d980ce7">refundedMinerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a54a49614debd1d15fc93784ed52613c2">repairedGas</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a1924e4db4876d3e42398865876bd6d94">repairedMinerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ab7a8f3a71aa9d8263c57624043c6e630">sightRange</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a427238edd8823f5b0eda4da50824574c">spentGas</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a10ddd11af600600733f07b2b062ae94b">spentMinerals</a>() const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#adbaf9b3cd274ea7de02022d487f623fa">supplyTotal</a>(Race race=Races::None) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#ad3123ca1484b9bbb96ea827a0eff74b4">supplyUsed</a>(Race race=Races::None) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a328b39f56a6bb6cdef426dcdbde4e533">topSpeed</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3144c3d974ad5dc0eb8837af89d79afd">visibleUnitCount</a>(UnitType unit=UnitTypes::AllUnits) const =0</td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a201505286ef56cbbe540f05f76e50624">weaponDamageCooldown</a>(UnitType unit) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a81ed329622222bfd53dc1088dba32642">weaponMaxRange</a>(WeaponType weapon) const </td><td class="entry"><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html">BWAPI::PlayerInterface</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated on Tue May 5 2015 15:48:24 for BWAPI by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Wed Jul 15 2015 05:51:56 for BWAPI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
 </body>
 </html>

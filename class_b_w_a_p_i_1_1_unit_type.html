@@ -10,13 +10,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -24,6 +17,14 @@
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-11415685-4', 'auto');
+  ga('send', 'pageview');
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,7 +35,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BWAPI
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">4.1.2</span>
    </div>
    <div id="projectbrief">An API for interacting with Starcraft: Broodwar (1.16.1)</div>
   </td>
@@ -53,10 +54,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="https://github.com/bwapi/bwapi/issues"><span>Issues</span></a></li>
+      <li><a href="https://github.com/bwapi/bwapi/wiki"><span>Wiki</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -83,27 +85,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_b_w_a_p_i_1_1_unit_type.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Modules</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,6 +99,11 @@ $(document).ready(function(){initNavTree('class_b_w_a_p_i_1_1_unit_type.html',''
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a></li><li class="navelem"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html">UnitType</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -144,6 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aefeddca6c5605d45e4aea7a5bc8bc160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6907ee78d2796d64db0a7972451ff748"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a6907ee78d2796d64db0a7972451ff748">buildScore</a> () const </td></tr>
 <tr class="separator:a6907ee78d2796d64db0a7972451ff748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4788db47d3b6cb0d0015aadf783a50c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="singleton_b_w_a_p_i_1_1_type.html#a84528ed932c6608197e588763fd0213c">UnitType::set</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#ac4788db47d3b6cb0d0015aadf783a50c">buildsWhat</a> () const </td></tr>
+<tr class="separator:ac4788db47d3b6cb0d0015aadf783a50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d78cc45c679725a899a77f35090a51a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a9d78cc45c679725a899a77f35090a51a">buildTime</a> () const </td></tr>
 <tr class="separator:a9d78cc45c679725a899a77f35090a51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1895e9778ff7cefbf8ab6bce0370573"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#af1895e9778ff7cefbf8ab6bce0370573">canAttack</a> () const </td></tr>
@@ -242,6 +236,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3484ad3facb8f799a47b513b68e13bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2207072b32e65a9037015b47e69aa6da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a2207072b32e65a9037015b47e69aa6da">mineralPrice</a> () const </td></tr>
 <tr class="separator:a2207072b32e65a9037015b47e69aa6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be07b66641bcd3dea5835744740a31b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a3be07b66641bcd3dea5835744740a31b">producesCreep</a> () const </td></tr>
+<tr class="separator:a3be07b66641bcd3dea5835744740a31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67c16dbdfc086a0ac9cc2e0d2015db93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a67c16dbdfc086a0ac9cc2e0d2015db93">producesLarva</a> () const </td></tr>
 <tr class="separator:a67c16dbdfc086a0ac9cc2e0d2015db93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ef479fe3a3cba22da9554eae9632c3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a8ef479fe3a3cba22da9554eae9632c3e">regeneratesHP</a> () const </td></tr>
@@ -254,6 +250,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a96e12875a03c4036c05b5fdf9270aa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97b50b4342acd82f72cdbbe3cdade061"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a97b50b4342acd82f72cdbbe3cdade061">requiresPsi</a> () const </td></tr>
 <tr class="separator:a97b50b4342acd82f72cdbbe3cdade061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29837af5ff38205e6cf88bead59316be"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_b_w_a_p_i_1_1_set_container.html">SetContainer</a>&lt; <a class="el" href="class_b_w_a_p_i_1_1_tech_type.html">TechType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a29837af5ff38205e6cf88bead59316be">researchesWhat</a> () const </td></tr>
+<tr class="separator:a29837af5ff38205e6cf88bead59316be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a418ce38c3dd7864d101111924cf4e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a8a418ce38c3dd7864d101111924cf4e0">seekRange</a> () const </td></tr>
 <tr class="separator:a8a418ce38c3dd7864d101111924cf4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94160d99f91d02db36d619e9e5a3fcd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a94160d99f91d02db36d619e9e5a3fcd6">sightRange</a> () const </td></tr>
@@ -280,6 +278,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a86bece4e0a3a93dab7b31e016acc65c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed4e99eb00775fd86397ccaf520359b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_b_w_a_p_i_1_1_set_container.html">SetContainer</a>&lt; <a class="el" href="class_b_w_a_p_i_1_1_upgrade_type.html">UpgradeType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a0ed4e99eb00775fd86397ccaf520359b">upgrades</a> () const </td></tr>
 <tr class="separator:a0ed4e99eb00775fd86397ccaf520359b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40e09f4131c0046be4972e2dbf98f0e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_b_w_a_p_i_1_1_set_container.html">SetContainer</a>&lt; <a class="el" href="class_b_w_a_p_i_1_1_upgrade_type.html">UpgradeType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#ac40e09f4131c0046be4972e2dbf98f0e">upgradesWhat</a> () const </td></tr>
+<tr class="separator:ac40e09f4131c0046be4972e2dbf98f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a386acdc33e9b47e455b7ac1ed2a3a0f8"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" doxygen="C:/Program Files (x86)/Jenkins/bwapi-dev/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w//" href="http://en.cppreference.com/w/cpp/utility/pair.html">std::pair</a>&lt; <a class="el" href="class_b_w_a_p_i_1_1_unit_type.html">UnitType</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a386acdc33e9b47e455b7ac1ed2a3a0f8">whatBuilds</a> () const </td></tr>
 <tr class="separator:a386acdc33e9b47e455b7ac1ed2a3a0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6967807f255cb065f03272ab6f060165"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a6967807f255cb065f03272ab6f060165">width</a> () const </td></tr>
@@ -1086,7 +1086,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieves the unit's acceleration amount. </p>
 <dl class="section return"><dt>Returns</dt><dd>How fast the unit can accelerate to its top speed.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Figure out the units this quantity is measured in. </dd></dl>
 
 </div>
 </div>
@@ -1106,7 +1105,6 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves the unit's halting distance. </p>
 <p>This determines how fast a unit can stop moving.</p>
 <dl class="section return"><dt>Returns</dt><dd>A halting distance value.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Figure out the units this quantity is measured in. </dd></dl>
 
 </div>
 </div>
@@ -1126,7 +1124,6 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves a unit's turning radius. </p>
 <p>This determines how fast a unit can turn.</p>
 <dl class="section return"><dt>Returns</dt><dd>A turn radius value.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Figure out the units this quantity is measured in. </dd></dl>
 
 </div>
 </div>
@@ -1720,7 +1717,6 @@ Public Member Functions</h2></td></tr>
 <p>Each race has exactly one flag beacon each. They are <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#ad921f09a493149fd28babe9ac34f2df4" title="  <img src=&#39;icon197.png&#39;>  Special Zerg Flag Beacon. ">UnitTypes::Special_Zerg_Flag_Beacon</a>, <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#a43c64729223762cf1b8c4c7886314e84" title="  <img src=&#39;icon198.png&#39;>  Special Terran Flag Beacon. ">UnitTypes::Special_Terran_Flag_Beacon</a>, and <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#a435a96dc48adad90b98cf91328ec1962" title="  <img src=&#39;icon199.png&#39;>  Special Protoss Flag Beacon. ">UnitTypes::Special_Protoss_Flag_Beacon</a>. <a class="el" href="namespace_b_w_a_p_i_1_1_flag.html" title="Contains flag enumerations for BWAPI. ">Flag</a> beacons spawn a <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#ad0b730d59378b2a556025fdd713025a4">Flag</a> after some ARBITRARY I FORGOT AMOUNT OF FRAMES.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a169f46b1441dbd2eff59bd79ce85e033" title="Checks if this unit type is a beacon. ">isBeacon</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this unit type is one of the three race flag beacons, and false otherwise.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>specify number of frames for flag spawner </dd></dl>
 
 </div>
 </div>
@@ -1759,6 +1755,27 @@ Public Member Functions</h2></td></tr>
 <p>Identifies if this unit type is used to complement some <a class="el" href="namespace_b_w_a_p_i_1_1_tech_types.html">abilities</a>. </p>
 <p>These include <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#ae3c94386ad0a05e8e8074c83a9c17f94" title="  <img src=&#39;icon202.png&#39;>  Spell Dark Swarm. ">UnitTypes::Spell_Dark_Swarm</a>, <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#a617c8e58937568a9d073ca38b730c466" title="  <img src=&#39;icon105.png&#39;>  Spell Disruption Web. ">UnitTypes::Spell_Disruption_Web</a>, and <a class="el" href="namespace_b_w_a_p_i_1_1_unit_types.html#a217703bb63d9ebf2e999c89dc5e99ba7" title="  <img src=&#39;icon33.png&#39;>  Spell Scanner Sweep. ">UnitTypes::Spell_Scanner_Sweep</a>, which correspond to <a class="el" href="namespace_b_w_a_p_i_1_1_tech_types.html#a7a06172efd3bb7c2d43935f4d7bbe596" title="  <img src=&#39;icon270.png&#39;>  Dark Swarm. ">TechTypes::Dark_Swarm</a>, <a class="el" href="namespace_b_w_a_p_i_1_1_tech_types.html#a763c823a72b61dbf09890e4d09fd6d21" title="  <img src=&#39;icon369.png&#39;>  Disruption Web. ">TechTypes::Disruption_Web</a>, and <a class="el" href="namespace_b_w_a_p_i_1_1_tech_types.html#aed1df4b421d2df4edf46fecfec19dc0f" title="  <img src=&#39;icon250.png&#39;>  Scanner Sweep. ">TechTypes::Scanner_Sweep</a> respectively.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if this unit type is used for an ability, and false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3be07b66641bcd3dea5835744740a31b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BWAPI::UnitType::producesCreep </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if this structure type produces creep. </p>
+<p>That is, the unit type spreads creep over a wide area so that <a class="el" href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97">Zerg</a> structures can be placed on it.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if this unit type spreads creep. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If this function returns a successful state, then the following function calls will also return a successful state: <a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#afbf0bba596b322006b9e6b71a15a449f" title="Retrieves the Race that the unit type belongs to. ">getRace()</a> == <a class="el" href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" title="Zerg. ">Races::Zerg</a>, <a class="el" href="class_b_w_a_p_i_1_1_unit_type.html#a034a7c0603ae88b76fc91c964498dfd8" title="Checks if this unit is a structure. ">isBuilding()</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1.2 </dd></dl>
 
 </div>
 </div>
@@ -1850,17 +1867,77 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac4788db47d3b6cb0d0015aadf783a50c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="singleton_b_w_a_p_i_1_1_type.html#a84528ed932c6608197e588763fd0213c">UnitType::set</a>&amp; BWAPI::UnitType::buildsWhat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the set of units that this unit type is capable of creating. </p>
+<p>This includes training, constructing, warping, and morphing.</p>
+<dl class="section note"><dt>Note</dt><dd>Some maps have special parameters that disable construction of units that are otherwise normally available. Use <a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3db2170091afa9e02e4a0f8b427140cd" title="Checks if a unit type can be created by the player. ">PlayerInterface::isUnitAvailable</a> to determine if a unit type is actually available in the current game for a specific player.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="singleton_b_w_a_p_i_1_1_type.html#a84528ed932c6608197e588763fd0213c" title="A set type that contains the current type.">UnitType::set</a> containing the units it can build. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a3db2170091afa9e02e4a0f8b427140cd" title="Checks if a unit type can be created by the player. ">PlayerInterface::isUnitAvailable</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a29837af5ff38205e6cf88bead59316be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_b_w_a_p_i_1_1_set_container.html">SetContainer</a>&lt;<a class="el" href="class_b_w_a_p_i_1_1_tech_type.html">TechType</a>&gt;&amp; BWAPI::UnitType::researchesWhat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the set of technologies that this unit type is capable of researching. </p>
+<dl class="section note"><dt>Note</dt><dd>Some maps have special parameters that disable certain technologies. Use <a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a856e8d86a76ac9c6fdda694496f0f2ff" title="Checks if a technology can be researched by the player. ">PlayerInterface::isResearchAvailable</a> to determine if a technology is actually available in the current game for a specific player.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="singleton_b_w_a_p_i_1_1_type.html#a84528ed932c6608197e588763fd0213c" title="A set type that contains the current type.">TechType::set</a> containing the technology types that can be researched. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a856e8d86a76ac9c6fdda694496f0f2ff" title="Checks if a technology can be researched by the player. ">PlayerInterface::isResearchAvailable</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac40e09f4131c0046be4972e2dbf98f0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_b_w_a_p_i_1_1_set_container.html">SetContainer</a>&lt;<a class="el" href="class_b_w_a_p_i_1_1_upgrade_type.html">UpgradeType</a>&gt;&amp; BWAPI::UnitType::upgradesWhat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the set of upgrades that this unit type is capable of upgrading. </p>
+<dl class="section note"><dt>Note</dt><dd>Some maps have special upgrade limitations. Use <a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a4d3da0d2b86da72605944e0669ae5c71" title="Retrieves the maximum upgrades available specific to the player. ">PlayerInterface::getMaxUpgradeLevel</a> to check if an upgrade is available.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="singleton_b_w_a_p_i_1_1_type.html#a84528ed932c6608197e588763fd0213c" title="A set type that contains the current type.">UpgradeType::set</a> containing the upgrade types that can be upgraded. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_b_w_a_p_i_1_1_player_interface.html#a4d3da0d2b86da72605944e0669ae5c71" title="Retrieves the maximum upgrades available specific to the player. ">PlayerInterface::getMaxUpgradeLevel</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1.2 </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a></li><li class="navelem"><a class="el" href="class_b_w_a_p_i_1_1_unit_type.html">UnitType</a></li>
-    <li class="footer">Generated on Tue May 5 2015 15:48:25 for BWAPI by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Wed Jul 15 2015 05:51:56 for BWAPI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
 </body>
 </html>

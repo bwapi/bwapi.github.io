@@ -150,7 +150,6 @@ var searchData=
   ['attackmove',['AttackMove',['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137a4821149355b2647430ff0ed0a8795029',1,'BWAPI::Orders::Enum::AttackMove()'],['../namespace_b_w_a_p_i_1_1_orders.html#a441881d98cb34368a43ae74fd0a7229f',1,'BWAPI::Orders::AttackMove()']]],
   ['attacktile',['AttackTile',['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137adee41f9e3380496226cd06cf1fe99508',1,'BWAPI::Orders::Enum::AttackTile()'],['../namespace_b_w_a_p_i_1_1_orders.html#a7f5edf8140179ffaa9a5af4244959fe4',1,'BWAPI::Orders::AttackTile()']]],
   ['attackunit',['AttackUnit',['../namespace_b_w_a_p_i_1_1_orders_1_1_enum.html#a66ab81b2eac33d96067437315e7b6137a2ed9164ea2d6e767314d1825fa4b60f4',1,'BWAPI::Orders::Enum::AttackUnit()'],['../namespace_b_w_a_p_i_1_1_orders.html#a22a9e049f7cebc703aa383715d20eac0',1,'BWAPI::Orders::AttackUnit()']]],
-  ['auto_5fptr',['auto_ptr',['http://en.cppreference.com/w/cpp/memory/auto_ptr.html',1,'std']]],
   ['auto_5fptr',['auto_ptr',['http://en.cppreference.com/w/cpp/memory/auto_ptr/auto_ptr.html',1,'std::auto_ptr']]],
-  ['academics',['Academics',['../md_bwapi_8wiki__academics.html',1,'']]]
+  ['auto_5fptr',['auto_ptr',['http://en.cppreference.com/w/cpp/memory/auto_ptr.html',1,'std']]]
 ];

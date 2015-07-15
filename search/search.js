@@ -16,8 +16,7 @@ var indexSectionsWithContent =
   6: "aekm",
   7: "abcdefghijklmnopqrstuvwyz",
   8: "o",
-  9: "it",
-  10: "abcdfgtu"
+  9: "it"
 };
 
 var indexSectionNames =
@@ -31,8 +30,7 @@ var indexSectionNames =
   6: "enums",
   7: "enumvalues",
   8: "related",
-  9: "groups",
-  10: "pages"
+  9: "groups"
 };
 
 function convertToId(search)

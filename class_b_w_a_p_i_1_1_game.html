@@ -10,13 +10,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-  $(window).load(resizeHeight);
-</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -24,6 +17,14 @@
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-11415685-4', 'auto');
+  ga('send', 'pageview');
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,7 +35,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">BWAPI
-   &#160;<span id="projectnumber">4.1.1</span>
+   &#160;<span id="projectnumber">4.1.2</span>
    </div>
    <div id="projectbrief">An API for interacting with Starcraft: Broodwar (1.16.1)</div>
   </td>
@@ -53,10 +54,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="https://github.com/bwapi/bwapi/issues"><span>Issues</span></a></li>
+      <li><a href="https://github.com/bwapi/bwapi/wiki"><span>Wiki</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -83,27 +85,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-$(document).ready(function(){initNavTree('class_b_w_a_p_i_1_1_game.html','');});
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Modules</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,6 +99,11 @@ $(document).ready(function(){initNavTree('class_b_w_a_p_i_1_1_game.html','');});
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a></li><li class="navelem"><a class="el" href="class_b_w_a_p_i_1_1_game.html">Game</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -1115,7 +1107,6 @@ Protected Member Functions</h2></td></tr>
 <p><a class="el" href="namespace_b_w_a_p_i_1_1_latency.html" title="Contains enumeration of known latency values. ">Latency</a> indicates the delay between issuing a command and having it processed.</p>
 <dl class="section return"><dt>Returns</dt><dd>The latency setting of the game, which is of <a class="el" href="namespace_b_w_a_p_i_1_1_latency.html#a2899444e2659944e7b339f7eff3b2ca9" title="Contains enumeration of known latency values. ">Latency::Enum</a>. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_b_w_a_p_i_1_1_latency.html#a2899444e2659944e7b339f7eff3b2ca9" title="Contains enumeration of known latency values. ">Latency::Enum</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Change return type to <a class="el" href="namespace_b_w_a_p_i_1_1_latency.html#a2899444e2659944e7b339f7eff3b2ca9" title="Contains enumeration of known latency values. ">Latency::Enum</a> without breaking everything. </dd></dl>
 
 </div>
 </div>
@@ -1532,7 +1523,6 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the given <code>flag</code> is enabled, false if the flag is disabled.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04ae" title="Contains flag enumerations for BWAPI. ">Flag::Enum</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Take <a class="el" href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04ae" title="Contains flag enumerations for BWAPI. ">Flag::Enum</a> as parameter instead of int </dd></dl>
 
 </div>
 </div>
@@ -1567,7 +1557,6 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04ae" title="Contains flag enumerations for BWAPI. ">Flag::Enum</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Take <a class="el" href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04ae" title="Contains flag enumerations for BWAPI. ">Flag::Enum</a> as parameter instead of int </dd></dl>
 
 </div>
 </div>
@@ -2156,7 +2145,6 @@ Protected Member Functions</h2></td></tr>
 <p>Retrieves the file name of the currently loaded map. </p>
 <dl class="section return"><dt>Returns</dt><dd>Map file name as <a class="elRef" doxygen="C:/Program Files (x86)/Jenkins/bwapi-dev/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w//" href="http://en.cppreference.com/w/cpp/string/basic_string.html" title="STL class. ">std::string</a> object.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_b_w_a_p_i_1_1_game.html#a69b366ffecdfac5a0d36eecc41c4b29b" title="Retrieves the full path name of the currently loaded map. ">mapPathName</a>, <a class="el" href="class_b_w_a_p_i_1_1_game.html#a0505dbfae7caa602e4b57cde3c00f3a0" title="Retrieves the title of the currently loaded map. ">mapName</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>: Note on campaign files. </dd></dl>
 
 </div>
 </div>
@@ -2184,7 +2172,6 @@ Protected Member Functions</h2></td></tr>
 <p>Retrieves the full path name of the currently loaded map. </p>
 <dl class="section return"><dt>Returns</dt><dd>Map file name as <a class="elRef" doxygen="C:/Program Files (x86)/Jenkins/bwapi-dev/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w//" href="http://en.cppreference.com/w/cpp/string/basic_string.html" title="STL class. ">std::string</a> object.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_b_w_a_p_i_1_1_game.html#a3e0a6ef7e7937c6c63e16ee5bb0e8d44" title="Retrieves the file name of the currently loaded map. ">mapFileName</a>, <a class="el" href="class_b_w_a_p_i_1_1_game.html#a0505dbfae7caa602e4b57cde3c00f3a0" title="Retrieves the title of the currently loaded map. ">mapName</a></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>: Note on campaign files. </dd></dl>
 
 </div>
 </div>
@@ -2239,7 +2226,6 @@ Protected Member Functions</h2></td></tr>
 <p>Calculates the SHA-1 hash of the currently loaded map file. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="C:/Program Files (x86)/Jenkins/bwapi-dev/Documentation/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w//" href="http://en.cppreference.com/w/cpp/string/basic_string.html" title="STL class. ">std::string</a> object containing SHA-1 hash.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Campaign maps will return a hash of their internal map chunk components(.chk), while standard maps will return a hash of their entire map archive (.scm,.scx).</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>: Note on replays. </dd></dl>
 
 </div>
 </div>
@@ -3639,7 +3625,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>Restarts the match. </p>
 <p>Works the same as if the match was restarted from the in-game menu (F10). This option is only available in single player games.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>return a bool indicating success, document error code for invalid state </dd></dl>
 
 </div>
 </div>
@@ -3676,7 +3661,6 @@ Protected Member Functions</h2></td></tr>
 <li>Slowest: 167ms/frame</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Specifying a value of 0 will not guarantee that logical frames are executed as fast as possible. If that is the intention, use this in combination with <a class="el" href="class_b_w_a_p_i_1_1_game.html#a166722909283eb4e75329ca4a8a8ef7a" title="Sets the number of graphical frames for every logical frame. ">setFrameSkip</a>.</dd></dl>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>Changing this value will cause the execution of <a class="el" href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008">Use Map Settings</a> scenario triggers to glitch. This will only happen in campaign maps and custom scenarios (non-melee).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">speed</td><td>The time spent per frame, in milliseconds. A value of 0 indicates that frames are executed immediately with no delay. Negative values will restore the default value as listed above. </td></tr>
@@ -7391,16 +7375,12 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_b_w_a_p_i.html">BWAPI</a></li><li class="navelem"><a class="el" href="class_b_w_a_p_i_1_1_game.html">Game</a></li>
-    <li class="footer">Generated on Tue May 5 2015 15:48:24 for BWAPI by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Wed Jul 15 2015 05:51:56 for BWAPI by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
 </body>
 </html>
