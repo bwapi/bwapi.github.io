@@ -1,5 +1,5 @@
 <map id="BWAPI::SetContainer&lt; T, HashT &gt;" name="BWAPI::SetContainer&lt; T, HashT &gt;">
-<area shape="rect" id="node2" href="C:/Program Files (x86)/Jenkins/bwapi-dev/Documentation/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set.html" title="STL class. " alt="" coords="5,173,171,214"/>
+<area shape="rect" id="node2" href="C:/Users/Adam/bwapi4/Documentation/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set.html" title="STL class. " alt="" coords="5,173,171,214"/>
 <area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_regionset.html" title="A container that holds a set of Region objects." alt="" coords="749,20,880,47"/>
 <area shape="rect" id="node6" href="$class_b_w_a_p_i_1_1_bulletset.html" title="A container for a set of Bullet objects." alt="" coords="753,100,877,127"/>
 <area shape="rect" id="node8" href="$class_b_w_a_p_i_1_1_forceset.html" title="A container that holds a group of Forces. " alt="" coords="753,180,877,207"/>

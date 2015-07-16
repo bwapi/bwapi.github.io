@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="C:/Program Files (x86)/Jenkins/bwapi-dev/Documentation/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set.html" title="STL class. " alt="" coords="5,206,168,233"/>
+<area shape="rect" id="node1" href="C:/Users/Adam/bwapi4/Documentation/cppreference-doxygen-web.tag.xml$cpp/container/unordered_set.html" title="STL class. " alt="" coords="5,206,168,233"/>
 <area shape="rect" id="node2" href="$class_b_w_a_p_i_1_1_set_container.html" title="This container is used to wrap convenience functions for BWAPI and be used as a bridge with a built&#45;i..." alt="" coords="217,5,365,47"/>
 <area shape="rect" id="node4" href="$class_b_w_a_p_i_1_1_bulletset.html" title="A container for a set of Bullet objects." alt="" coords="418,86,542,113"/>
 <area shape="rect" id="node6" href="$class_b_w_a_p_i_1_1_forceset.html" title="A container that holds a group of Forces. " alt="" coords="418,166,542,193"/>
