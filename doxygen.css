@@ -126,6 +126,11 @@ search.css
     margin-left:15px;
 }
 
+#MSearchCloseImg {
+  width: 11px;
+  height: 11px;
+}
+
 #MSearchBox .right {
     display:block;
     position:absolute;
@@ -342,6 +347,18 @@ doxygen.css
 
 body, table, div, p, dl {
 	font: 13px arial,sans-serif;
+}
+
+@media screen and (max-width: 700px){
+  body, table, div, p, dl {
+    font: 12px arial,sans-serif !important;
+  }
+}
+
+@media screen and (max-width: 650px){
+  body, table, div, p, dl {
+    font: 11px arial,sans-serif !important;
+  }
 }
 
 /* @group Heading Levels */
@@ -673,6 +690,15 @@ table.memberdecls {
 
 .memname td {
 	vertical-align: bottom;
+}
+
+@media screen and (max-width: 650px){
+  .memname tr {
+    display: inline-block !important;
+  }
+  .memname td {
+    display: inline-block !important;
+  }
 }
 
 .memproto, dl.reflist dt {
@@ -1516,7 +1542,6 @@ customdoxygen.css
 .memSeparator {
     display: none;
 }
-
 
 /* Ribbon; Fork me banner; Modified from: https://unindented.org/articles/github-ribbon-using-css-transforms/ 
 Note: Parent must have overflow:hidden and position:relative.
