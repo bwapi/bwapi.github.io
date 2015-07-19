@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-  <meta http-equiv="Cache-control" content="public"/>
+  <meta http-equiv="Cache-Control" content="public"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="generator" content="Doxygen 1.8.8"/>
   <title>BWAPI: Namespace Members</title>
@@ -273,14 +273,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   }
 </script>
 <small>
-Generated on Sun Jul 19 2015 12:30:36 for BWAPI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 19 2015 16:45:07 for BWAPI by &#160;<a href="http://www.doxygen.org/index.html">
 <img style="width:104px;height:31px;" class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() { searchBox.OnSelectItem(0); });
+  $(document).ready(function() { 
+    searchBox.OnSelectItem(0);
+    $(".memberDecls > tbody > .memitem").addClass("notranslate");
+    $(".memname").addClass("notranslate");
+    $(".memproto").addClass("notranslate");
+    $(".paramname").addClass("notranslate");
+    $(".fieldname").addClass("notranslate");
+    $(".entry").addClass("notranslate");
+    $(".fragment").addClass("notranslate");
+    $("#MSearchResultsWindow").addClass("notranslate");
+    $(".qindex").addClass("notranslate");
+    $(".qindex + table").addClass("notranslate");
+    $(".contents > ul").addClass("notranslate");
+    $("#navrow4 > .tablist > li > a").addClass("notranslate");
+    $("a.el").addClass("notranslate");
+  });
 </script>
 </body>
 </html>
