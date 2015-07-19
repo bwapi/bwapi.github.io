@@ -405,7 +405,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   }
 </script>
 <small>
-Generated on Sun Jul 19 2015 16:45:07 for BWAPI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 19 2015 17:00:51 for BWAPI by &#160;<a href="http://www.doxygen.org/index.html">
 <img style="width:104px;height:31px;" class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
@@ -414,19 +414,13 @@ Generated on Sun Jul 19 2015 16:45:07 for BWAPI by &#160;<a href="http://www.dox
 <script type="text/javascript">
   $(document).ready(function() { 
     searchBox.OnSelectItem(0);
-    $(".memberDecls > tbody > .memitem").addClass("notranslate");
-    $(".memname").addClass("notranslate");
-    $(".memproto").addClass("notranslate");
-    $(".paramname").addClass("notranslate");
-    $(".fieldname").addClass("notranslate");
-    $(".entry").addClass("notranslate");
-    $(".fragment").addClass("notranslate");
+    $(".memberdecls, .memname, .memproto, .paramname, .fieldname, .entry, .fragment").addClass("notranslate");
     $("#MSearchResultsWindow").addClass("notranslate");
-    $(".qindex").addClass("notranslate");
-    $(".qindex + table").addClass("notranslate");
+    $(".qindex, .qindex + table").addClass("notranslate");
     $(".contents > ul").addClass("notranslate");
+    $(".contents > h3").addClass("notranslate");
     $("#navrow4 > .tablist > li > a").addClass("notranslate");
-    $("a.el").addClass("notranslate");
+    $("a.el, a.elRef").addClass("notranslate");
   });
 </script>
 </body>
