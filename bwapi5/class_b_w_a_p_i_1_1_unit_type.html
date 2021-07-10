@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BWAPI::UnitType class | BWAPI The BroodWar API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="stylesheet" href="doxygen-mcss.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BWAPI <span class="m-thin">The BroodWar API</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_b_w_a_p_i.html">BWAPI</a>::<wbr/></span>UnitType <span class="m-thin">class</span>
+        </h1>
+        <p>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> is used to get information about a particular type of unit, such as its cost, build time, weapon, hit points, abilities, etc.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#a90cc608a1d16fc956f5384b7a4d0ea35" class="m-doc">Unit::<wbr />getType</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html" class="m-doc">UnitTypes</a></p></aside>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <div class="m-doc-template">template&lt;class T, <a href="classint.html" class="m-doc">int</a> UnknownId&gt;</div>
+              class <a href="class_b_w_a_p_i_1_1_type.html" class="m-doc">Type&lt;UnitType, UnitTypes::Enum::Unknown&gt;</a>
+            </dt>
+            <dd>Base superclass for all <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> Types.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper"><a href="#a54843cfce3e939fe4832dda1ce3dc662" class="m-doc">UnitType</a>(</span><span class="m-doc-wrap"><a href="classint.html" class="m-doc">int</a> id = <a href="namespace_b_w_a_p_i_1_1_unit_types_1_1_enum.html#a082c934b3011fe0df23c262311644989a393c414b8f05898ae7f1cdc285ae37db" class="m-doc">UnitTypes::<wbr />Enum::<wbr />None</a>) <span class="m-label m-flat m-info">explicit</span>  <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Expected type constructor.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3bd18087357bb10da654eb6eec8b98d1" class="m-doc">abilities</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a>&gt;&amp;</span>
+            </dt>
+            <dd>Retrieves the set of abilities that this unit can use, provided it is available to you in the game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab39e2af12f9c3c1042c37ff560e00213" class="m-doc">acceleration</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the unit&#x27;s acceleration amount.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0f2ee75778df95db99d70909df412a34" class="m-doc">airWeapon</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a></span>
+            </dt>
+            <dd>Retrieves this unit type&#x27;s weapon type used when attacking targets in the air.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7e677af75f072dd5f69dc28d053715b4" class="m-doc">armor</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the default amount of armor that the unit type starts with, excluding upgrades.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac3435121f3a954a7e73010fe9edb638f" class="m-doc">armorUpgrade</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a></span>
+            </dt>
+            <dd>Retrieves the upgrade type used to increase the armor of this unit type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5037edb3be484f816bdc586f309f3c08" class="m-doc">attackRangeUpgrade</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-5\20" class="m-label m-success m-flat">since v5.0.0</a></span>
+            </dt>
+            <dd>Retrieves the upgrade that increases this unit type&#x27;s attack range.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1773ccc5d98e0d19c16d464759dad337" class="m-doc">attackUpgrade</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-5\20" class="m-label m-success m-flat">since v5.0.0</a></span>
+            </dt>
+            <dd>Retrieves the upgrade type used to upgrade the weapon damage of this unit type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab1d290b6303a214b83b46690ff7d5302" class="m-doc">buildScore</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the amount of score points awarded for constructing this unit type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aea38058e1878043a762273a417fe64fc" class="m-doc">buildsWhat</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="class_b_w_a_p_i_1_1_type.html#a5e6f35c39f30a358cc00ce0cb0ba26b4" class="m-doc">UnitType::<wbr />set</a>&amp; <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span>
+            </dt>
+            <dd>Retrieves the set of units that this unit type is capable of creating.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8928bdc16e6b037d1de37c67fc367bec" class="m-doc">buildTime</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the default time, in frames, needed to train, morph, or build the unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7cd89d2caecb960bc6c8cb07e93be7b1" class="m-doc">canAttack</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit is capable of attacking.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a97db030eb861ddf50c590d8b1554815e" class="m-doc">canBuildAddon</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is capable of constructing an add-on.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#affa7dad70c4e635f1e2b84bd1c0cf4e0" class="m-doc">canMove</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is capable of movement.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1a91a46a4c9cfc76d207b8f62a6aaaa2" class="m-doc">canProduce</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Determines if a unit can train other units.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a322e9b07009476c0a8efd7263c514411" class="m-doc">cloakingTech</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a></span>
+            </dt>
+            <dd>Retrieves the cloaking technology associated with certain units.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1724dd6e5bd65e30cd455b9c99ab791b" class="m-doc">destroyScore</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the amount of score points awarded for killing this unit type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5ec902b2d84dc4a0acf4029743caa8e7" class="m-doc">dimensionDown</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the distance from the center of the unit type to its bottom edge.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4791f309f07006c29c27366c8b3893d1" class="m-doc">dimensionLeft</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the distance from the center of the unit type to its left edge.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6323e0b724a9239e5a890604a1339901" class="m-doc">dimensionRight</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the distance from the center of the unit type to its right edge.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa5ac41e0be6282bef8c2a2e3aaa63b61" class="m-doc">dimensionUp</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the distance from the center of the unit type to its top edge.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae14672122010cfe55bfac1da549e2b6e" class="m-doc">gasPrice</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the default vespene gas price of purchasing the unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc">getRace</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a></span>
+            </dt>
+            <dd>Retrieves the <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> that the unit type belongs to.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4797b833eb4e0aa6aad3ccad347b8cd2" class="m-doc">groundWeapon</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a></span>
+            </dt>
+            <dd>Retrieves this unit type&#x27;s weapon type used when attacking targets on the ground.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0c94eaaaad6328c41bb3bc4a345a7d15" class="m-doc">haltDistance</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the unit&#x27;s halting distance.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8a5042c27783253c101e1b7504adca89" class="m-doc">hasPermanentCloak</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is permanently cloaked.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2e81f8501cd493016b0aa94160e9cd18" class="m-doc">height</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>A macro for retrieving the height of the unit type, which is calculated using dimensionUp + dimensionDown + 1.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6564bc7fc1edeabacaf35f407a25b7ac" class="m-doc">isAddon</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit is an add-on.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae63fc443765ee1acc86d81440e66209c" class="m-doc">isBeacon</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a beacon.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit is a structure.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8ed4ef5b53afda3b0003d3e7c59ad94d" class="m-doc">isBurrowable</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type has the capability to use the <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a803597e2d289ec0c22fdcb8a25395554" class="m-doc">Burrow</a> technology when it is researched.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a941b77f579ea513c31ac2c62df946244" class="m-doc">isCloakable</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type has the capability to use a cloaking ability when it is researched.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9ed47aed36c98c7973d9e564743ec656" class="m-doc">isCritter</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a neutral critter.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a96ec6e499d887abe314f4d7d0c50f2e1" class="m-doc">isDetector</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is capable of detecting units that are cloaked or burrowed.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac2b6b28453346da24c55e3772d33e536" class="m-doc">isFlagBeacon</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a flag beacon.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a60100d8155bd475c6261476d9fa1f34f" class="m-doc">isFlyer</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a flying unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9512bb889aa8e8534181e704f095b0dd" class="m-doc">isFlyingBuilding</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this structure has the capability to use the lift-off command.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a243b989a19328c1e48e7086c18e8db25" class="m-doc">isHero</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a hero.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6f68e8a59eeb8329e24058975f371b70" class="m-doc">isInvincible</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is invincible by default.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9dc02d6147f3f159fa79558bedf4c9c2" class="m-doc">isMechanical</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit is mechanical.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab0da937dea04713ac313ae667cd99f0d" class="m-doc">isMineralField</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a mineral field and contains a resource amount.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abd36afa179c068d8eb2c68718097098f" class="m-doc">isNeutral</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a neutral type, such as critters and resources.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a006255ec7b802234241a616cb4f033da" class="m-doc">isOrganic</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit is an organic unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7e0fe7866da6c7ccbcaba4cf9c89c050" class="m-doc">isPowerup</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a powerup.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a711860b068bed0923737791eebced2dd" class="m-doc">isRefinery</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a refinery.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8147df050f474ed3887fac0a0f02e856" class="m-doc">isResourceContainer</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is capable of storing resources such as <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae7f62b7ccccd3720612d29db0081974b" class="m-doc">Mineral Fields</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a621fab460f36985e6f3607f2934c42d2" class="m-doc">isResourceDepot</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a resource depot.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac991a2106cdb9f112ab0499cdb812248" class="m-doc">isRobotic</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit is robotic.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4a4566f7f83baecfe76dc0bc3613f86e" class="m-doc">isSpecialBuilding</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this structure is special and cannot be obtained normally within the game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3b1e3c0838d82993ef4a309bdb4cbf59" class="m-doc">isSpell</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Identifies if this unit type is used to complement some <a href="namespace_b_w_a_p_i_1_1_tech_types.html" class="m-doc">abilities</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#adcb3507e43bcaa851a206988eab721a5" class="m-doc">isSpellcaster</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type has the capacity to store energy and use it for special abilities.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0007baab269275a27c2a891cbddb8b60" class="m-doc">isSuccessorOf</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const -&gt; bool <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\20" class="m-label m-success m-flat">since v4.2.0</a></span>
+            </dt>
+            <dd>Checks if the current type is equal to the provided type, or a successor of the provided type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a63a9ff8ce10a665d086fea8d60d16f09" class="m-doc">isTwoUnitsInOneEgg</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type spawns two units when being hatched from an <a href="namespace_b_w_a_p_i_1_1_unit_types.html#acaa853a5d2cefd4f405a4329197bf8e4" class="m-doc">Egg</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3c45ec50dac84fc92a866293b3218785" class="m-doc">isWorker</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type is a worker unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6085c28e8a9949fdc470fdd286a41625" class="m-doc">maxAirHits</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the maximum number of hits this unit can deal to a flying target using its air weapon.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa2cc7f816fbdbeb02efd5dbd49422059" class="m-doc">maxEnergy</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the maximum amount of energy this unit type can have by default.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5652c7bb31823090745e35ee99705e5c" class="m-doc">maxGroundHits</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the maximum number of hits this unit can deal to a ground target using its ground weapon.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aad7cd9e8c542ecb8cacd08c59584d16a" class="m-doc">maxHitPoints</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the default maximum amount of hit points that this unit type can have.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a05e106706ef950c0020473d6035b8867" class="m-doc">maxShields</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the default maximum amount of shield points that this unit type can have.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8980222100c1a3568e0dee028e50ee37" class="m-doc">mineralPrice</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the default mineral price of purchasing the unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa691a869bc7f422155eeea08926cc6ad" class="m-doc">producesCreep</a>(</span><span class="m-doc-wrap">) const -&gt; bool <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span>
+            </dt>
+            <dd>Checks if this structure type produces creep.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a543d0b5aa880eb3339e67fadc6fa1f3c" class="m-doc">producesLarva</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type produces larva.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a767ea0a13f11a8cc16b85ec9541c4355" class="m-doc">regeneratesHP</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this unit type can regenerate hit points.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#add23b82d8e210203dd72067d67a6d506" class="m-doc">requiredTech</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a></span>
+            </dt>
+            <dd>Identifies the required <a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> in order to create certain units.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5748de13dea09d76d5e904aaa6f99fff" class="m-doc">requiredUnits</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="http://en.cppreference.com/w/cpp/container/map.html" class="m-doc-external">std::<wbr />map</a>&lt;<a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>, <a href="classint.html" class="m-doc">int</a>&gt;&amp;</span>
+            </dt>
+            <dd>Retrieves the immediate technology tree requirements to make this unit type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae6dd745abc6353ac1f215418fb414f66" class="m-doc">requiresCreep</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this structure must be placed on <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> creep.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0a1f9d712f614c7215fd1205bce45c5f" class="m-doc">requiresPsi</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this structure is powered by a psi field.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a67cd71c5ec177ce33efc8431b3c3ac19" class="m-doc">researchesWhat</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a>&gt;&amp; <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span>
+            </dt>
+            <dd>Retrieves the set of technologies that this unit type is capable of researching.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad4782e874f5d8ace2e60b94c32276f70" class="m-doc">seekRange</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the range at which this unit type will start targeting enemy units.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a08b138c52b61d74b43eb5005aac83e0b" class="m-doc">sightRange</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the sight range of this unit type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a158cceb27cd17ce1fe353a4ece167ff1" class="m-doc">size</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_unit_size_type.html" class="m-doc">UnitSizeType</a></span>
+            </dt>
+            <dd>Retrieves the <a href="class_b_w_a_p_i_1_1_unit_size_type.html" class="m-doc">UnitSizeType</a> of this unit, which is used in calculations along with weapon damage types to determine the amount of damage that will be dealt to this type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae1711bae039cf8593267e44a49a35f3e" class="m-doc">spaceProvided</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the amount of space provided by this <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a90f861a36087ce17173d3f242718bd39" class="m-doc">Bunker</a> or Transport(<a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6c2b65d4081b19cbf61a951e777a56ea" class="m-doc">Dropship</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae80227145f5fb84ad745f6059a5c1d61" class="m-doc">Shuttle</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a5f48be167258e9c00eabebb7c6c8c85b" class="m-doc">Overlord</a> ) for unit transportation.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa6c86739fc80ac158b0a0bb209898e24" class="m-doc">spaceRequired</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the amount of space required by this unit type to fit inside a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a90f861a36087ce17173d3f242718bd39" class="m-doc">Bunker</a> or Transport(<a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6c2b65d4081b19cbf61a951e777a56ea" class="m-doc">Dropship</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae80227145f5fb84ad745f6059a5c1d61" class="m-doc">Shuttle</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a5f48be167258e9c00eabebb7c6c8c85b" class="m-doc">Overlord</a> ).</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2653f8790e9f60ce639e2fe0e88851b3" class="m-doc">speedUpgrade</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-5\20" class="m-label m-success m-flat">since v5.0.0</a></span>
+            </dt>
+            <dd>Retrieves this unit type&#x27;s upgrade type for upgrading speed.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6d518e1f703b35653cfe3f9c07ea4c02" class="m-doc">supplyProvided</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the amount of supply that this unit type produces for its appropriate <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a>&#x27;s supply pool.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a314191dd91b0d3095c54bc5b9062020a" class="m-doc">supplyRequired</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the amount of supply that this unit type will use when created.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad8f35c148022fd29e4d1f2138f5bd845" class="m-doc">tileHeight</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the height of this unit type, in tiles.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aab61922043ef5d0f4a52b0230770e86c" class="m-doc">tileSize</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespace_b_w_a_p_i.html#acbc3b2215432badacfe58f9271c5de19" class="m-doc">TilePosition</a></span>
+            </dt>
+            <dd>Retrieves the tile size of this unit type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4a5d521f84c5571705d694eb427e80a3" class="m-doc">tileWidth</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the width of this unit type, in tiles.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a458ad36f139cd9f0321bd88ad2922e0b" class="m-doc">topSpeed</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+            </dt>
+            <dd>Retrieves this unit type&#x27;s top movement speed with no upgrades.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aec3bead0ba60f3272a9bd9b8ab41988c" class="m-doc">turnRadius</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves a unit&#x27;s turning rate.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a72c47d1c59807420370409e32ecb6b4e" class="m-doc">upgrades</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a>&gt;&amp;</span>
+            </dt>
+            <dd>Retrieves the set of upgrades that this unit can use to enhance its fighting ability.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a66ae672405874323642586347a8918dd" class="m-doc">upgradesWhat</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a>&gt;&amp; <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span>
+            </dt>
+            <dd>Retrieves the set of upgrades that this unit type is capable of upgrading.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab343c5ac13bfa39d83e16241d1e755bc" class="m-doc">whatBuilds</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="http://en.cppreference.com/w/cpp/utility/pair.html" class="m-doc-external">std::<wbr />pair</a>&lt;<a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>, <a href="classint.html" class="m-doc">int</a>&gt;</span>
+            </dt>
+            <dd>Obtains the source unit type that is used to build or train this unit type, as well as the amount of them that are required.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a219c7b1c1e7b41b97df72d96c71075be" class="m-doc">width</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>A macro for retrieving the width of the unit type, which is calculated using dimensionLeft + dimensionRight + 1.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a54843cfce3e939fe4832dda1ce3dc662"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a54843cfce3e939fe4832dda1ce3dc662" class="m-doc-self">UnitType</a>(</span><span class="m-doc-wrap"><a href="classint.html" class="m-doc">int</a> id = <a href="namespace_b_w_a_p_i_1_1_unit_types_1_1_enum.html#a082c934b3011fe0df23c262311644989a393c414b8f05898ae7f1cdc285ae37db" class="m-doc">UnitTypes::<wbr />Enum::<wbr />None</a>) <span class="m-label m-info">explicit</span>  <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Expected type constructor.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">id</td>
+                  <td>The id that corresponds to this type. It is typically an integer value that corresponds to an internal Broodwar type. If the given id is invalid, then it becomes Types::Unknown.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>If the type is an invalid type, then it becomes Types::Unknown. A type is invalid if its value is less than 0 or greater than Types::Unknown.</p>
+          </div></section>
+          <section class="m-doc-details" id="a3bd18087357bb10da654eb6eec8b98d1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a>&gt;&amp; BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3bd18087357bb10da654eb6eec8b98d1" class="m-doc-self">abilities</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the set of abilities that this unit can use, provided it is available to you in the game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Set of <a href="namespace_b_w_a_p_i_1_1_tech_types.html" class="m-doc">TechTypes</a> containing ability information.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ab39e2af12f9c3c1042c37ff560e00213"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab39e2af12f9c3c1042c37ff560e00213" class="m-doc-self">acceleration</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the unit&#x27;s acceleration amount.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>If the value is 1: The unit has fixed or patterned velocity (for example, a hopping Zergling). Otherwise, returns the unit&#x27;s acceleration measured in N/256 pixels per frame per frame. So a unit with 64 acceleration would take 4 frames to reach 1 pixel per frame.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a0f2ee75778df95db99d70909df412a34"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0f2ee75778df95db99d70909df412a34" class="m-doc-self">airWeapon</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves this unit type&#x27;s weapon type used when attacking targets in the air.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> used as this unit type&#x27;s air weapon.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a6085c28e8a9949fdc470fdd286a41625" class="m-doc">maxAirHits</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#a4797b833eb4e0aa6aad3ccad347b8cd2" class="m-doc">groundWeapon</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a7e677af75f072dd5f69dc28d053715b4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7e677af75f072dd5f69dc28d053715b4" class="m-doc-self">armor</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the default amount of armor that the unit type starts with, excluding upgrades.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The amount of armor the unit type has.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This value may not necessarily match the value seen in the <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game type.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac3435121f3a954a7e73010fe9edb638f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac3435121f3a954a7e73010fe9edb638f" class="m-doc-self">armorUpgrade</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the upgrade type used to increase the armor of this unit type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> indicating the upgrade that increases this unit type&#x27;s armor amount.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>For each upgrade, this unit type gains +1 additional armor.</p>
+          </div></section>
+          <section class="m-doc-details" id="a5037edb3be484f816bdc586f309f3c08"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5037edb3be484f816bdc586f309f3c08" class="m-doc-self">attackRangeUpgrade</a>(</span><span class="m-doc-wrap">) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-5\20" class="m-label m-success m-flat">since v5.0.0</a></span></span>
+            </h3>
+            <p>Retrieves the upgrade that increases this unit type&#x27;s attack range.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> indicating the upgrade that increases this unit type&#x27;s attack range.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a1773ccc5d98e0d19c16d464759dad337"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1773ccc5d98e0d19c16d464759dad337" class="m-doc-self">attackUpgrade</a>(</span><span class="m-doc-wrap">) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-5\20" class="m-label m-success m-flat">since v5.0.0</a></span></span>
+            </h3>
+            <p>Retrieves the upgrade type used to upgrade the weapon damage of this unit type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> indicating the upgrade that increases this unit type&#x27;s weapon damage amount.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ab1d290b6303a214b83b46690ff7d5302"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab1d290b6303a214b83b46690ff7d5302" class="m-doc-self">buildScore</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the amount of score points awarded for constructing this unit type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Number of points awarded for constructing this unit type.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This value is used for calculating scores in the post-game score screen.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a1724dd6e5bd65e30cd455b9c99ab791b" class="m-doc">destroyScore</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aea38058e1878043a762273a417fe64fc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="class_b_w_a_p_i_1_1_type.html#a5e6f35c39f30a358cc00ce0cb0ba26b4" class="m-doc">UnitType::<wbr />set</a>&amp; BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aea38058e1878043a762273a417fe64fc" class="m-doc-self">buildsWhat</a>(</span><span class="m-doc-wrap">) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span></span>
+            </h3>
+            <p>Retrieves the set of units that this unit type is capable of creating.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_type.html#a5e6f35c39f30a358cc00ce0cb0ba26b4" class="m-doc">UnitType::<wbr />set</a> containing the units it can build.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This includes training, constructing, warping, and morphing.</p><aside class="m-note m-info"><h4>Note</h4><p>Some maps have special parameters that disable construction of units that are otherwise normally available. Use <a href="class_b_w_a_p_i_1_1_player.html#a5ab2acb63b4abb102a6acf2c39a24c36" class="m-doc">Player::<wbr />isUnitAvailable</a> to determine if a unit type is actually available in the current game for a specific player.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#a5ab2acb63b4abb102a6acf2c39a24c36" class="m-doc">Player::<wbr />isUnitAvailable</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a8928bdc16e6b037d1de37c67fc367bec"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8928bdc16e6b037d1de37c67fc367bec" class="m-doc-self">buildTime</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the default time, in frames, needed to train, morph, or build the unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Number of frames needed in order to build the unit.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This value may not necessarily match the value seen in the <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game type.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#a4f6a7cf241f133954979ae0a41dcfd0a" class="m-doc">Unit::<wbr />getRemainingBuildTime</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a7cd89d2caecb960bc6c8cb07e93be7b1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7cd89d2caecb960bc6c8cb07e93be7b1" class="m-doc-self">canAttack</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit is capable of attacking.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is capable of damaging other units with a standard attack, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function returns false for units that can only inflict damage via special abilities, such as the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a76ff943e5b183f34f3f175927205ad36" class="m-doc">High Templar</a>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a97db030eb861ddf50c590d8b1554815e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a97db030eb861ddf50c590d8b1554815e" class="m-doc-self">canBuildAddon</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is capable of constructing an add-on.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type can construct an add-on, and false if it can not.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>An add-on is an extension or attachment for <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> structures, specifically the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#aa2eca0b2f1c369567020ade86c569b46" class="m-doc">Command Center</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ad1d2b4d122d0aa03b722aeeff9c2f188" class="m-doc">Factory</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a2efec47cf6fbc262fd300469f7565a66" class="m-doc">Starport</a>, and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#acd18028f67c830f3e2d8d42a017218fc" class="m-doc">Science Facility</a>.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a6564bc7fc1edeabacaf35f407a25b7ac" class="m-doc">isAddon</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="affa7dad70c4e635f1e2b84bd1c0cf4e0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#affa7dad70c4e635f1e2b84bd1c0cf4e0" class="m-doc-self">canMove</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is capable of movement.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit can use a movement command, and false if they cannot move.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Buildings will return false, including <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> liftable buildings which are capable of moving when lifted.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a1a91a46a4c9cfc76d207b8f62a6aaaa2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1a91a46a4c9cfc76d207b8f62a6aaaa2" class="m-doc-self">canProduce</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Determines if a unit can train other units.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type can have a production queue, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>For example, UnitTypes::Terran_Barracks.canProduce() will return true, while UnitTypes::Terran_Marine.canProduce() will return false. This is also true for two non-structures: <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6e7975149f92d898a7dd08203aa4caae" class="m-doc">Carrier</a> (can produce interceptors) and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a284a350329f0d38a2a753481f312a5ed" class="m-doc">Reaver</a> (can produce scarabs).</p>
+          </div></section>
+          <section class="m-doc-details" id="a322e9b07009476c0a8efd7263c514411"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a322e9b07009476c0a8efd7263c514411" class="m-doc-self">cloakingTech</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cloaking technology associated with certain units.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> referring to the cloaking technology that this unit type uses as an ability.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>None</td>
+                  <td>If this unit type does not have an active cloak ability.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a1724dd6e5bd65e30cd455b9c99ab791b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1724dd6e5bd65e30cd455b9c99ab791b" class="m-doc-self">destroyScore</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the amount of score points awarded for killing this unit type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Number of points awarded for killing this unit type.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This value is used for calculating scores in the post-game score screen.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#ab1d290b6303a214b83b46690ff7d5302" class="m-doc">buildScore</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a5ec902b2d84dc4a0acf4029743caa8e7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5ec902b2d84dc4a0acf4029743caa8e7" class="m-doc-self">dimensionDown</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the distance from the center of the unit type to its bottom edge.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Distance to this unit type&#x27;s bottom edge from its center, in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a4791f309f07006c29c27366c8b3893d1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4791f309f07006c29c27366c8b3893d1" class="m-doc-self">dimensionLeft</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the distance from the center of the unit type to its left edge.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Distance to this unit type&#x27;s left edge from its center, in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a6323e0b724a9239e5a890604a1339901"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6323e0b724a9239e5a890604a1339901" class="m-doc-self">dimensionRight</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the distance from the center of the unit type to its right edge.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Distance to this unit type&#x27;s right edge from its center, in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="aa5ac41e0be6282bef8c2a2e3aaa63b61"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa5ac41e0be6282bef8c2a2e3aaa63b61" class="m-doc-self">dimensionUp</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the distance from the center of the unit type to its top edge.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Distance to this unit type&#x27;s top edge from its center, in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ae14672122010cfe55bfac1da549e2b6e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae14672122010cfe55bfac1da549e2b6e" class="m-doc-self">gasPrice</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the default vespene gas price of purchasing the unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Vespene gas cost of the unit.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This value may not necessarily match the value seen in the <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game type.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af9e550fc7b814b2b377757d8f98c41fc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc-self">getRace</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> that the unit type belongs to.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> indicating the race that owns this unit type.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Race::None</td>
+                  <td>indicating that the unit type does not belong to any particular race (a critter for example).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a4797b833eb4e0aa6aad3ccad347b8cd2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4797b833eb4e0aa6aad3ccad347b8cd2" class="m-doc-self">groundWeapon</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves this unit type&#x27;s weapon type used when attacking targets on the ground.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> used as this unit type&#x27;s ground weapon.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a5652c7bb31823090745e35ee99705e5c" class="m-doc">maxGroundHits</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#a0f2ee75778df95db99d70909df412a34" class="m-doc">airWeapon</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0c94eaaaad6328c41bb3bc4a345a7d15"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0c94eaaaad6328c41bb3bc4a345a7d15" class="m-doc-self">haltDistance</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the unit&#x27;s halting distance.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The unit&#x27;s halting distance, in 1/256ths of a pixel.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This is the distance from the unit&#x27;s destination at which point the unit starts decelerating.</p>
+          </div></section>
+          <section class="m-doc-details" id="a8a5042c27783253c101e1b7504adca89"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8a5042c27783253c101e1b7504adca89" class="m-doc-self">hasPermanentCloak</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is permanently cloaked.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is permanently cloaked, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This means the unit type is always cloaked and requires a detector in order to see it.</p>
+          </div></section>
+          <section class="m-doc-details" id="a2e81f8501cd493016b0aa94160e9cd18"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2e81f8501cd493016b0aa94160e9cd18" class="m-doc-self">height</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>A macro for retrieving the height of the unit type, which is calculated using dimensionUp + dimensionDown + 1.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Height of the unit, in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a6564bc7fc1edeabacaf35f407a25b7ac"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6564bc7fc1edeabacaf35f407a25b7ac" class="m-doc-self">isAddon</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit is an add-on.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit is an add-on, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Add-ons are attachments used by some <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> structures such as the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a876fbd4c915ab63573ac01d7be52c2fa" class="m-doc">Comsat Station</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc">getRace()</a> == <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Races::<wbr />Terran</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding()</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ae63fc443765ee1acc86d81440e66209c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae63fc443765ee1acc86d81440e66209c" class="m-doc-self">isBeacon</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a beacon.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is one of the three race beacons, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Each race has exactly one beacon each. They are <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a82a71296a8e7e85be51c946462fd63e0" class="m-doc">UnitTypes::<wbr />Special_Zerg_Beacon</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ab8c58824344bb39b6dfe6588708f0185" class="m-doc">UnitTypes::<wbr />Special_Terran_Beacon</a>, and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae82f63c6ac024e4e900af5f76f74d94f" class="m-doc">UnitTypes::<wbr />Special_Protoss_Beacon</a>.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#ac2b6b28453346da24c55e3772d33e536" class="m-doc">isFlagBeacon</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a2c40e5e99e0ab89722a0850e20508e84"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc-self">isBuilding</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit is a structure.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit is a building, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This includes <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae7f62b7ccccd3720612d29db0081974b" class="m-doc">Mineral Fields</a> and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8285b43105508081a114c127ba2050a1" class="m-doc">Vespene Geysers</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="a8ed4ef5b53afda3b0003d3e7c59ad94d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8ed4ef5b53afda3b0003d3e7c59ad94d" class="m-doc-self">isBurrowable</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type has the capability to use the <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a803597e2d289ec0c22fdcb8a25395554" class="m-doc">Burrow</a> technology when it is researched.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit can use the <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a803597e2d289ec0c22fdcb8a25395554" class="m-doc">Burrow</a> ability, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>The <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a204826d78bd887abb1889788cb064c9a" class="m-doc">Lurker</a> can burrow even without researching the ability.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>TechTypes::Burrow</p></aside><aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc">getRace()</a> == <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Races::<wbr />Zerg</a>, !isBuilding(), <a href="class_b_w_a_p_i_1_1_unit_type.html#affa7dad70c4e635f1e2b84bd1c0cf4e0" class="m-doc">canMove()</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a941b77f579ea513c31ac2c62df946244"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a941b77f579ea513c31ac2c62df946244" class="m-doc-self">isCloakable</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type has the capability to use a cloaking ability when it is researched.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit has a cloaking ability, false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This applies only to <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a3601706029b2afcd0ea2663f129c3183" class="m-doc">Wraiths</a> and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a487c2a236b1864b0b977d2b9e843215c" class="m-doc">Ghosts</a>, and does not include units which are permanently cloaked.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a8a5042c27783253c101e1b7504adca89" class="m-doc">hasPermanentCloak</a>, <a href="namespace_b_w_a_p_i_1_1_tech_types.html#abf8445a02858862d8d15b16c505a5fd1" class="m-doc">TechTypes::<wbr />Cloaking_Field</a>, <a href="namespace_b_w_a_p_i_1_1_tech_types.html#ab5905fe1efaab9bf3b8ee0f07bce8db8" class="m-doc">TechTypes::<wbr />Personnel_Cloaking</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9ed47aed36c98c7973d9e564743ec656"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9ed47aed36c98c7973d9e564743ec656" class="m-doc-self">isCritter</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a neutral critter.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a critter, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Example usage:</p><pre class="m-code"><span class="n">BWAPI</span><span class="o">::</span><span class="n">Position</span> <span class="n">myBasePosition</span><span class="p">(</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">().</span><span class="n">getStartLocation</span><span class="p">()</span> <span class="p">);</span>
+<span class="n">BWAPI</span><span class="o">::</span><span class="n">UnitSet</span> <span class="n">unitsAroundTheBase</span> <span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="n">getUnitsInRadius</span><span class="p">(</span><span class="n">myBasePosition</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="o">!</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsOwned</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsParasited</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Unit</span> <span class="nl">u</span> <span class="p">:</span> <span class="n">unitsAroundTheBase</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">u</span><span class="p">.</span><span class="n">getType</span><span class="p">().</span><span class="n">isCritter</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">u</span><span class="p">.</span><span class="n">isInvincible</span><span class="p">()</span> <span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">BWAPI</span><span class="o">::</span><span class="n">Unit</span> <span class="n">myQueen</span> <span class="o">=</span> <span class="n">u</span><span class="p">.</span><span class="n">getClosestUnit</span><span class="p">(</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">GetType</span> <span class="o">==</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">UnitTypes</span><span class="o">::</span><span class="n">Zerg_Queen</span> <span class="o">&amp;&amp;</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsOwned</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">myQueen</span> <span class="p">)</span>
+      <span class="n">myQueen</span><span class="p">.</span><span class="n">useTech</span><span class="p">(</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">TechTypes</span><span class="o">::</span><span class="n">Parasite</span><span class="p">,</span> <span class="n">u</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="a96ec6e499d887abe314f4d7d0c50f2e1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a96ec6e499d887abe314f4d7d0c50f2e1" class="m-doc-self">isDetector</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is capable of detecting units that are cloaked or burrowed.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a detector by default, false if it does not have this property</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ac2b6b28453346da24c55e3772d33e536"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac2b6b28453346da24c55e3772d33e536" class="m-doc-self">isFlagBeacon</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a flag beacon.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is one of the three race flag beacons, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Each race has exactly one flag beacon each. They are <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ad921f09a493149fd28babe9ac34f2df4" class="m-doc">UnitTypes::<wbr />Special_Zerg_Flag_Beacon</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a43c64729223762cf1b8c4c7886314e84" class="m-doc">UnitTypes::<wbr />Special_Terran_Flag_Beacon</a>, and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a435a96dc48adad90b98cf91328ec1962" class="m-doc">UnitTypes::<wbr />Special_Protoss_Flag_Beacon</a>. <a href="namespace_b_w_a_p_i_1_1_flag.html" class="m-doc">Flag</a> beacons spawn a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ad0b730d59378b2a556025fdd713025a4" class="m-doc">Flag</a> on frame 9604.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#ae63fc443765ee1acc86d81440e66209c" class="m-doc">isBeacon</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a60100d8155bd475c6261476d9fa1f34f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a60100d8155bd475c6261476d9fa1f34f" class="m-doc-self">isFlyer</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a flying unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is in the air by default, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Flying units ignore ground pathing and collisions.</p>
+          </div></section>
+          <section class="m-doc-details" id="a9512bb889aa8e8534181e704f095b0dd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9512bb889aa8e8534181e704f095b0dd" class="m-doc-self">isFlyingBuilding</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this structure has the capability to use the lift-off command.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a flyable building, false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding()</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a243b989a19328c1e48e7086c18e8db25"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a243b989a19328c1e48e7086c18e8db25" class="m-doc-self">isHero</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a hero.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a hero type, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Heroes are types that the player cannot obtain normally, and are identified by the white border around their icon when selected with a group.</p><aside class="m-note m-info"><h4>Note</h4><p>There are two non-hero units included in this set, the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#afa9c0965a422df58f22567a837e9dd5c" class="m-doc">Civilian</a> and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae39abbaaba8fabe9efe33989ecf21579" class="m-doc">Dark Templar Hero</a>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a6f68e8a59eeb8329e24058975f371b70"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6f68e8a59eeb8329e24058975f371b70" class="m-doc-self">isInvincible</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is invincible by default.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is invincible, and false if it is vulnerable to attacks.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Invincible units cannot take damage.</p>
+          </div></section>
+          <section class="m-doc-details" id="a9dc02d6147f3f159fa79558bedf4c9c2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9dc02d6147f3f159fa79558bedf4c9c2" class="m-doc-self">isMechanical</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit is mechanical.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type has the mechanical property, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>The mechanical property is required for some actions such as <a href="namespace_b_w_a_p_i_1_1_unit_command_types.html#a4e462638cc60e4bb907ce27aa4f1e8ad" class="m-doc">Repair</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="ab0da937dea04713ac313ae667cd99f0d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab0da937dea04713ac313ae667cd99f0d" class="m-doc-self">isMineralField</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a mineral field and contains a resource amount.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a mineral field resource.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This indicates that the unit type is either <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae7f62b7ccccd3720612d29db0081974b" class="m-doc">UnitTypes::<wbr />Resource_Mineral_Field</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ab52fdfcb92d4d344d8c4c28bc664ec83" class="m-doc">UnitTypes::<wbr />Resource_Mineral_Field_Type_2</a>, or <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ac99e4a8366f80ef2049cb0af80b9be09" class="m-doc">UnitTypes::<wbr />Resource_Mineral_Field_Type_3</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="abd36afa179c068d8eb2c68718097098f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abd36afa179c068d8eb2c68718097098f" class="m-doc-self">isNeutral</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a neutral type, such as critters and resources.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit is intended to be neutral, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a006255ec7b802234241a616cb4f033da"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a006255ec7b802234241a616cb4f033da" class="m-doc-self">isOrganic</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit is an organic unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type has the organic property, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>The organic property is required for some abilities such as <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a48f5e472d55bd0f0e97180c7cb2bf69d" class="m-doc">Heal</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="a7e0fe7866da6c7ccbcaba4cf9c89c050"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7e0fe7866da6c7ccbcaba4cf9c89c050" class="m-doc-self">isPowerup</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a powerup.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a powerup type, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Powerups can be picked up and carried by workers. They are usually only seen in campaign maps and <a href="namespace_b_w_a_p_i_1_1_game_types.html#ac3e90cb3d63591e8d5a4c20619c7ab7b" class="m-doc">Capture the Flag</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="a711860b068bed0923737791eebced2dd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a711860b068bed0923737791eebced2dd" class="m-doc-self">isRefinery</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a refinery.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a refinery, and false if it is not.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>A refinery is a structure that is placed on top of a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8285b43105508081a114c127ba2050a1" class="m-doc">Vespene Geyser</a> . Refinery types are <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9b26cb07722f510e26344c22b57f232b" class="m-doc">Refinery</a> , <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a45b11b3a10f55c560a41155dbef9455c" class="m-doc">Extractor</a> , and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ac790ed39018dbacfb254b004ff28c928" class="m-doc">Assimilator</a>.</p><p>Example:</p><pre class="m-code"><span class="k">if</span> <span class="p">(</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">()</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Unit</span> <span class="nl">u</span> <span class="p">:</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">().</span><span class="n">getUnits</span><span class="p">()</span> <span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">u</span><span class="p">.</span><span class="n">getType</span><span class="p">().</span><span class="n">isRefinery</span><span class="p">()</span> <span class="p">)</span>
+    <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">nWorkersAssigned</span> <span class="o">=</span> <span class="n">refineryWorkerCount</span><span class="p">[</span><span class="n">u</span><span class="p">];</span>
+      <span class="k">if</span> <span class="p">(</span> <span class="n">nWorkersAssigned</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="p">)</span>
+      <span class="p">{</span>
+        <span class="n">Unit</span> <span class="n">closestIdleWorker</span> <span class="o">=</span> <span class="n">u</span><span class="p">.</span><span class="n">getClosestUnit</span><span class="p">(</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsWorker</span> <span class="o">&amp;&amp;</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsIdle</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="n">closestIdleWorker</span> <span class="p">)</span>
+        <span class="p">{</span>
+          <span class="c1">// gather from the refinery (and check if successful)</span>
+          <span class="k">if</span> <span class="p">(</span> <span class="n">closestIdleWorker</span><span class="p">.</span><span class="n">gather</span><span class="p">(</span><span class="n">u</span><span class="p">)</span> <span class="p">)</span>
+          <span class="p">{</span>
+            <span class="c1">// set a back reference for when the unit is killed or re-assigned (code not provided)</span>
+            <span class="n">workerRefineryMap</span><span class="p">[</span><span class="n">closestIdleWorker</span><span class="p">]</span> <span class="o">=</span> <span class="n">u</span><span class="p">;</span>
+
+            <span class="c1">// Increment the number of workers assigned and associate it with the refinery</span>
+            <span class="o">++</span><span class="n">nWorkersAssigned</span><span class="p">;</span>
+            <span class="n">refineryWorkerCount</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="n">nWorkersAssigned</span><span class="p">;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span> <span class="c1">// workers &lt; 3</span>
+    <span class="p">}</span> <span class="c1">// isRefinery</span>
+  <span class="p">}</span> <span class="c1">// for</span>
+<span class="p">}</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="a8147df050f474ed3887fac0a0f02e856"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8147df050f474ed3887fac0a0f02e856" class="m-doc-self">isResourceContainer</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is capable of storing resources such as <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae7f62b7ccccd3720612d29db0081974b" class="m-doc">Mineral Fields</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type may contain resources that can be harvested, false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Resources are harvested from resource containers.</p>
+          </div></section>
+          <section class="m-doc-details" id="a621fab460f36985e6f3607f2934c42d2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a621fab460f36985e6f3607f2934c42d2" class="m-doc-self">isResourceDepot</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a resource depot.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the unit type is a resource depot, false if it is not.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Resource depots must be placed a certain distance from resources. Resource depots are typically the main building for any particular race. Workers will return resources to the nearest resource depot.</p><p>Example:</p><pre class="m-code"><span class="k">if</span> <span class="p">(</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">()</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Unit</span> <span class="nl">u</span> <span class="p">:</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">().</span><span class="n">getUnits</span><span class="p">()</span> <span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">u</span><span class="p">.</span><span class="n">isIdle</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">u</span><span class="p">.</span><span class="n">getType</span><span class="p">().</span><span class="n">isResourceDepot</span><span class="p">()</span> <span class="p">)</span>
+      <span class="n">u</span><span class="p">.</span><span class="n">train</span><span class="p">(</span> <span class="n">u</span><span class="p">.</span><span class="n">getType</span><span class="p">().</span><span class="n">getRace</span><span class="p">().</span><span class="n">getWorker</span><span class="p">()</span> <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="ac991a2106cdb9f112ab0499cdb812248"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac991a2106cdb9f112ab0499cdb812248" class="m-doc-self">isRobotic</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit is robotic.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type has the robotic property, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>The robotic property is applied to robotic units such as the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a61e2bc433b5aa6460f9374523f5e8fcd" class="m-doc">Probe</a> which prevents them from taking damage from <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a9bffa8034c2a3ced199e911074a54e36" class="m-doc">Irradiate</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="a4a4566f7f83baecfe76dc0bc3613f86e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4a4566f7f83baecfe76dc0bc3613f86e" class="m-doc-self">isSpecialBuilding</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this structure is special and cannot be obtained normally within the game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this structure is a special building, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding()</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a3b1e3c0838d82993ef4a309bdb4cbf59"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3b1e3c0838d82993ef4a309bdb4cbf59" class="m-doc-self">isSpell</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Identifies if this unit type is used to complement some <a href="namespace_b_w_a_p_i_1_1_tech_types.html" class="m-doc">abilities</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is used for an ability, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>These include <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae3c94386ad0a05e8e8074c83a9c17f94" class="m-doc">UnitTypes::<wbr />Spell_Dark_Swarm</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a617c8e58937568a9d073ca38b730c466" class="m-doc">UnitTypes::<wbr />Spell_Disruption_Web</a>, and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a217703bb63d9ebf2e999c89dc5e99ba7" class="m-doc">UnitTypes::<wbr />Spell_Scanner_Sweep</a>, which correspond to <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a7a06172efd3bb7c2d43935f4d7bbe596" class="m-doc">TechTypes::<wbr />Dark_Swarm</a>, <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a763c823a72b61dbf09890e4d09fd6d21" class="m-doc">TechTypes::<wbr />Disruption_Web</a>, and <a href="namespace_b_w_a_p_i_1_1_tech_types.html#aed1df4b421d2df4edf46fecfec19dc0f" class="m-doc">TechTypes::<wbr />Scanner_Sweep</a> respectively.</p>
+          </div></section>
+          <section class="m-doc-details" id="adcb3507e43bcaa851a206988eab721a5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adcb3507e43bcaa851a206988eab721a5" class="m-doc-self">isSpellcaster</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type has the capacity to store energy and use it for special abilities.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type generates energy, and false if it does not have an energy pool.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a0007baab269275a27c2a891cbddb8b60"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0007baab269275a27c2a891cbddb8b60" class="m-doc-self">isSuccessorOf</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\20" class="m-label m-success m-flat">since v4.2.0</a></span></span>
+            </h3>
+            <p>Checks if the current type is equal to the provided type, or a successor of the provided type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>The unit type to check.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>For example, a Hive is a successor of a Hatchery, since it can still research the <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a803597e2d289ec0c22fdcb8a25395554" class="m-doc">Burrow</a> technology.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_tech_type.html#a6ecfcb925a5899e8f3220fe8857f7ec8" class="m-doc">TechType::<wbr />whatResearches</a>, <a href="class_b_w_a_p_i_1_1_upgrade_type.html#a932bd903fd6e24762b88f6edbdcd621c" class="m-doc">UpgradeType::<wbr />whatUpgrades</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a63a9ff8ce10a665d086fea8d60d16f09"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a63a9ff8ce10a665d086fea8d60d16f09" class="m-doc-self">isTwoUnitsInOneEgg</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type spawns two units when being hatched from an <a href="namespace_b_w_a_p_i_1_1_unit_types.html#acaa853a5d2cefd4f405a4329197bf8e4" class="m-doc">Egg</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if morphing this unit type will spawn two of them, and false if only one is spawned.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This is only applicable to <a href="namespace_b_w_a_p_i_1_1_unit_types.html#aecc7b465c9d18ee06c189bd43267e86a" class="m-doc">Zerglings</a> and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a2797fae893862d2c5a792af9a8b0c367" class="m-doc">Scourges</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="a3c45ec50dac84fc92a866293b3218785"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3c45ec50dac84fc92a866293b3218785" class="m-doc-self">isWorker</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type is a worker unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type is a worker, and false if it is not.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Worker units can harvest resources and build structures. Worker unit types include the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6fe4be4de3c47cd4da33132df09dc2f0" class="m-doc">SCV</a> , <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a61e2bc433b5aa6460f9374523f5e8fcd" class="m-doc">Probe</a>, and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6e8858e6c1328ecf68f842ce4ebbeea1" class="m-doc">Drone</a>.</p>
+          </div></section>
+          <section class="m-doc-details" id="a6085c28e8a9949fdc470fdd286a41625"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6085c28e8a9949fdc470fdd286a41625" class="m-doc-self">maxAirHits</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the maximum number of hits this unit can deal to a flying target using its air weapon.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Maximum number of hits given to air targets.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This value is multiplied by the air weapon&#x27;s damage to calculate the unit type&#x27;s damage potential.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a0f2ee75778df95db99d70909df412a34" class="m-doc">airWeapon</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#a5652c7bb31823090745e35ee99705e5c" class="m-doc">maxGroundHits</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aa2cc7f816fbdbeb02efd5dbd49422059"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa2cc7f816fbdbeb02efd5dbd49422059" class="m-doc-self">maxEnergy</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the maximum amount of energy this unit type can have by default.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Integer indicating the maximum amount of energy for this unit type.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>If this unit does not gain energy for abilities.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a5652c7bb31823090745e35ee99705e5c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5652c7bb31823090745e35ee99705e5c" class="m-doc-self">maxGroundHits</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the maximum number of hits this unit can deal to a ground target using its ground weapon.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Maximum number of hits given to ground targets.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This value is multiplied by the ground weapon&#x27;s damage to calculate the unit type&#x27;s damage potential.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a4797b833eb4e0aa6aad3ccad347b8cd2" class="m-doc">groundWeapon</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#a6085c28e8a9949fdc470fdd286a41625" class="m-doc">maxAirHits</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aad7cd9e8c542ecb8cacd08c59584d16a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aad7cd9e8c542ecb8cacd08c59584d16a" class="m-doc-self">maxHitPoints</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the default maximum amount of hit points that this unit type can have.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Integer indicating the maximum amount of hit points for this unit type.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This value may not necessarily match the value seen in the <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game type.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a05e106706ef950c0020473d6035b8867"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a05e106706ef950c0020473d6035b8867" class="m-doc-self">maxShields</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the default maximum amount of shield points that this unit type can have.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Integer indicating the maximum amount of shield points for this unit type.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>If this unit type does not have shields.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This value may not necessarily match the value seen in the <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game type.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a8980222100c1a3568e0dee028e50ee37"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8980222100c1a3568e0dee028e50ee37" class="m-doc-self">mineralPrice</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the default mineral price of purchasing the unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Mineral cost of the unit.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This value may not necessarily match the value seen in the <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game type.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aa691a869bc7f422155eeea08926cc6ad"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa691a869bc7f422155eeea08926cc6ad" class="m-doc-self">producesCreep</a>(</span><span class="m-doc-wrap">) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span></span>
+            </h3>
+            <p>Checks if this structure type produces creep.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type spreads creep.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>That is, the unit type spreads creep over a wide area so that <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> structures can be placed on it.</p><aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc">getRace()</a> == <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Races::<wbr />Zerg</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding()</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a543d0b5aa880eb3339e67fadc6fa1f3c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a543d0b5aa880eb3339e67fadc6fa1f3c" class="m-doc-self">producesLarva</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type produces larva.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type produces larva.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This is essentially used to check if the unit type is a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9dd8fad5da92ccf6a9488a6b984d6f4f" class="m-doc">Hatchery</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9d66308b56162e0e6642f28a6d455671" class="m-doc">Lair</a>, or <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a1b6e7927363253dc113c3e838de3ca68" class="m-doc">Hive</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc">getRace()</a> == <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Races::<wbr />Zerg</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding()</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a767ea0a13f11a8cc16b85ec9541c4355"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a767ea0a13f11a8cc16b85ec9541c4355" class="m-doc-self">regeneratesHP</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this unit type can regenerate hit points.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type regenerates its hit points, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This generally applies to <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> units.</p>
+          </div></section>
+          <section class="m-doc-details" id="add23b82d8e210203dd72067d67a6d506"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#add23b82d8e210203dd72067d67a6d506" class="m-doc-self">requiredTech</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Identifies the required <a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> in order to create certain units.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> indicating the technology that must be researched in order to create this unit type.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>None</td>
+                  <td>If creating this unit type does not require a technology to be researched.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>The only unit that requires a technology is the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a204826d78bd887abb1889788cb064c9a" class="m-doc">Lurker</a>, which needs <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a98032f71ac0e415a4cee1544f4f7ed5c" class="m-doc">Lurker Aspect</a>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a5748de13dea09d76d5e904aaa6f99fff"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="http://en.cppreference.com/w/cpp/container/map.html" class="m-doc-external">std::<wbr />map</a>&lt;<a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>, <a href="classint.html" class="m-doc">int</a>&gt;&amp; BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5748de13dea09d76d5e904aaa6f99fff" class="m-doc-self">requiredUnits</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the immediate technology tree requirements to make this unit type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="http://en.cppreference.com/w/cpp/container/map.html" class="m-doc-external">std::<wbr />map</a> containing a <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to number mapping of <a href="namespace_b_w_a_p_i_1_1_unit_types.html" class="m-doc">UnitTypes</a> required.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ae6dd745abc6353ac1f215418fb414f66"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae6dd745abc6353ac1f215418fb414f66" class="m-doc-self">requiresCreep</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this structure must be placed on <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> creep.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type requires creep, false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding()</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc">getRace()</a> == <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Races::<wbr />Zerg</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0a1f9d712f614c7215fd1205bce45c5f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0a1f9d712f614c7215fd1205bce45c5f" class="m-doc-self">requiresPsi</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this structure is powered by a psi field.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this unit type can only be placed in a psi field, false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Structures powered by psi can only be placed near a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a346680c9f2748c5612e5241251cd9d2d" class="m-doc">Pylon</a>. If the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a346680c9f2748c5612e5241251cd9d2d" class="m-doc">Pylon</a> is destroyed, then this unit will lose power.</p><aside class="m-note m-info"><h4>Note</h4><p>If this function returns a successful state, then the following function calls will also return a successful state: <a href="class_b_w_a_p_i_1_1_unit_type.html#a2c40e5e99e0ab89722a0850e20508e84" class="m-doc">isBuilding()</a>, <a href="class_b_w_a_p_i_1_1_unit_type.html#af9e550fc7b814b2b377757d8f98c41fc" class="m-doc">getRace()</a> == <a href="namespace_b_w_a_p_i_1_1_races.html#a90cc40290b9721f7fe1414db4f76a336" class="m-doc">Races::<wbr />Protoss</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a67cd71c5ec177ce33efc8431b3c3ac19"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a>&gt;&amp; BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a67cd71c5ec177ce33efc8431b3c3ac19" class="m-doc-self">researchesWhat</a>(</span><span class="m-doc-wrap">) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span></span>
+            </h3>
+            <p>Retrieves the set of technologies that this unit type is capable of researching.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_type.html#a5e6f35c39f30a358cc00ce0cb0ba26b4" class="m-doc">TechType::<wbr />set</a> containing the technology types that can be researched.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Some maps have special parameters that disable certain technologies. Use <a href="class_b_w_a_p_i_1_1_player.html#ad35b7d88259429bd72a25ef87f4d6ff9" class="m-doc">Player::<wbr />isResearchAvailable</a> to determine if a technology is actually available in the current game for a specific player.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#ad35b7d88259429bd72a25ef87f4d6ff9" class="m-doc">Player::<wbr />isResearchAvailable</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ad4782e874f5d8ace2e60b94c32276f70"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad4782e874f5d8ace2e60b94c32276f70" class="m-doc-self">seekRange</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the range at which this unit type will start targeting enemy units.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Distance at which this unit type begins to seek out enemy units, in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a08b138c52b61d74b43eb5005aac83e0b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a08b138c52b61d74b43eb5005aac83e0b" class="m-doc-self">sightRange</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the sight range of this unit type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Sight range of this unit type, measured in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a158cceb27cd17ce1fe353a4ece167ff1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unit_size_type.html" class="m-doc">UnitSizeType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a158cceb27cd17ce1fe353a4ece167ff1" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the <a href="class_b_w_a_p_i_1_1_unit_size_type.html" class="m-doc">UnitSizeType</a> of this unit, which is used in calculations along with weapon damage types to determine the amount of damage that will be dealt to this type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_unit_size_type.html" class="m-doc">UnitSizeType</a> indicating the conceptual size of the unit type.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_weapon_type.html#a09070541e9fa5a7578ded763f13484ab" class="m-doc">WeaponType::<wbr />damageType</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ae1711bae039cf8593267e44a49a35f3e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae1711bae039cf8593267e44a49a35f3e" class="m-doc-self">spaceProvided</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the amount of space provided by this <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a90f861a36087ce17173d3f242718bd39" class="m-doc">Bunker</a> or Transport(<a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6c2b65d4081b19cbf61a951e777a56ea" class="m-doc">Dropship</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae80227145f5fb84ad745f6059a5c1d61" class="m-doc">Shuttle</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a5f48be167258e9c00eabebb7c6c8c85b" class="m-doc">Overlord</a> ) for unit transportation.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The number of slots provided by this unit type.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#aa6c86739fc80ac158b0a0bb209898e24" class="m-doc">spaceRequired</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aa6c86739fc80ac158b0a0bb209898e24"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa6c86739fc80ac158b0a0bb209898e24" class="m-doc-self">spaceRequired</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the amount of space required by this unit type to fit inside a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a90f861a36087ce17173d3f242718bd39" class="m-doc">Bunker</a> or Transport(<a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6c2b65d4081b19cbf61a951e777a56ea" class="m-doc">Dropship</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae80227145f5fb84ad745f6059a5c1d61" class="m-doc">Shuttle</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a5f48be167258e9c00eabebb7c6c8c85b" class="m-doc">Overlord</a> ).</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Amount of space required by this unit type for transport.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>255</td>
+                  <td>If this unit type can not be transported.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#ae1711bae039cf8593267e44a49a35f3e" class="m-doc">spaceProvided</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a2653f8790e9f60ce639e2fe0e88851b3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2653f8790e9f60ce639e2fe0e88851b3" class="m-doc-self">speedUpgrade</a>(</span><span class="m-doc-wrap">) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-5\20" class="m-label m-success m-flat">since v5.0.0</a></span></span>
+            </h3>
+            <p>Retrieves this unit type&#x27;s upgrade type for upgrading speed.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> used as this unit type&#x27;s ground weapon.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a6d518e1f703b35653cfe3f9c07ea4c02"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6d518e1f703b35653cfe3f9c07ea4c02" class="m-doc-self">supplyProvided</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the amount of supply that this unit type produces for its appropriate <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a>&#x27;s supply pool.</p>
+<aside class="m-note m-info"><h4>Note</h4><p>In Starcraft programming, the managed supply values are double than what they appear in the game. The reason for this is because <a href="namespace_b_w_a_p_i_1_1_unit_types.html#aecc7b465c9d18ee06c189bd43267e86a" class="m-doc">Zerglings</a> use 0.5 visible supply.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a314191dd91b0d3095c54bc5b9062020a" class="m-doc">supplyRequired</a>, <a href="class_b_w_a_p_i_1_1_player.html#a92cab4bf71b32d6751f8858f639fb358" class="m-doc">Player::<wbr />supplyTotal</a>, <a href="class_b_w_a_p_i_1_1_player.html#aeb56c1e4ad586d8589f8bf6a3d1a3518" class="m-doc">Player::<wbr />supplyUsed</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a314191dd91b0d3095c54bc5b9062020a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a314191dd91b0d3095c54bc5b9062020a" class="m-doc-self">supplyRequired</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the amount of supply that this unit type will use when created.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Integer containing the supply required to build this unit.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>It will use the supply pool that is appropriate for its <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>In Starcraft programming, the managed supply values are double than what they appear in the game. The reason for this is because <a href="namespace_b_w_a_p_i_1_1_unit_types.html#aecc7b465c9d18ee06c189bd43267e86a" class="m-doc">Zerglings</a> use 0.5 visible supply.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit_type.html#a6d518e1f703b35653cfe3f9c07ea4c02" class="m-doc">supplyProvided</a>, <a href="class_b_w_a_p_i_1_1_player.html#a92cab4bf71b32d6751f8858f639fb358" class="m-doc">Player::<wbr />supplyTotal</a>, <a href="class_b_w_a_p_i_1_1_player.html#aeb56c1e4ad586d8589f8bf6a3d1a3518" class="m-doc">Player::<wbr />supplyUsed</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ad8f35c148022fd29e4d1f2138f5bd845"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad8f35c148022fd29e4d1f2138f5bd845" class="m-doc-self">tileHeight</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the height of this unit type, in tiles.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Height of this unit type, in tiles.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Used for determining the tile size of structures.</p>
+          </div></section>
+          <section class="m-doc-details" id="aab61922043ef5d0f4a52b0230770e86c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespace_b_w_a_p_i.html#acbc3b2215432badacfe58f9271c5de19" class="m-doc">TilePosition</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aab61922043ef5d0f4a52b0230770e86c" class="m-doc-self">tileSize</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the tile size of this unit type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>TilePosition containing the width (x) and height (y) of the unit type, in tiles.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Used for determining the tile size of structures.</p>
+          </div></section>
+          <section class="m-doc-details" id="a4a5d521f84c5571705d694eb427e80a3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4a5d521f84c5571705d694eb427e80a3" class="m-doc-self">tileWidth</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the width of this unit type, in tiles.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Width of this unit type, in tiles.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Used for determining the tile size of structures.</p>
+          </div></section>
+          <section class="m-doc-details" id="a458ad36f139cd9f0321bd88ad2922e0b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a458ad36f139cd9f0321bd88ad2922e0b" class="m-doc-self">topSpeed</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves this unit type&#x27;s top movement speed with no upgrades.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The approximate top speed, in pixels per frame, as a double. For liftable <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> structures, this function returns their movement speed while lifted.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>That some units have inconsistent movement and this value is sometimes an approximation.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aec3bead0ba60f3272a9bd9b8ab41988c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aec3bead0ba60f3272a9bd9b8ab41988c" class="m-doc-self">turnRadius</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves a unit&#x27;s turning rate.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The units are N/256ths of a circle per frame. So a unit with a turnRadius of 64 can turn a full circle in 4 frames.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This determines how far a unit can rotate in one frame.</p>
+          </div></section>
+          <section class="m-doc-details" id="a72c47d1c59807420370409e32ecb6b4e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a>&gt;&amp; BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a72c47d1c59807420370409e32ecb6b4e" class="m-doc-self">upgrades</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the set of upgrades that this unit can use to enhance its fighting ability.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Set of <a href="namespace_b_w_a_p_i_1_1_upgrade_types.html" class="m-doc">UpgradeTypes</a> containing upgrade types that will impact this unit type.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a66ae672405874323642586347a8918dd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer</a>&lt;<a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a>&gt;&amp; BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a66ae672405874323642586347a8918dd" class="m-doc-self">upgradesWhat</a>(</span><span class="m-doc-wrap">) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span></span>
+            </h3>
+            <p>Retrieves the set of upgrades that this unit type is capable of upgrading.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_type.html#a5e6f35c39f30a358cc00ce0cb0ba26b4" class="m-doc">UpgradeType::<wbr />set</a> containing the upgrade types that can be upgraded.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Some maps have special upgrade limitations. Use <a href="class_b_w_a_p_i_1_1_player.html#ac90cdeec849d289f461b45d384023553" class="m-doc">Player::<wbr />getMaxUpgradeLevel</a> to check if an upgrade is available.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#ac90cdeec849d289f461b45d384023553" class="m-doc">Player::<wbr />getMaxUpgradeLevel</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab343c5ac13bfa39d83e16241d1e755bc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="http://en.cppreference.com/w/cpp/utility/pair.html" class="m-doc-external">std::<wbr />pair</a>&lt;<a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>, <a href="classint.html" class="m-doc">int</a>&gt; BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab343c5ac13bfa39d83e16241d1e755bc" class="m-doc-self">whatBuilds</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Obtains the source unit type that is used to build or train this unit type, as well as the amount of them that are required.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="http://en.cppreference.com/w/cpp/utility/pair.html" class="m-doc-external">std::<wbr />pair</a> in which the first value is the <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> that builds this unit type, and the second value is the number of those types that are required (this value is 2 for <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a39e3c935ac3753b8c47811d9a9a8b421" class="m-doc">Archons</a>, and 1 for all other types).</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>pair(UnitTypes::None</td>
+                  <td>If this unit type cannot be made by the player.</td>
+                </tr>
+                <tr>
+                  <td>0)</td>
+                  <td>If this unit type cannot be made by the player.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a219c7b1c1e7b41b97df72d96c71075be"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />UnitType::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a219c7b1c1e7b41b97df72d96c71075be" class="m-doc-self">width</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>A macro for retrieving the width of the unit type, which is calculated using dimensionLeft + dimensionRight + 1.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Width of the unit, in pixels.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BWAPI The BroodWar API. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

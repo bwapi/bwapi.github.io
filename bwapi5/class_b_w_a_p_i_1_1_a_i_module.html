@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BWAPI::AIModule class | BWAPI The BroodWar API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="stylesheet" href="doxygen-mcss.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BWAPI <span class="m-thin">The BroodWar API</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_b_w_a_p_i.html">BWAPI</a>::<wbr/></span>AIModule <span class="m-thin">class</span>
+        </h1>
+        <p><a href="class_b_w_a_p_i_1_1_a_i_module.html" class="m-doc">AIModule</a> is a virtual class that is intended to be implemented or inherited by a custom AI class.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>The Broodwar interface is guaranteed to be initialized if any of these predefined interface functions are invoked by <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a>.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Using <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> in any thread other than the thread that invokes these functions can produce unexpected behaviour and possibly crash your bot. Multi-threaded AIs are possible so long as all <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> interaction is limited to the calling thread.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>Replays are considered games and call all of the same callbacks as a standard game would.</p></aside>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="a514f4dbd1419bb16e2c45bfa58914d8f">
+              <span class="m-doc-wrap-bumper"><a href="#a514f4dbd1419bb16e2c45bfa58914d8f" class="m-doc-self">AIModule</a>(</span><span class="m-doc-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ab7954d4a94a358482fa3a857d756797e" class="m-doc">onEnd</a>(</span><span class="m-doc-wrap">bool isWinner) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called once at the end of a game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a5fd6ec7878a556942a7666c5e68141ab" class="m-doc">onFrame</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called once for every execution of a logical frame in Broodwar.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ad89efab65f2a897f217555a9042f8a2d" class="m-doc">onNukeDetect</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a87d101b816a45827a552bb2c4f11fac3" class="m-doc">Nuke</a> has been launched somewhere on the map.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a06db1fcf1f3e218d6e9a9377392ba542" class="m-doc">onPlayerLeft</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> player) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> leaves the game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a728cd0f056cb912e6f1914fc2402e7a1" class="m-doc">onReceiveText</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> player,
+              <a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> text) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when the client receives a message from another <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a88ba9fbfd611ec84a5ac84c7d3a7f1d3" class="m-doc">onSaveGame</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> gameName) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when the state of the Broodwar game is saved to file.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a3f9c26e773de37f7224d2e41e32871e7" class="m-doc">onSendText</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> text) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when the user attempts to send a text message.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#aa1068e4f30fd50cb52a678bbf7a7c6f9" class="m-doc">onStart</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called only once at the beginning of a game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#aecf4f7bafd4b6a888e5d15391bec4a40" class="m-doc">onUnitComplete</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when the state of a unit changes from incomplete to complete.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a04a0aed9a49021541a670caace31c3a1" class="m-doc">onUnitCreate</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when any unit is created.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a622d4220064cc6901962c337af23a898" class="m-doc">onUnitDestroy</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a unit is removed from the game either through death or other means.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#afb4da5b482ad7ad9012f94692d43bb65" class="m-doc">onUnitDiscover</a>(</span><span class="m-doc-wrap">class <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> becomes accessible.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a65ff620334a74cb6c712b9b4a6679178" class="m-doc">onUnitEvade</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> becomes inaccessible.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a576763419111c0d22984eac87f2b26e8" class="m-doc">onUnitHide</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called just as a visible unit is becoming invisible.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a336c6e66f6d15fd0c544b3549417c1fe" class="m-doc">onUnitMorph</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a unit changes its <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#a482b078250e5e1834303504e460dfa36" class="m-doc">onUnitRenegade</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a unit changes ownership.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">void <a href="#ae955d304a266ecc3cad188ceefe02fec" class="m-doc">onUnitShow</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Called when a previously invisible unit becomes visible.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ab7954d4a94a358482fa3a857d756797e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab7954d4a94a358482fa3a857d756797e" class="m-doc-self">onEnd</a>(</span><span class="m-doc-wrap">bool isWinner) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called once at the end of a game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">isWinner</td>
+                  <td>A boolean value to determine if the current player has won the match. This value will be true if the current player has won, and false if either the player has lost or the game is actually a replay.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a5fd6ec7878a556942a7666c5e68141ab"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5fd6ec7878a556942a7666c5e68141ab" class="m-doc-self">onFrame</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called once for every execution of a logical frame in Broodwar.</p>
+<p>Users will generally put most of their code in this function.</p>
+          </div></section>
+          <section class="m-doc-details" id="ad89efab65f2a897f217555a9042f8a2d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad89efab65f2a897f217555a9042f8a2d" class="m-doc-self">onNukeDetect</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a87d101b816a45827a552bb2c4f11fac3" class="m-doc">Nuke</a> has been launched somewhere on the map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>A Position object containing the target location of the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a87d101b816a45827a552bb2c4f11fac3" class="m-doc">Nuke</a>. If the target location is not visible and <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a> is disabled, then target will be <a href="namespace_b_w_a_p_i_1_1_positions.html#ae2581b77eb8c4d58663ce871f555973b" class="m-doc">Positions::<wbr />Unknown</a>.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a06db1fcf1f3e218d6e9a9377392ba542"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a06db1fcf1f3e218d6e9a9377392ba542" class="m-doc-self">onPlayerLeft</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> player) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> leaves the game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">player</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> interface object representing the player that left the game.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>All of their units are automatically given to the neutral player with their colour and alliance parameters preserved.</p>
+          </div></section>
+          <section class="m-doc-details" id="a728cd0f056cb912e6f1914fc2402e7a1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a728cd0f056cb912e6f1914fc2402e7a1" class="m-doc-self">onReceiveText</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> player,
+              <a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> text) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when the client receives a message from another <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">player</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> interface object representing the owner of the text message.</td>
+                </tr>
+                <tr>
+                  <td>text</td>
+                  <td>The text message that the <code>player</code> sent.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>This function can be used to retrieve information from allies in team games, or just to respond to other players.</p><aside class="m-note m-info"><h4>Note</h4><p>Messages sent by the current player will never invoke this function.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a88ba9fbfd611ec84a5ac84c7d3a7f1d3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a88ba9fbfd611ec84a5ac84c7d3a7f1d3" class="m-doc-self">onSaveGame</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> gameName) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when the state of the Broodwar game is saved to file.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">gameName</td>
+                  <td>A String object containing the file name that the game was saved as.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a3f9c26e773de37f7224d2e41e32871e7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3f9c26e773de37f7224d2e41e32871e7" class="m-doc-self">onSendText</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> text) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when the user attempts to send a text message.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">text</td>
+                  <td>A string containing the exact text message that was sent by the user.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>This function can be used to make the bot execute text commands entered by the user for debugging purposes.</p><aside class="m-note m-info"><h4>Note</h4><p>If <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aea74a41a92f61bc4e7d1da3468de118d34" class="m-doc">Flag::<wbr />UserInput</a> is disabled, then this function is not called.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aa1068e4f30fd50cb52a678bbf7a7c6f9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa1068e4f30fd50cb52a678bbf7a7c6f9" class="m-doc-self">onStart</a>(</span><span class="m-doc-wrap">) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called only once at the beginning of a game.</p>
+<p>It is intended that the AI module do any data initialization in this function.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Using the Broodwar interface before this function is called can produce undefined behaviour and crash your bot. (During static initialization of a class for example)</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aecf4f7bafd4b6a888e5d15391bec4a40"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aecf4f7bafd4b6a888e5d15391bec4a40" class="m-doc-self">onUnitComplete</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when the state of a unit changes from incomplete to complete.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> object representing the <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> that has just finished training or constructing.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a04a0aed9a49021541a670caace31c3a1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a04a0aed9a49021541a670caace31c3a1" class="m-doc-self">onUnitCreate</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when any unit is created.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object representing the unit that has just been created.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Due to the internal workings of Broodwar, this function excludes Zerg morphing and the construction of structures over a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8285b43105508081a114c127ba2050a1" class="m-doc">Vespene Geyser</a> .</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_a_i_module.html#a336c6e66f6d15fd0c544b3549417c1fe" class="m-doc">onUnitMorph</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a622d4220064cc6901962c337af23a898"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a622d4220064cc6901962c337af23a898" class="m-doc-self">onUnitDestroy</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a unit is removed from the game either through death or other means.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> object representing the unit that has just been destroyed or otherwise completely removed from the game.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>When a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6e8858e6c1328ecf68f842ce4ebbeea1" class="m-doc">Drone</a> morphs into an <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a45b11b3a10f55c560a41155dbef9455c" class="m-doc">Extractor</a>, the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6e8858e6c1328ecf68f842ce4ebbeea1" class="m-doc">Drone</a> is removed from the game and the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8285b43105508081a114c127ba2050a1" class="m-doc">Vespene Geyser</a> morphs into an <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a45b11b3a10f55c560a41155dbef9455c" class="m-doc">Extractor</a>.</p><p>If a unit is visible and destroyed, then onUnitHide is called just before this.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="afb4da5b482ad7ad9012f94692d43bb65"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afb4da5b482ad7ad9012f94692d43bb65" class="m-doc-self">onUnitDiscover</a>(</span><span class="m-doc-wrap">class <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> becomes accessible.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object representing the unit that has just become accessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function INCLUDES the state of <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_a_i_module.html#ae955d304a266ecc3cad188ceefe02fec" class="m-doc">onUnitShow</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a65ff620334a74cb6c712b9b4a6679178"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a65ff620334a74cb6c712b9b4a6679178" class="m-doc-self">onUnitEvade</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> becomes inaccessible.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object representing the unit that has just become inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function INCLUDES the state of <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_a_i_module.html#a576763419111c0d22984eac87f2b26e8" class="m-doc">onUnitHide</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a576763419111c0d22984eac87f2b26e8"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a576763419111c0d22984eac87f2b26e8" class="m-doc-self">onUnitHide</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called just as a visible unit is becoming invisible.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object representing the unit that is about to go out of scope.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function EXCLUDES the state of <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_a_i_module.html#a65ff620334a74cb6c712b9b4a6679178" class="m-doc">onUnitEvade</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a336c6e66f6d15fd0c544b3549417c1fe"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a336c6e66f6d15fd0c544b3549417c1fe" class="m-doc-self">onUnitMorph</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a unit changes its <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> object representing the unit that had its <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> change.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>For example, when a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6e8858e6c1328ecf68f842ce4ebbeea1" class="m-doc">Drone</a> transforms into a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9dd8fad5da92ccf6a9488a6b984d6f4f" class="m-doc">Hatchery</a>, a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8bd8d8aa10c9bcdb9902b87c23dc5546" class="m-doc">Siege Tank</a> uses <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a9b60b854c474b28b6669438ab4ec79d9" class="m-doc">Siege Mode</a>, or a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8285b43105508081a114c127ba2050a1" class="m-doc">Vespene Geyser</a> receives a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9b26cb07722f510e26344c22b57f232b" class="m-doc">Refinery</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>This is NOT called if the unit type changes to or from <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a93d5273de0c6c1ec0d82755a4173f251" class="m-doc">UnitTypes::<wbr />Unknown</a>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a482b078250e5e1834303504e460dfa36"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a482b078250e5e1834303504e460dfa36" class="m-doc-self">onUnitRenegade</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a unit changes ownership.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object pertaining to the unit that has just changed ownership.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>This occurs when the <a href="namespace_b_w_a_p_i_1_1_races.html#a90cc40290b9721f7fe1414db4f76a336" class="m-doc">Protoss</a> ability <a href="namespace_b_w_a_p_i_1_1_tech_types.html#ae9068e33d155fd177d8c7abccf6f7665" class="m-doc">Mind Control</a> is used, or if a unit changes ownership in <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> .</p>
+          </div></section>
+          <section class="m-doc-details" id="ae955d304a266ecc3cad188ceefe02fec"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void BWAPI::<wbr />AIModule::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae955d304a266ecc3cad188ceefe02fec" class="m-doc-self">onUnitShow</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> unit) <span class="m-label m-warning">virtual</span></span></span>
+            </h3>
+            <p>Called when a previously invisible unit becomes visible.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object representing the unit that has just become visible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function EXCLUDES the state of <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_a_i_module.html#afb4da5b482ad7ad9012f94692d43bb65" class="m-doc">onUnitDiscover</a></p></aside>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BWAPI The BroodWar API. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

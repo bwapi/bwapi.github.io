@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BWAPI::Unitset class | BWAPI The BroodWar API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="stylesheet" href="doxygen-mcss.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BWAPI <span class="m-thin">The BroodWar API</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_b_w_a_p_i.html">BWAPI</a>::<wbr/></span>Unitset <span class="m-thin">class</span>
+        </h1>
+        <p><span></span></p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#unit-commands">Unit Commands</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <div class="m-doc-template">template&lt;class T, typename Compare = <a href="http://en.cppreference.com/w/cpp/utility/functional/less.html" class="m-doc-external">std::<wbr />less</a>&lt;&gt;&gt;</div>
+              class <a href="class_b_w_a_p_i_1_1_set_container.html" class="m-doc">SetContainer&lt;T, Compare&gt;</a>
+            </dt>
+            <dd>This container is used to wrap convenience functions for <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> and be used as a bridge with a built-in set type.</dd>
+          </dl>
+        </section>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              static const <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> <a href="#a118ad00e185899a87c41e5a9e1e364f7" class="m-doc">none</a>
+            </dt>
+            <dd>A blank <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> containing no elements.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae4527d831ccbb419cafedfd769299379" class="m-doc">getClosestUnit</a>(</span><span class="m-doc-wrap">const <a href="namespace_b_w_a_p_i.html#a9c4b9f78ba7d562b366d3c89ddfb79eb" class="m-doc">UnitFilter</a>&amp; pred = nullptr,
+              <a href="classint.html" class="m-doc">int</a> radius = 999999) const -&gt; <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a></span>
+            </dt>
+            <dd>Retrieves the closest unit to this one.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af1c904d7d0bcbd99aae9d86b05807acb" class="m-doc">getInterceptors</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a></span>
+            </dt>
+            <dd>Creates a single set containing all the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a43b8ae80514d87adbbeb45c1ffa74f38" class="m-doc">Interceptors</a> of all <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6e7975149f92d898a7dd08203aa4caae" class="m-doc">Carriers</a> in this set.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aaff71de381b850cd8a11e7bc281245dc" class="m-doc">getLarva</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a></span>
+            </dt>
+            <dd>Creates a single set containing all the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a30167e04ab1bf2e89cc91085f08f6f5c" class="m-doc">Larvae</a> of all <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9dd8fad5da92ccf6a9488a6b984d6f4f" class="m-doc">Hatcheries</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9d66308b56162e0e6642f28a6d455671" class="m-doc">Lairs</a>, and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a1b6e7927363253dc113c3e838de3ca68" class="m-doc">Hives</a> in this set.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0e6b9e1c8a739dc504830a1f35571dd1" class="m-doc">getLoadedUnits</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a></span>
+            </dt>
+            <dd>Creates a single set containing all units that are loaded into units of this set.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7e215e33e535ab544ae5498a58a23f16" class="m-doc">getPosition</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a></span>
+            </dt>
+            <dd>Calculates the average of all valid <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> positions in this set.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a05069276a30cbc22d00181aa76098b6c" class="m-doc">getUnitsInRadius</a>(</span><span class="m-doc-wrap"><a href="classint.html" class="m-doc">int</a> radius,
+              const <a href="namespace_b_w_a_p_i.html#a9c4b9f78ba7d562b366d3c89ddfb79eb" class="m-doc">UnitFilter</a>&amp; pred = nullptr) const -&gt; <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a></span>
+            </dt>
+            <dd>Retrieves the set of all units in a given radius of the current unit.</dd>
+            <dt id="a535a40fa5f75ad71834e334117fe3b57">
+              <div class="m-doc-template">template&lt;typename ... Ts&gt;</div>
+              <span class="m-doc-wrap-bumper">auto <a href="#a535a40fa5f75ad71834e334117fe3b57" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap">Ts &amp;&amp; ... vals) -&gt; <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a>&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="unit-commands">
+          <h2><a href="#unit-commands">Unit Commands</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3267d638aac58708c4d532b8a31a5685" class="m-doc">issueCommand</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_command.html" class="m-doc">UnitCommand</a> command) const -&gt; bool</span>
+            </dt>
+            <dd>This function issues a command to the unit(s), however it is used for interfacing only, and is recommended to use one of the more specific command functions when writing an AI.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a889da30a1c13874b167420c4f2d25e18" class="m-doc">attack</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to attack move to the specified position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a48e695770f7a2c06ddb31462cb41319d" class="m-doc">attack</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to attack move to the specified position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a331dc5fa57bf3e054893a5f0b9c8677e" class="m-doc">buildAddon</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> structure(s) to construct an add-on.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aad1ad80eda8f1adcdb934e31df22d996" class="m-doc">train</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to add a <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to its training queue, or morphs into the <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> if it is <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab84c041d1d4bcf58d46a8cebe4df7718" class="m-doc">morph</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to morph into a different <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab13237493781b4b43c0b8812e04729df" class="m-doc">setRallyPoint</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to set its rally position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5eb0848b5780e156e99933324cc1e7e4" class="m-doc">setRallyPoint</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to set its rally position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a63a0a21b1be60739ad4671701448100f" class="m-doc">move</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to move from its current position to the specified position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a123c995281a071addfddc0c34860318c" class="m-doc">patrol</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to patrol between its current position and the specified position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a613fc5b25a8a4bbdabce485068c9a159" class="m-doc">holdPosition</a>(</span><span class="m-doc-wrap">bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to hold its position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aeb9906c1456651b8128f68c6f45e34e8" class="m-doc">stop</a>(</span><span class="m-doc-wrap">bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to stop.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a41a1386b8b982225614c1cda7361544b" class="m-doc">follow</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to follow the specified unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8ea2c4808090c9536e727d24ad88698c" class="m-doc">gather</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to gather the specified unit (must be mineral or refinery type).</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a164e4ef05e5d7c937c7293decaa2e609" class="m-doc">returnCargo</a>(</span><span class="m-doc-wrap">bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to return its cargo to a nearby resource depot such as a Command Center.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4084ffcfa4b1bd4ea35aac8a11085be6" class="m-doc">repair</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to repair the specified unit.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a76a999b392659318b0a1cd85714dc9d5" class="m-doc">burrow</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to burrow.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab148ec609f2c614265e3fa9010b75c1f" class="m-doc">unburrow</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> a burrowed unit to unburrow.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a015673406cc364d1e56ef8bb422482b7" class="m-doc">cloak</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to cloak.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5eef06ea2229e720377f865f4327caaf" class="m-doc">decloak</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> a cloaked unit to decloak.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a68904446d82b34aff1636c12f06d4943" class="m-doc">siege</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to siege.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aef56badfacff22f26ca87a310b622bac" class="m-doc">unsiege</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to unsiege.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a59937dcdbb24b063fe4acdcb76fba484" class="m-doc">lift</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to lift.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6648e9059c41a8692536a027e38752ff" class="m-doc">load</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to load the target unit.</dd>
+            <dt id="a7cd3f83a86a5428f24f0ddd4f23044d2">
+              <span class="m-doc-wrap-bumper">auto <a href="#a7cd3f83a86a5428f24f0ddd4f23044d2" class="m-doc-self">unloadAll</a>(</span><span class="m-doc-wrap">bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa184116b3d4ee3fbb17f21159abd3a20">
+              <span class="m-doc-wrap-bumper">auto <a href="#aa184116b3d4ee3fbb17f21159abd3a20" class="m-doc-self">unloadAll</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3d2739b27ffa89d7679b5ea54196743e" class="m-doc">rightClick</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd>Performs a right click action as it would work in StarCraft.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af0a8897d5445decc33b6093becc37454" class="m-doc">rightClick</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const -&gt; bool</span>
+            </dt>
+            <dd>Performs a right click action as it would work in StarCraft.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a72c76dab189e649f17f1f5d9c8ed57b6" class="m-doc">haltConstruction</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6fe4be4de3c47cd4da33132df09dc2f0" class="m-doc">SCV</a> to stop constructing a structure.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aebb49908ee2ac8b2746ca3ae12537a66" class="m-doc">cancelConstruction</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund itself from begin constructed.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2e5fa186d7fe60dd54a27685e1ace6c4" class="m-doc">cancelAddon</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund an add-on that is being constructed.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a80e72753e08955c12578b3668164fa94" class="m-doc">cancelTrain</a>(</span><span class="m-doc-wrap"><a href="classint.html" class="m-doc">int</a> slot = -2) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to remove the specified unit from its training queue.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2376818bafc2260cb9a98689634fb134" class="m-doc">cancelMorph</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund a unit that is morphing.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a19bfe6ada2973010c29da65f60159753" class="m-doc">cancelResearch</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund a research that is in progress.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a43a26d257e15c5eea70de382b675af9d" class="m-doc">cancelUpgrade</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund an upgrade that is in progress.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0b3b27bd25fbe909cd91aa43cd937145" class="m-doc">useTech</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to use a technology.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa9b64ea58a7643c9d90e4d034ea656c9" class="m-doc">useTech</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech,
+              <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to use a technology.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad12726ea4bc87de1549c1024fc3bd711" class="m-doc">useTech</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech,
+              <a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target) const -&gt; bool</span>
+            </dt>
+            <dd><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to use a technology.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="ae4527d831ccbb419cafedfd769299379"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae4527d831ccbb419cafedfd769299379" class="m-doc-self">getClosestUnit</a>(</span><span class="m-doc-wrap">const <a href="namespace_b_w_a_p_i.html#a9c4b9f78ba7d562b366d3c89ddfb79eb" class="m-doc">UnitFilter</a>&amp; pred = nullptr,
+              <a href="classint.html" class="m-doc">int</a> radius = 999999) const</span></span>
+            </h3>
+            <p>Retrieves the closest unit to this one.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">pred</td>
+                  <td>(optional) A function predicate used to identify which conditions must be matched for a unit to be considered. If omitted, then the closest unit owned by any player will be returned.</td>
+                </tr>
+                <tr>
+                  <td>radius</td>
+                  <td>(optional) The maximum radius to check for the closest unit. For performance reasons, a developer can limit the radius that is checked. If omitted, then the entire map is checked.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#a05069276a30cbc22d00181aa76098b6c" class="m-doc">getUnitsInRadius</a>, <a href="class_b_w_a_p_i_1_1_game.html#a272aa621dc432e56127c9a6b5bc21f77" class="m-doc">Game::<wbr />getUnitsInRadius</a>, <a href="class_b_w_a_p_i_1_1_game.html#afff24c8eadb0982b00e64f33ed2dad4f" class="m-doc">Game::<wbr />getUnitsInRectangle</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af1c904d7d0bcbd99aae9d86b05807acb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af1c904d7d0bcbd99aae9d86b05807acb" class="m-doc-self">getInterceptors</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Creates a single set containing all the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a43b8ae80514d87adbbeb45c1ffa74f38" class="m-doc">Interceptors</a> of all <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6e7975149f92d898a7dd08203aa4caae" class="m-doc">Carriers</a> in this set.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The set of all <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a43b8ae80514d87adbbeb45c1ffa74f38" class="m-doc">Interceptors</a> .</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#a1bc3513532f2033704a796584e521870" class="m-doc">Unit::<wbr />getInterceptors</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aaff71de381b850cd8a11e7bc281245dc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aaff71de381b850cd8a11e7bc281245dc" class="m-doc-self">getLarva</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Creates a single set containing all the <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a30167e04ab1bf2e89cc91085f08f6f5c" class="m-doc">Larvae</a> of all <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9dd8fad5da92ccf6a9488a6b984d6f4f" class="m-doc">Hatcheries</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9d66308b56162e0e6642f28a6d455671" class="m-doc">Lairs</a>, and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a1b6e7927363253dc113c3e838de3ca68" class="m-doc">Hives</a> in this set.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The set of all <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a30167e04ab1bf2e89cc91085f08f6f5c" class="m-doc">Larvae</a> .</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#a0a900dadd0a146be90bf71c5ebade07a" class="m-doc">Unit::<wbr />getLarva</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0e6b9e1c8a739dc504830a1f35571dd1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0e6b9e1c8a739dc504830a1f35571dd1" class="m-doc-self">getLoadedUnits</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Creates a single set containing all units that are loaded into units of this set.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The set of all loaded units.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#ad5ec0b18bdd2ba5085847d1f8bffe149" class="m-doc">Unit::<wbr />getLoadedUnits</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a7e215e33e535ab544ae5498a58a23f16"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7e215e33e535ab544ae5498a58a23f16" class="m-doc-self">getPosition</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Calculates the average of all valid <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> positions in this set.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Average Position of all units in the set.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#a5c4cef70f072636c4f6fe7afb860d4c9" class="m-doc">Unit::<wbr />getPosition</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a05069276a30cbc22d00181aa76098b6c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a05069276a30cbc22d00181aa76098b6c" class="m-doc-self">getUnitsInRadius</a>(</span><span class="m-doc-wrap"><a href="classint.html" class="m-doc">int</a> radius,
+              const <a href="namespace_b_w_a_p_i.html#a9c4b9f78ba7d562b366d3c89ddfb79eb" class="m-doc">UnitFilter</a>&amp; pred = nullptr) const</span></span>
+            </h3>
+            <p>Retrieves the set of all units in a given radius of the current unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">radius</td>
+                  <td>The radius, in pixels, to search for units.</td>
+                </tr>
+                <tr>
+                  <td>pred</td>
+                  <td>(optional) The composed function predicate to include only specific (desired) units in the set. Defaults to nullptr, which means no filter.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>A <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> containing the set of units that match the given criteria.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Takes into account this unit&#x27;s dimensions. Can optionally specify a filter that is composed using <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> <a href="namespace_b_w_a_p_i_1_1_filter.html" class="m-doc">Filter</a> semantics to include only specific units (such as only ground units, etc.)</p><p>Example usage:</p><pre class="m-code"><span class="c1">// Get main building closest to start location.</span>
+<span class="n">BWAPI</span><span class="o">::</span><span class="n">Unit</span> <span class="n">pMain</span> <span class="o">=</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Broodwar</span><span class="o">-&gt;</span><span class="n">getClosestUnit</span><span class="p">(</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Broodwar</span><span class="o">-&gt;</span><span class="n">self</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getStartLocation</span><span class="p">(),</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsResourceDepot</span> <span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span> <span class="n">pMain</span> <span class="p">)</span> <span class="c1">// check if pMain is valid</span>
+<span class="p">{</span>
+  <span class="c1">// Get sets of resources and workers</span>
+  <span class="n">BWAPI</span><span class="o">::</span><span class="n">Unitset</span> <span class="n">myResources</span> <span class="o">=</span> <span class="n">pMain</span><span class="o">-&gt;</span><span class="n">getUnitsInRadius</span><span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsMineralField</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">myResources</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span> <span class="p">)</span> <span class="c1">// check if we have resources nearby</span>
+  <span class="p">{</span>
+    <span class="n">BWAPI</span><span class="o">::</span><span class="n">Unitset</span> <span class="n">myWorkers</span> <span class="o">=</span> <span class="n">pMain</span><span class="o">-&gt;</span><span class="n">getUnitsInRadius</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsWorker</span> <span class="o">&amp;&amp;</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsIdle</span> <span class="o">&amp;&amp;</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Filter</span><span class="o">::</span><span class="n">IsOwned</span> <span class="p">);</span>
+    <span class="k">while</span> <span class="p">(</span> <span class="o">!</span><span class="n">myWorkers</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span> <span class="p">)</span> <span class="c1">// make sure we command all nearby idle workers, if any</span>
+    <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span> <span class="k">auto</span> <span class="n">u</span> <span class="o">=</span> <span class="n">myResources</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">u</span> <span class="o">!=</span> <span class="n">myResources</span><span class="p">.</span><span class="n">end</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">myWorkers</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span> <span class="o">++</span><span class="n">u</span> <span class="p">)</span>
+      <span class="p">{</span>
+        <span class="n">myWorkers</span><span class="p">.</span><span class="n">back</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">u</span><span class="p">);</span>
+        <span class="n">myWorkers</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="c1">// myResources not empty</span>
+<span class="p">}</span> <span class="c1">// pMain != nullptr</span></pre><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#ae4527d831ccbb419cafedfd769299379" class="m-doc">getClosestUnit</a>, getUnitsInWeaponRange, <a href="class_b_w_a_p_i_1_1_game.html#a272aa621dc432e56127c9a6b5bc21f77" class="m-doc">Game::<wbr />getUnitsInRadius</a>, <a href="class_b_w_a_p_i_1_1_game.html#afff24c8eadb0982b00e64f33ed2dad4f" class="m-doc">Game::<wbr />getUnitsInRectangle</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a3267d638aac58708c4d532b8a31a5685"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3267d638aac58708c4d532b8a31a5685" class="m-doc-self">issueCommand</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_command.html" class="m-doc">UnitCommand</a> command) const</span></span>
+            </h3>
+            <p>This function issues a command to the unit(s), however it is used for interfacing only, and is recommended to use one of the more specific command functions when writing an AI.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">command</td>
+                  <td>A <a href="class_b_w_a_p_i_1_1_unit_command.html" class="m-doc">UnitCommand</a> containing command parameters such as the type, position, target, etc.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="namespace_b_w_a_p_i_1_1_unit_command_types.html" class="m-doc">UnitCommandTypes</a>, <a href="class_b_w_a_p_i_1_1_game.html#a9aff1871cc88e8550972efd9880809cf" class="m-doc">Game::<wbr />getLastError</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a5e91f64bbee21374af36ff6fc585a79a" class="m-doc">Unit::<wbr />canIssueCommand</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a889da30a1c13874b167420c4f2d25e18"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a889da30a1c13874b167420c4f2d25e18" class="m-doc-self">attack</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to attack move to the specified position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>A Position to designate as the target. The unit will perform an Attack Move command.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p><p>A <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a0a51cf7a9891ca207ae88d2f9ce7e8e9" class="m-doc">Medic</a> will use Heal Move instead of attack.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_game.html#a9aff1871cc88e8550972efd9880809cf" class="m-doc">Game::<wbr />getLastError</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a4c2206e0cff3ede6d70f406286a82d27" class="m-doc">Unit::<wbr />canAttack</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a48e695770f7a2c06ddb31462cb41319d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a48e695770f7a2c06ddb31462cb41319d" class="m-doc-self">attack</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to attack move to the specified position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>A Position to designate as the target. The unit will perform an Attack Move command.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p><p>A <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a0a51cf7a9891ca207ae88d2f9ce7e8e9" class="m-doc">Medic</a> will use Heal Move instead of attack.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_game.html#a9aff1871cc88e8550972efd9880809cf" class="m-doc">Game::<wbr />getLastError</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a4c2206e0cff3ede6d70f406286a82d27" class="m-doc">Unit::<wbr />canAttack</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a331dc5fa57bf3e054893a5f0b9c8677e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a331dc5fa57bf3e054893a5f0b9c8677e" class="m-doc-self">buildAddon</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> structure(s) to construct an add-on.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>The add-on <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to construct.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p><p>You must have sufficient resources and meet the necessary requirements in order to build a structure.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_game.html#a9aff1871cc88e8550972efd9880809cf" class="m-doc">Game::<wbr />getLastError</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a442e0e28d5ee043723d106a1ef38e645" class="m-doc">Unit::<wbr />build</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a1af5e7ae804e2109fb363eecfa17efb4" class="m-doc">Unit::<wbr />cancelAddon</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a6d4e2f9b7a672cc43e45885899d6a1f8" class="m-doc">Unit::<wbr />canBuildAddon</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aad1ad80eda8f1adcdb934e31df22d996"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aad1ad80eda8f1adcdb934e31df22d996" class="m-doc-self">train</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to add a <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to its training queue, or morphs into the <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> if it is <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to train.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p><p>You must have sufficient resources, supply, and meet the necessary requirements in order to train a unit.</p><p>This command is also used for training <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a43b8ae80514d87adbbeb45c1ffa74f38" class="m-doc">Interceptors</a> and <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a93345eb30fa6979a0b4f0d370d383659" class="m-doc">Scarabs</a>.</p><p>If you call this using a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9dd8fad5da92ccf6a9488a6b984d6f4f" class="m-doc">Hatchery</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9d66308b56162e0e6642f28a6d455671" class="m-doc">Lair</a>, or <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a1b6e7927363253dc113c3e838de3ca68" class="m-doc">Hive</a>, then it will automatically pass the command to one of its <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a30167e04ab1bf2e89cc91085f08f6f5c" class="m-doc">Larvae</a>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_game.html#a9aff1871cc88e8550972efd9880809cf" class="m-doc">Game::<wbr />getLastError</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a442e0e28d5ee043723d106a1ef38e645" class="m-doc">Unit::<wbr />build</a>, <a href="class_b_w_a_p_i_1_1_unit.html#acc34f0f3d4425484ebe603d485d85549" class="m-doc">Unit::<wbr />morph</a>, <a href="class_b_w_a_p_i_1_1_unit.html#abd7c3cfd8acfd2fdbdda6dd3c77d1e9e" class="m-doc">Unit::<wbr />cancelTrain</a>, <a href="class_b_w_a_p_i_1_1_unit.html#ad4f2cfe148bdcddf625a814e87b20539" class="m-doc">Unit::<wbr />isTraining</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a7bb2de60b854dfd5a82375f77767c1ee" class="m-doc">Unit::<wbr />canTrain</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab84c041d1d4bcf58d46a8cebe4df7718"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab84c041d1d4bcf58d46a8cebe4df7718" class="m-doc-self">morph</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> type) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit(s) to morph into a different <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to morph into.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_game.html#a9aff1871cc88e8550972efd9880809cf" class="m-doc">Game::<wbr />getLastError</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a442e0e28d5ee043723d106a1ef38e645" class="m-doc">Unit::<wbr />build</a>, <a href="class_b_w_a_p_i_1_1_unit.html#acc34f0f3d4425484ebe603d485d85549" class="m-doc">Unit::<wbr />morph</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a48eea5ced0114c8862b2f641f9919f6c" class="m-doc">Unit::<wbr />canMorph</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab13237493781b4b43c0b8812e04729df"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab13237493781b4b43c0b8812e04729df" class="m-doc-self">setRallyPoint</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to set its rally position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target position that this structure will rally completed units to.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>getRallyPosition, getRallyUnit, canSetRallyPoint, canSetRallyPosition, canSetRallyUnit</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a5eb0848b5780e156e99933324cc1e7e4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5eb0848b5780e156e99933324cc1e7e4" class="m-doc-self">setRallyPoint</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to set its rally position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target position that this structure will rally completed units to.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>getRallyPosition, getRallyUnit, canSetRallyPoint, canSetRallyPosition, canSetRallyUnit</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a63a0a21b1be60739ad4671701448100f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a63a0a21b1be60739ad4671701448100f" class="m-doc-self">move</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to move from its current position to the specified position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target position to move to.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isMoving, canMove</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a123c995281a071addfddc0c34860318c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a123c995281a071addfddc0c34860318c" class="m-doc-self">patrol</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to patrol between its current position and the specified position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The position to patrol to.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>While patrolling, units will attack and chase enemy units that they encounter, and then return to its patrol route. <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a0a51cf7a9891ca207ae88d2f9ce7e8e9" class="m-doc">Medics</a> will automatically heal units and then return to their patrol route.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isPatrolling, canPatrol</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a613fc5b25a8a4bbdabce485068c9a159"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a613fc5b25a8a4bbdabce485068c9a159" class="m-doc-self">holdPosition</a>(</span><span class="m-doc-wrap">bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to hold its position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>canHoldPosition, isHoldingPosition</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aeb9906c1456651b8128f68c6f45e34e8"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aeb9906c1456651b8128f68c6f45e34e8" class="m-doc-self">stop</a>(</span><span class="m-doc-wrap">bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to stop.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>canStop, isIdle</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a41a1386b8b982225614c1cda7361544b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a41a1386b8b982225614c1cda7361544b" class="m-doc-self">follow</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to follow the specified unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target unit to start following.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Units that are following other units will not perform any other actions such as attacking. They will ignore attackers.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isFollowing, canFollow, getOrderTarget</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a8ea2c4808090c9536e727d24ad88698c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8ea2c4808090c9536e727d24ad88698c" class="m-doc-self">gather</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to gather the specified unit (must be mineral or refinery type).</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target unit to gather from.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isGatheringGas, isGatheringMinerals, canGather</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a164e4ef05e5d7c937c7293decaa2e609"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a164e4ef05e5d7c937c7293decaa2e609" class="m-doc-self">returnCargo</a>(</span><span class="m-doc-wrap">bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to return its cargo to a nearby resource depot such as a Command Center.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Only workers that are carrying minerals or gas can be ordered to return cargo.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isCarryingGas, isCarryingMinerals, canReturnCargo</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4084ffcfa4b1bd4ea35aac8a11085be6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4084ffcfa4b1bd4ea35aac8a11085be6" class="m-doc-self">repair</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to repair the specified unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The unit to repair.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Only Terran SCVs can be ordered to repair, and the target must be a mechanical <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> unit or building.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isRepairing, canRepair</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a76a999b392659318b0a1cd85714dc9d5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a76a999b392659318b0a1cd85714dc9d5" class="m-doc-self">burrow</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to burrow.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Either the unit must be a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a204826d78bd887abb1889788cb064c9a" class="m-doc">Lurker</a>, or the unit must be a <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> ground unit that is capable of <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a803597e2d289ec0c22fdcb8a25395554" class="m-doc">Burrowing</a>, and <a href="namespace_b_w_a_p_i_1_1_tech_types.html#a803597e2d289ec0c22fdcb8a25395554" class="m-doc">Burrow</a> technology must be researched.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#ab148ec609f2c614265e3fa9010b75c1f" class="m-doc">unburrow</a>, isBurrowed, canBurrow</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab148ec609f2c614265e3fa9010b75c1f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab148ec609f2c614265e3fa9010b75c1f" class="m-doc-self">unburrow</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> a burrowed unit to unburrow.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#a76a999b392659318b0a1cd85714dc9d5" class="m-doc">burrow</a>, isBurrowed, canUnburrow</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a015673406cc364d1e56ef8bb422482b7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a015673406cc364d1e56ef8bb422482b7" class="m-doc-self">cloak</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to cloak.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#a5eef06ea2229e720377f865f4327caaf" class="m-doc">decloak</a>, isCloaked, canCloak</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a5eef06ea2229e720377f865f4327caaf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5eef06ea2229e720377f865f4327caaf" class="m-doc-self">decloak</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> a cloaked unit to decloak.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#a015673406cc364d1e56ef8bb422482b7" class="m-doc">cloak</a>, isCloaked, canDecloak</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a68904446d82b34aff1636c12f06d4943"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a68904446d82b34aff1636c12f06d4943" class="m-doc-self">siege</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to siege.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Only works for <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8bd8d8aa10c9bcdb9902b87c23dc5546" class="m-doc">Siege Tanks</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#aef56badfacff22f26ca87a310b622bac" class="m-doc">unsiege</a>, isSieged, canSiege</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aef56badfacff22f26ca87a310b622bac"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aef56badfacff22f26ca87a310b622bac" class="m-doc-self">unsiege</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to unsiege.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Only works for sieged <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a8bd8d8aa10c9bcdb9902b87c23dc5546" class="m-doc">Siege Tanks</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#a68904446d82b34aff1636c12f06d4943" class="m-doc">siege</a>, isSieged, canUnsiege</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a59937dcdbb24b063fe4acdcb76fba484"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a59937dcdbb24b063fe4acdcb76fba484" class="m-doc-self">lift</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to lift.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Only works for liftable <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> structures.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>land, isLifted, canLift</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a6648e9059c41a8692536a027e38752ff"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6648e9059c41a8692536a027e38752ff" class="m-doc-self">load</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to load the target unit.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target unit to load into this Transport(<a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6c2b65d4081b19cbf61a951e777a56ea" class="m-doc">Dropship</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae80227145f5fb84ad745f6059a5c1d61" class="m-doc">Shuttle</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a5f48be167258e9c00eabebb7c6c8c85b" class="m-doc">Overlord</a> ) or <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a90f861a36087ce17173d3f242718bd39" class="m-doc">Bunker</a>.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Only works if this unit is a Transport(<a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6c2b65d4081b19cbf61a951e777a56ea" class="m-doc">Dropship</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ae80227145f5fb84ad745f6059a5c1d61" class="m-doc">Shuttle</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a5f48be167258e9c00eabebb7c6c8c85b" class="m-doc">Overlord</a> ) or <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a90f861a36087ce17173d3f242718bd39" class="m-doc">Bunker</a> type.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>unload, <a href="class_b_w_a_p_i_1_1_unitset.html#a7cd3f83a86a5428f24f0ddd4f23044d2" class="m-doc">unloadAll</a>, <a href="class_b_w_a_p_i_1_1_unitset.html#a0e6b9e1c8a739dc504830a1f35571dd1" class="m-doc">getLoadedUnits</a>, isLoaded</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a3d2739b27ffa89d7679b5ea54196743e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3d2739b27ffa89d7679b5ea54196743e" class="m-doc-self">rightClick</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p>Performs a right click action as it would work in StarCraft.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target position to right click.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>canRightClick, canRightClickPosition, canRightClickUnit</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af0a8897d5445decc33b6093becc37454"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af0a8897d5445decc33b6093becc37454" class="m-doc-self">rightClick</a>(</span><span class="m-doc-wrap"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target,
+              bool shiftQueueCommand = false) const</span></span>
+            </h3>
+            <p>Performs a right click action as it would work in StarCraft.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">target</td>
+                  <td>The target position to right click.</td>
+                </tr>
+                <tr>
+                  <td>shiftQueueCommand</td>
+                  <td>(optional) If this value is true, then the order will be queued instead of immediately executed. If this value is omitted, then the order will be executed immediately by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>canRightClick, canRightClickPosition, canRightClickUnit</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a72c76dab189e649f17f1f5d9c8ed57b6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a72c76dab189e649f17f1f5d9c8ed57b6" class="m-doc-self">haltConstruction</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6fe4be4de3c47cd4da33132df09dc2f0" class="m-doc">SCV</a> to stop constructing a structure.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This leaves the structure in an incomplete state until it is either cancelled, razed, or completed by another <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6fe4be4de3c47cd4da33132df09dc2f0" class="m-doc">SCV</a>.</p><aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isConstructing, canHaltConstruction</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aebb49908ee2ac8b2746ca3ae12537a66"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aebb49908ee2ac8b2746ca3ae12537a66" class="m-doc-self">cancelConstruction</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund itself from begin constructed.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>isBeingConstructed, build, canCancelConstruction</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a2e5fa186d7fe60dd54a27685e1ace6c4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2e5fa186d7fe60dd54a27685e1ace6c4" class="m-doc-self">cancelAddon</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund an add-on that is being constructed.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>canCancelAddon, <a href="class_b_w_a_p_i_1_1_unitset.html#a331dc5fa57bf3e054893a5f0b9c8677e" class="m-doc">buildAddon</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a80e72753e08955c12578b3668164fa94"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a80e72753e08955c12578b3668164fa94" class="m-doc-self">cancelTrain</a>(</span><span class="m-doc-wrap"><a href="classint.html" class="m-doc">int</a> slot = -2) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to remove the specified unit from its training queue.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">slot</td>
+                  <td>(optional) Identifies the slot that will be cancelled. If the specified value is at least 0, then the unit in the corresponding slot from the list provided by getTrainingQueue will be cancelled. If the value is either omitted or -2, then the last slot is cancelled.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>The value of slot is passed directly to Broodwar. Other negative values have no effect.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#aad1ad80eda8f1adcdb934e31df22d996" class="m-doc">train</a>, <a href="class_b_w_a_p_i_1_1_unitset.html#a80e72753e08955c12578b3668164fa94" class="m-doc">cancelTrain</a>, isTraining, getTrainingQueue, canCancelTrain, canCancelTrainSlot</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a2376818bafc2260cb9a98689634fb134"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2376818bafc2260cb9a98689634fb134" class="m-doc-self">cancelMorph</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund a unit that is morphing.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unitset.html#ab84c041d1d4bcf58d46a8cebe4df7718" class="m-doc">morph</a>, isMorphing, canCancelMorph</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a19bfe6ada2973010c29da65f60159753"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a19bfe6ada2973010c29da65f60159753" class="m-doc-self">cancelResearch</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund a research that is in progress.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>research, isResearching, getTech, canCancelResearch</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a43a26d257e15c5eea70de382b675af9d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a43a26d257e15c5eea70de382b675af9d" class="m-doc-self">cancelUpgrade</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> this unit to cancel and refund an upgrade that is in progress.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>There is a small chance for a command to fail after it has been passed to Broodwar.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>upgrade, isUpgrading, getUpgrade, canCancelUpgrade</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0b3b27bd25fbe909cd91aa43cd937145"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0b3b27bd25fbe909cd91aa43cd937145" class="m-doc-self">useTech</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to use a technology.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">tech</td>
+                  <td>The technology type to use.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p>canUseTechWithOrWithoutTarget, canUseTech, canUseTechWithoutTarget, canUseTechUnit, canUseTechPosition, <a href="namespace_b_w_a_p_i_1_1_tech_types.html" class="m-doc">TechTypes</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aa9b64ea58a7643c9d90e4d034ea656c9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa9b64ea58a7643c9d90e4d034ea656c9" class="m-doc-self">useTech</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech,
+              <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> target) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to use a technology.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">tech</td>
+                  <td>The technology type to use.</td>
+                </tr>
+                <tr>
+                  <td>target</td>
+                  <td>If specified, indicates the target location to use the tech on.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p>canUseTechWithOrWithoutTarget, canUseTech, canUseTechWithoutTarget, canUseTechUnit, canUseTechPosition, <a href="namespace_b_w_a_p_i_1_1_tech_types.html" class="m-doc">TechTypes</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ad12726ea4bc87de1549c1024fc3bd711"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Unitset::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad12726ea4bc87de1549c1024fc3bd711" class="m-doc-self">useTech</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech,
+              <a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> target) const</span></span>
+            </h3>
+            <p><a href="namespace_b_w_a_p_i_1_1_orders.html" class="m-doc">Orders</a> the unit to use a technology.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">tech</td>
+                  <td>The technology type to use.</td>
+                </tr>
+                <tr>
+                  <td>target</td>
+                  <td>If specified, indicates the target location to use the tech on.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the command was passed to Broodwar, and false if <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> determined that the command would fail.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p>canUseTechWithOrWithoutTarget, canUseTech, canUseTechWithoutTarget, canUseTechUnit, canUseTechPosition, <a href="namespace_b_w_a_p_i_1_1_tech_types.html" class="m-doc">TechTypes</a></p></aside>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a118ad00e185899a87c41e5a9e1e364f7"><div>
+            <h3>
+              static const <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> BWAPI::<wbr />Unitset::<wbr /><a href="#a118ad00e185899a87c41e5a9e1e364f7" class="m-doc-self">none</a>
+            </h3>
+            <p>A blank <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> containing no elements.</p>
+<p>This is typically used as a return value for <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> interface functions that have encountered an error.</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BWAPI The BroodWar API. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

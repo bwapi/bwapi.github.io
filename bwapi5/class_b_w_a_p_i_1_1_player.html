@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BWAPI::Player class | BWAPI The BroodWar API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="stylesheet" href="doxygen-mcss.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BWAPI <span class="m-thin">The BroodWar API</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_b_w_a_p_i.html">BWAPI</a>::<wbr/></span>Player <span class="m-thin">class</span>
+        </h1>
+        <p>The <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> represents a unique controller in the game.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>Each player in a match will have his or her own player instance. There is also a neutral player which owns all the neutral units (such as mineral patches and vespene geysers).</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_playerset.html" class="m-doc">Playerset</a>, <a href="class_b_w_a_p_i_1_1_player_type.html" class="m-doc">PlayerType</a>, <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a></p></aside>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <div class="m-doc-template">template&lt;typename Interface, typename Data&gt;</div>
+              struct <a href="struct_b_w_a_p_i_1_1_interface_data_wrapper.html" class="m-doc">InterfaceDataWrapper&lt;Player, PlayerData&gt;</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a72b91bd00c68badaced7bad333f6431d" class="m-doc">allUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the total number of units that the player has.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a34a1138abafc09e4729e0cf88c9c8068" class="m-doc">armor</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Calculates the armor that a given unit type will have, including upgrades.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad2dfa4aee92e12f2cc3ba9098c1f7d21" class="m-doc">completedUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the number of completed units that the player has.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a29215af7c18897b47d22779cc0e36893" class="m-doc">damage</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> wpn) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Calculates the damage that a given weapon type can deal, including upgrades.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a41782d5e518a7ee39b70e15f3e9ec539" class="m-doc">deadUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the number units that have died for this player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0573e11e3a7e02c6481914e0443b2a59" class="m-doc">gas</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the current amount of vespene gas that this player has.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a0180a3dfd2de3718bfe191eb8a719ba4" class="m-doc">gatheredGas</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of vespene gas that this player has gathered since the beginning of the game, including the amount that the player starts the game with (if any).</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad65d1a6a4c064341244bb2e9fa0dd526" class="m-doc">gatheredMinerals</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of minerals/ore that this player has gathered since the beginning of the game, including the amount that the player starts the game with (if any).</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a918c3a136f2e7b758fd798183b7df251" class="m-doc">getBuildingScore</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the total building score, as seen in the end-game score screen.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5c0fa944ead2de3ff5a464eaf7cb2847" class="m-doc">getColor</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_color.html" class="m-doc">BWAPI::<wbr />Color</a></span>
+            </dt>
+            <dd>Retrieves the color value of the current player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7efa816f1b1a53e5a5e5efec59c45f57" class="m-doc">getCustomScore</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the player&#x27;s custom score.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a89fb6cf8d86f0e41f91b2a11b310c8f2" class="m-doc">getForce</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_force.html" class="m-doc">Force</a></span>
+            </dt>
+            <dd>Retrieves the player&#x27;s force.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a1473dc14dd54109e87173f8a6612b7e4" class="m-doc">getKillScore</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the total kill score, as seen in the end-game score screen.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac90cdeec849d289f461b45d384023553" class="m-doc">getMaxUpgradeLevel</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> upgrade) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the maximum upgrades available specific to the player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a20083baa6a9c95f8eb735abdcc7acc87" class="m-doc">getName</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="http://en.cppreference.com/w/cpp/string/basic_string_view.html" class="m-doc-external">std::<wbr />string_view</a></span>
+            </dt>
+            <dd>Retrieves the name of the player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4b5e8b0e0dd878e2eaa30d2c4ef35185" class="m-doc">getRace</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Retrieves the race of the player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a213eb5d718657f5d48137a21b679ff3d" class="m-doc">getRazingScore</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the total razing score, as seen in the end-game score screen.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a83c7234bf3433ca15381e1b1f0797cfe" class="m-doc">getStartLocation</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespace_b_w_a_p_i.html#acbc3b2215432badacfe58f9271c5de19" class="m-doc">TilePosition</a></span>
+            </dt>
+            <dd>Retrieve&#x27;s the player&#x27;s starting location.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ab78308ccc57b2955a8dd8618121d7845" class="m-doc">getTextColor</a>(</span><span class="m-doc-wrap">) const -&gt; char</span>
+            </dt>
+            <dd>Retrieves the control code character that changes the color of text messages to represent this player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a393c1a99bc1af768c638202293d8f794" class="m-doc">getType</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_player_type.html" class="m-doc">PlayerType</a> <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Retrieves the player&#x27;s controller type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2aa8799440d1b8b42b8b65e677cd06c7" class="m-doc">getUnits</a>(</span><span class="m-doc-wrap">) const -&gt; const <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a>&amp;</span>
+            </dt>
+            <dd>Retrieves the set of all units that the player owns.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4a1673779408838d0ae43d853a7276e5" class="m-doc">getUnitScore</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the total unit score, as seen in the end-game score screen.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9119f33989b92800914e2462765ac648" class="m-doc">getUpgradeLevel</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> upgrade) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the current upgrade level that the player has attained for a given upgrade type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac3988717f181c9d3a9de68cb3a8a7a89" class="m-doc">hasResearched</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the player has already researched a given technology.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4eb97ba35a45cd773b3f6d3350159cd1" class="m-doc">hasUnitTypeRequirement</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit,
+              <a href="classint.html" class="m-doc">int</a> amount = 1) const -&gt; bool <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span>
+            </dt>
+            <dd>Verifies that this player satisfies a unit type requirement.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ae001ff26a461a239e21396c8c8705824" class="m-doc">incompleteUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the number of incomplete units that the player has.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac8f659bde712bec80006daf7ed9b0979" class="m-doc">isAlly</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> otherPlayer) const -&gt; bool <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Checks if this player is allied to the specified player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a738158c2949f5cb709fa2dfbaf3767af" class="m-doc">isDefeated</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the player has been defeated.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a08a18d61e56fa2df441328d630d52d55" class="m-doc">isEnemy</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> otherPlayer) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this player is unallied to the specified player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a7b13cc4146f5a9f5b3b20ad44b9e93f4" class="m-doc">isNeutral</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if this player is the neutral player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a6496eb8cd0e503fafc800321f07a4aab" class="m-doc">isObserver</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the player is an observer player, typically in a <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> observer game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad35b7d88259429bd72a25ef87f4d6ff9" class="m-doc">isResearchAvailable</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if a technology can be researched by the player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad98b1ff4efe00a42470f1db4f9868fba" class="m-doc">isResearching</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the player is researching a given technology type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5ab2acb63b4abb102a6acf2c39a24c36" class="m-doc">isUnitAvailable</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if a unit type can be created by the player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af768a80d2c26fb6fef45d761b86a30ea" class="m-doc">isUpgrading</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> upgrade) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the player is upgrading a given upgrade type.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a54d139de801a8a323ca034444cee588b" class="m-doc">isVictorious</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the player has achieved victory.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ade459ab4beff20fa573e9f9559ff985f" class="m-doc">killedUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the number units that the player has killed.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a3df9166ecf3632472c8ce606e9c81da2" class="m-doc">leftGame</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the player has left the game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a61987f53967fde63e640f0e46963dd5c" class="m-doc">maxEnergy</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the maximum amount of energy that a unit type will have, taking the player&#x27;s energy upgrades into consideration.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#afa3ca2494a2a9ca665a1d69dc1a1efeb" class="m-doc">minerals</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the current amount of minerals/ore that this player has.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4375e733901586d2336550fb338f1abc" class="m-doc">refundedGas</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of vespene gas that this player has gained from refunding (cancelling) units and structures.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ac6acc70145318e13746314ef5239eb5f" class="m-doc">refundedMinerals</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of minerals/ore that this player has gained from refunding (cancelling) units and structures.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad5adf40fc90cd558654f7e50ec2249fd" class="m-doc">repairedGas</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of vespene gas that this player has spent on repairing units since the beginning of the game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#abf8bcd655394e5b8b993e171f8c5f435" class="m-doc">repairedMinerals</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of minerals/ore that this player has spent on repairing units since the beginning of the game.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af7d1f95c03b25097f09a33b4d0f03685" class="m-doc">sightRange</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the sight range of a unit type, taking the player&#x27;s sight range upgrades into consideration.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9813e824937db0176ac763b83c6b7b59" class="m-doc">spentGas</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of vespene gas that this player has spent, excluding repairs.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a852dca7fa77e7fc7cfc4670a9cffbd7b" class="m-doc">spentMinerals</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the cumulative amount of minerals/ore that this player has spent, excluding repairs.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a92cab4bf71b32d6751f8858f639fb358" class="m-doc">supplyTotal</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> race = <a href="namespace_b_w_a_p_i_1_1_races.html#ab6642f18c4a1bf2f081a991d15b01424" class="m-doc">Races::<wbr />None</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the total amount of supply the player has available for unit control.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aeb56c1e4ad586d8589f8bf6a3d1a3518" class="m-doc">supplyUsed</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> race = <a href="namespace_b_w_a_p_i_1_1_races.html#ab6642f18c4a1bf2f081a991d15b01424" class="m-doc">Races::<wbr />None</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the current amount of supply that the player is using for unit control.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a914f3d6a135f008e1f23908aa28a2c1b" class="m-doc">topSpeed</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const -&gt; double</span>
+            </dt>
+            <dd>Retrieves the top speed of a unit type, taking the player&#x27;s speed upgrades into consideration.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aaf29c0753d9d276ae9bdca99919d054b" class="m-doc">visibleUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the total number of strictly visible units that the player has, even if information on the player is unrestricted.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a91534f7aab2c0fc70cbbe53adc0fd1d1" class="m-doc">weaponDamageCooldown</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the ground weapon cooldown of a unit type, taking the player&#x27;s attack speed upgrades into consideration.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a28e4d2f057ff6c9660196f66ea13761f" class="m-doc">weaponMaxRange</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> weapon) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the maximum weapon range of a weapon type, taking the player&#x27;s weapon upgrades into consideration.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a72b91bd00c68badaced7bad333f6431d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a72b91bd00c68badaced7bad333f6431d" class="m-doc-self">allUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const</span></span>
+            </h3>
+            <p>Retrieves the total number of units that the player has.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>(optional) The unit type to query. <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> macros are accepted. If this parameter is omitted, then it will use <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a> by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The total number of units of the given type that the player owns.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>If the information about the player is limited, then this function will only return the number of visible units.</p><aside class="m-note m-info"><h4>Note</h4><p>While in-progress <a href="namespace_b_w_a_p_i_1_1_races.html#a90cc40290b9721f7fe1414db4f76a336" class="m-doc">Protoss</a> and <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> units will be counted, in-progress <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> units (i.e. inside of an egg) do not.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#aaf29c0753d9d276ae9bdca99919d054b" class="m-doc">visibleUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#ad2dfa4aee92e12f2cc3ba9098c1f7d21" class="m-doc">completedUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#ae001ff26a461a239e21396c8c8705824" class="m-doc">incompleteUnitCount</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a34a1138abafc09e4729e0cf88c9c8068"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a34a1138abafc09e4729e0cf88c9c8068" class="m-doc-self">armor</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const</span></span>
+            </h3>
+            <p>Calculates the armor that a given unit type will have, including upgrades.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The unit type to calculate armor for, using the current player&#x27;s upgrades.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The amount of armor that the unit will have with the player&#x27;s upgrades.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ad2dfa4aee92e12f2cc3ba9098c1f7d21"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad2dfa4aee92e12f2cc3ba9098c1f7d21" class="m-doc-self">completedUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const</span></span>
+            </h3>
+            <p>Retrieves the number of completed units that the player has.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>(optional) The unit type to query. <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> macros are accepted. If this parameter is omitted, then it will use <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a> by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The number of completed units of the given type that the player owns.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>If the information about the player is limited, then this function will only return the number of visible completed units.</p><p>Example usage:</p><pre class="m-code"><span class="kt">bool</span> <span class="nf">obtainNextUpgrade</span><span class="p">(</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">UpgradeType</span> <span class="n">upgType</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">BWAPI</span><span class="o">::</span><span class="n">Player</span> <span class="n">self</span> <span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">self</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="n">maxLvl</span>      <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getMaxUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">currentLvl</span>  <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">self</span><span class="p">.</span><span class="n">isUpgrading</span><span class="p">(</span><span class="n">upgType</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">currentLvl</span> <span class="o">&lt;</span> <span class="n">maxLvl</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatsRequired</span><span class="p">(</span><span class="n">currentLvl</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatUpgrades</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">getUnits</span><span class="p">().</span><span class="n">upgrade</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span></pre><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#a72b91bd00c68badaced7bad333f6431d" class="m-doc">allUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#aaf29c0753d9d276ae9bdca99919d054b" class="m-doc">visibleUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#ae001ff26a461a239e21396c8c8705824" class="m-doc">incompleteUnitCount</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a29215af7c18897b47d22779cc0e36893"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a29215af7c18897b47d22779cc0e36893" class="m-doc-self">damage</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> wpn) const</span></span>
+            </h3>
+            <p>Calculates the damage that a given weapon type can deal, including upgrades.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">wpn</td>
+                  <td>The weapon type to calculate for.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The amount of damage that the weapon deals with this player&#x27;s upgrades.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a41782d5e518a7ee39b70e15f3e9ec539"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a41782d5e518a7ee39b70e15f3e9ec539" class="m-doc-self">deadUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const</span></span>
+            </h3>
+            <p>Retrieves the number units that have died for this player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>(optional) The unit type to query. <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> macros are accepted. If this parameter is omitted, then it will use <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a> by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The total number of units that have died throughout the game.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a0573e11e3a7e02c6481914e0443b2a59"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0573e11e3a7e02c6481914e0443b2a59" class="m-doc-self">gas</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the current amount of vespene gas that this player has.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Amount of gas that the player currently has for spending.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0180a3dfd2de3718bfe191eb8a719ba4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0180a3dfd2de3718bfe191eb8a719ba4" class="m-doc-self">gatheredGas</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of vespene gas that this player has gathered since the beginning of the game, including the amount that the player starts the game with (if any).</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of gas that the player has gathered.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ad65d1a6a4c064341244bb2e9fa0dd526"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad65d1a6a4c064341244bb2e9fa0dd526" class="m-doc-self">gatheredMinerals</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of minerals/ore that this player has gathered since the beginning of the game, including the amount that the player starts the game with (if any).</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of minerals that the player has gathered.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a918c3a136f2e7b758fd798183b7df251"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a918c3a136f2e7b758fd798183b7df251" class="m-doc-self">getBuildingScore</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the total building score, as seen in the end-game score screen.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The player&#x27;s building score.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a5c0fa944ead2de3ff5a464eaf7cb2847"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_color.html" class="m-doc">BWAPI::<wbr />Color</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5c0fa944ead2de3ff5a464eaf7cb2847" class="m-doc-self">getColor</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the color value of the current player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td><a href="class_b_w_a_p_i_1_1_color.html" class="m-doc">Color</a> object that represents the color of the current player.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a7efa816f1b1a53e5a5e5efec59c45f57"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7efa816f1b1a53e5a5e5efec59c45f57" class="m-doc-self">getCustomScore</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the player&#x27;s custom score.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The player&#x27;s custom score.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This score is used in <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game types.</p>
+          </div></section>
+          <section class="m-doc-details" id="a89fb6cf8d86f0e41f91b2a11b310c8f2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_force.html" class="m-doc">Force</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a89fb6cf8d86f0e41f91b2a11b310c8f2" class="m-doc-self">getForce</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the player&#x27;s force.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The <a href="class_b_w_a_p_i_1_1_force.html" class="m-doc">Force</a> object that the player is part of.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>A force is the team that the player is playing on.</p>
+          </div></section>
+          <section class="m-doc-details" id="a1473dc14dd54109e87173f8a6612b7e4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1473dc14dd54109e87173f8a6612b7e4" class="m-doc-self">getKillScore</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the total kill score, as seen in the end-game score screen.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The player&#x27;s kill score.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ac90cdeec849d289f461b45d384023553"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac90cdeec849d289f461b45d384023553" class="m-doc-self">getMaxUpgradeLevel</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> upgrade) const</span></span>
+            </h3>
+            <p>Retrieves the maximum upgrades available specific to the player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">upgrade</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> to retrieve the maximum upgrade level for.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Maximum upgrade level of the given <code>upgrade</code> type.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This value is only different from <a href="class_b_w_a_p_i_1_1_upgrade_type.html#a10254ab2559ae4f6492c9bd0a4d289b6" class="m-doc">UpgradeType::<wbr />maxRepeats</a> in <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> games.</p><p>Example usage:</p><pre class="m-code"><span class="kt">bool</span> <span class="nf">obtainNextUpgrade</span><span class="p">(</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">UpgradeType</span> <span class="n">upgType</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">BWAPI</span><span class="o">::</span><span class="n">Player</span> <span class="n">self</span> <span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">self</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="n">maxLvl</span>      <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getMaxUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">currentLvl</span>  <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">self</span><span class="p">.</span><span class="n">isUpgrading</span><span class="p">(</span><span class="n">upgType</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">currentLvl</span> <span class="o">&lt;</span> <span class="n">maxLvl</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatsRequired</span><span class="p">(</span><span class="n">currentLvl</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatUpgrades</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">getUnits</span><span class="p">().</span><span class="n">upgrade</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="a20083baa6a9c95f8eb735abdcc7acc87"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="http://en.cppreference.com/w/cpp/string/basic_string_view.html" class="m-doc-external">std::<wbr />string_view</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a20083baa6a9c95f8eb735abdcc7acc87" class="m-doc-self">getName</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the name of the player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A <a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> object containing the player&#x27;s name.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Don&#x27;t forget to use <a href="http://en.cppreference.com/w/cpp/string/basic_string/c_str.html" class="m-doc-external">std::<wbr />string::<wbr />c_str()</a> when passing this parameter to <a href="class_b_w_a_p_i_1_1_game.html#a1c962ad68ec74004b20e76d7cd3723f7" class="m-doc">Game::<wbr />sendText</a> and other variadic functions.</p></aside><p>Example usage:</p><pre class="m-code"><span class="n">BWAPI</span><span class="o">::</span><span class="n">Player</span> <span class="n">myEnemy</span> <span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="n">enemy</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span> <span class="n">myEnemy</span> <span class="p">)</span>   <span class="c1">// Make sure there is an enemy!</span>
+  <span class="n">game</span><span class="p">.</span><span class="n">sendText</span><span class="p">(</span><span class="s">&quot;Prepare to be crushed, %s!&quot;</span><span class="p">,</span> <span class="n">myEnemy</span><span class="p">.</span><span class="n">getName</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="a4b5e8b0e0dd878e2eaa30d2c4ef35185"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4b5e8b0e0dd878e2eaa30d2c4ef35185" class="m-doc-self">getRace</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Retrieves the race of the player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The <a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> that the player is using.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>None</td>
+                  <td>If the player chose <a href="namespace_b_w_a_p_i_1_1_races.html#ae2f12e7be1c3ae10e40b489406f41fbe" class="m-doc">Races::<wbr />Random</a> when the game started and they have not been seen.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>This allows you to change strategies against different races, or generalize some commands for yourself.</p><p>Example usage:</p><pre class="m-code"><span class="k">if</span> <span class="p">(</span> <span class="n">game</span><span class="p">.</span><span class="n">enemy</span><span class="p">()</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">BWAPI</span><span class="o">::</span><span class="n">Race</span> <span class="n">enemyRace</span> <span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="n">enemy</span><span class="p">().</span><span class="n">getRace</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">enemyRace</span> <span class="o">==</span> <span class="n">Races</span><span class="o">::</span><span class="n">Zerg</span> <span class="p">)</span>
+    <span class="n">game</span><span class="p">.</span><span class="n">sendText</span><span class="p">(</span><span class="s">&quot;Do you really think you can beat me with a zergling rush?&quot;</span><span class="p">);</span>
+<span class="p">}</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="a213eb5d718657f5d48137a21b679ff3d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a213eb5d718657f5d48137a21b679ff3d" class="m-doc-self">getRazingScore</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the total razing score, as seen in the end-game score screen.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The player&#x27;s razing score.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a83c7234bf3433ca15381e1b1f0797cfe"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespace_b_w_a_p_i.html#acbc3b2215432badacfe58f9271c5de19" class="m-doc">TilePosition</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a83c7234bf3433ca15381e1b1f0797cfe" class="m-doc-self">getStartLocation</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieve&#x27;s the player&#x27;s starting location.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A TilePosition containing the position of the start location.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>None</td>
+                  <td>if the player does not have a start location.</td>
+                </tr>
+                <tr>
+                  <td>None</td>
+                  <td>if an error occured while trying to retrieve the start location.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_game.html#a2fdad948f3fd4977f4931b1327dcf82c" class="m-doc">Game::<wbr />getStartLocations</a>, <a href="class_b_w_a_p_i_1_1_game.html#a9aff1871cc88e8550972efd9880809cf" class="m-doc">Game::<wbr />getLastError</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab78308ccc57b2955a8dd8618121d7845"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">char BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab78308ccc57b2955a8dd8618121d7845" class="m-doc-self">getTextColor</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the control code character that changes the color of text messages to represent this player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>character code to use for text in Broodwar.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a393c1a99bc1af768c638202293d8f794"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_player_type.html" class="m-doc">PlayerType</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a393c1a99bc1af768c638202293d8f794" class="m-doc-self">getType</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Retrieves the player&#x27;s controller type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The <a href="class_b_w_a_p_i_1_1_player_type.html" class="m-doc">PlayerType</a> that identifies who is controlling a player.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This allows you to distinguish betweeen computer and human players.</p><aside class="m-note m-info"><h4>Note</h4><p>Other players using <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> will be treated as a human player and return <a href="namespace_b_w_a_p_i_1_1_player_types.html#ad4f399b2e6cb2ff1bcf6bf0fe12eea86" class="m-doc">PlayerTypes::<wbr />Player</a>.</p></aside><pre class="m-code"><span class="k">if</span> <span class="p">(</span> <span class="n">game</span><span class="p">.</span><span class="n">enemy</span><span class="p">()</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">game</span><span class="p">.</span><span class="n">enemy</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getType</span><span class="p">()</span> <span class="o">==</span> <span class="n">PlayerTypes</span><span class="o">::</span><span class="n">Computer</span> <span class="p">)</span>
+    <span class="n">game</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Looks like something I can abuse!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="a2aa8799440d1b8b42b8b65e677cd06c7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">const <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a>&amp; BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2aa8799440d1b8b42b8b65e677cd06c7" class="m-doc-self">getUnits</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the set of all units that the player owns.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Reference to a <a href="class_b_w_a_p_i_1_1_unitset.html" class="m-doc">Unitset</a> containing the units.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This also includes incomplete units.</p><aside class="m-note m-info"><h4>Note</h4><p>This does not include units that are loaded into transports, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a90f861a36087ce17173d3f242718bd39" class="m-doc">Bunkers</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a9b26cb07722f510e26344c22b57f232b" class="m-doc">Refineries</a>, <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ac790ed39018dbacfb254b004ff28c928" class="m-doc">Assimilators</a>, or <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a45b11b3a10f55c560a41155dbef9455c" class="m-doc">Extractors</a>.</p></aside><p>Example usage:</p><pre class="m-code"><span class="k">for</span> <span class="p">(</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Unit</span> <span class="nl">u</span> <span class="p">:</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">().</span><span class="n">getUnits</span><span class="p">()</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// Do something with your units</span>
+<span class="p">}</span></pre>
+          </div></section>
+          <section class="m-doc-details" id="a4a1673779408838d0ae43d853a7276e5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4a1673779408838d0ae43d853a7276e5" class="m-doc-self">getUnitScore</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the total unit score, as seen in the end-game score screen.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The player&#x27;s unit score.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a9119f33989b92800914e2462765ac648"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9119f33989b92800914e2462765ac648" class="m-doc-self">getUpgradeLevel</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> upgrade) const</span></span>
+            </h3>
+            <p>Retrieves the current upgrade level that the player has attained for a given upgrade type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">upgrade</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> to query.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The number of levels that the <code>upgrade</code> has been upgraded for this player.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Example usage:</p><pre class="m-code"><span class="kt">bool</span> <span class="nf">obtainNextUpgrade</span><span class="p">(</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">UpgradeType</span> <span class="n">upgType</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">BWAPI</span><span class="o">::</span><span class="n">Player</span> <span class="n">self</span> <span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">self</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="n">maxLvl</span>      <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getMaxUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">currentLvl</span>  <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">self</span><span class="p">.</span><span class="n">isUpgrading</span><span class="p">(</span><span class="n">upgType</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">currentLvl</span> <span class="o">&lt;</span> <span class="n">maxLvl</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatsRequired</span><span class="p">(</span><span class="n">currentLvl</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatUpgrades</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">getUnits</span><span class="p">().</span><span class="n">upgrade</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span></pre><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#a590e9da94263d720ce1df2adc4e98450" class="m-doc">Unit::<wbr />upgrade</a>, <a href="class_b_w_a_p_i_1_1_player.html#ac90cdeec849d289f461b45d384023553" class="m-doc">getMaxUpgradeLevel</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac3988717f181c9d3a9de68cb3a8a7a89"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac3988717f181c9d3a9de68cb3a8a7a89" class="m-doc-self">hasResearched</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const</span></span>
+            </h3>
+            <p>Checks if the player has already researched a given technology.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">tech</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> to query.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the player has obtained the given <code>tech</code>, or false if they have not</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#ad98b1ff4efe00a42470f1db4f9868fba" class="m-doc">isResearching</a>, <a href="class_b_w_a_p_i_1_1_unit.html#af043584f656d145aa5a673a37d1ca6cd" class="m-doc">Unit::<wbr />research</a>, <a href="class_b_w_a_p_i_1_1_player.html#ad35b7d88259429bd72a25ef87f4d6ff9" class="m-doc">isResearchAvailable</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4eb97ba35a45cd773b3f6d3350159cd1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4eb97ba35a45cd773b3f6d3350159cd1" class="m-doc-self">hasUnitTypeRequirement</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit,
+              <a href="classint.html" class="m-doc">int</a> amount = 1) const <a href="https://github.com/bwapi/bwapi/wiki/Changes#bwapi-4\22" class="m-label m-success m-flat">since v4.1.2</a></span></span>
+            </h3>
+            <p>Verifies that this player satisfies a unit type requirement.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to check.</td>
+                </tr>
+                <tr>
+                  <td>amount</td>
+                  <td>(optional) The amount of units that are required.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the unit type requirements are met, and false otherwise.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This verifies complex type requirements involving morphable <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> structures. For example, if something requires a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a6da0d8c81764b3205d7e04763805aa1e" class="m-doc">Spire</a>, but the player has (or is in the process of morphing) a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#ac3b9dbf9c99382dbfc1967d100367f46" class="m-doc">Greater Spire</a>, this function will identify the requirement. It is simply a convenience function that performs all of the requirement checks.</p>
+          </div></section>
+          <section class="m-doc-details" id="ae001ff26a461a239e21396c8c8705824"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae001ff26a461a239e21396c8c8705824" class="m-doc-self">incompleteUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const</span></span>
+            </h3>
+            <p>Retrieves the number of incomplete units that the player has.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>(optional) The unit type to query. <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> macros are accepted. If this parameter is omitted, then it will use <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a> by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The number of incomplete units of the given type that the player owns.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>If the information about the player is limited, then this function will only return the number of visible incomplete units.</p><aside class="m-note m-info"><h4>Note</h4><p>This function is a macro for <a href="class_b_w_a_p_i_1_1_player.html#a72b91bd00c68badaced7bad333f6431d" class="m-doc">allUnitCount()</a> - <a href="class_b_w_a_p_i_1_1_player.html#ad2dfa4aee92e12f2cc3ba9098c1f7d21" class="m-doc">completedUnitCount()</a>.</p><p>Incomplete <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> units inside of eggs are not counted.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#a72b91bd00c68badaced7bad333f6431d" class="m-doc">allUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#aaf29c0753d9d276ae9bdca99919d054b" class="m-doc">visibleUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#ad2dfa4aee92e12f2cc3ba9098c1f7d21" class="m-doc">completedUnitCount</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac8f659bde712bec80006daf7ed9b0979"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac8f659bde712bec80006daf7ed9b0979" class="m-doc-self">isAlly</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> otherPlayer) const <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Checks if this player is allied to the specified player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">otherPlayer</td>
+                  <td>The player to check alliance with.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Returns</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>true</td>
+                  <td>if this player is allied with <code>player</code> .</td>
+                </tr>
+                <tr>
+                  <td>false</td>
+                  <td>if this player is not allied with <code>player</code>.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will also return false if this player is neutral or an observer, or if <code>otherPlayer</code> is neutral or an observer.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#a08a18d61e56fa2df441328d630d52d55" class="m-doc">isEnemy</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a738158c2949f5cb709fa2dfbaf3767af"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a738158c2949f5cb709fa2dfbaf3767af" class="m-doc-self">isDefeated</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if the player has been defeated.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the player is defeated, otherwise false</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a08a18d61e56fa2df441328d630d52d55"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a08a18d61e56fa2df441328d630d52d55" class="m-doc-self">isEnemy</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> otherPlayer) const</span></span>
+            </h3>
+            <p>Checks if this player is unallied to the specified player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">otherPlayer</td>
+                  <td>The player to check alliance with.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Returns</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>true</td>
+                  <td>if this player is allied with <code>player</code> .</td>
+                </tr>
+                <tr>
+                  <td>false</td>
+                  <td>if this player is not allied with <code>player</code> .</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will also return false if this player is neutral or an observer, or if <code>otherPlayer</code> is neutral or an observer.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#ac8f659bde712bec80006daf7ed9b0979" class="m-doc">isAlly</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a7b13cc4146f5a9f5b3b20ad44b9e93f4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a7b13cc4146f5a9f5b3b20ad44b9e93f4" class="m-doc-self">isNeutral</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if this player is the neutral player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Returns</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">true</td>
+                  <td>if this player is the neutral player.</td>
+                </tr>
+                <tr>
+                  <td>false</td>
+                  <td>if this player is any other player.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a6496eb8cd0e503fafc800321f07a4aab"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6496eb8cd0e503fafc800321f07a4aab" class="m-doc-self">isObserver</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if the player is an observer player, typically in a <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> observer game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the player is observing, or false if the player is capable of playing in the game.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>An observer player does not participate in the game.</p>
+          </div></section>
+          <section class="m-doc-details" id="ad35b7d88259429bd72a25ef87f4d6ff9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad35b7d88259429bd72a25ef87f4d6ff9" class="m-doc-self">isResearchAvailable</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const</span></span>
+            </h3>
+            <p>Checks if a technology can be researched by the player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">tech</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> to query.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the <code>tech</code> type is available to the player for research.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Certain technologies may be disabled in <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game types.</p>
+          </div></section>
+          <section class="m-doc-details" id="ad98b1ff4efe00a42470f1db4f9868fba"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad98b1ff4efe00a42470f1db4f9868fba" class="m-doc-self">isResearching</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> tech) const</span></span>
+            </h3>
+            <p>Checks if the player is researching a given technology type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">tech</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_tech_type.html" class="m-doc">TechType</a> to query.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the player is currently researching the <code>tech</code>, or false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#af043584f656d145aa5a673a37d1ca6cd" class="m-doc">Unit::<wbr />research</a>, <a href="class_b_w_a_p_i_1_1_player.html#ac3988717f181c9d3a9de68cb3a8a7a89" class="m-doc">hasResearched</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a5ab2acb63b4abb102a6acf2c39a24c36"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5ab2acb63b4abb102a6acf2c39a24c36" class="m-doc-self">isUnitAvailable</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const</span></span>
+            </h3>
+            <p>Checks if a unit type can be created by the player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to check.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the <code>unit</code> type is available to the player.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Certain unit types may be disabled in <a href="namespace_b_w_a_p_i_1_1_game_types.html#ad49903c20bd1fa93215f8f0f23d07008" class="m-doc">Use Map Settings</a> game types.</p>
+          </div></section>
+          <section class="m-doc-details" id="af768a80d2c26fb6fef45d761b86a30ea"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af768a80d2c26fb6fef45d761b86a30ea" class="m-doc-self">isUpgrading</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_upgrade_type.html" class="m-doc">UpgradeType</a> upgrade) const</span></span>
+            </h3>
+            <p>Checks if the player is upgrading a given upgrade type.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">upgrade</td>
+                  <td>The upgrade type to query.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>true if the player is currently upgrading the given <code>upgrade</code>, false otherwise</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Example usage:</p><pre class="m-code"><span class="kt">bool</span> <span class="nf">obtainNextUpgrade</span><span class="p">(</span><span class="n">BWAPI</span><span class="o">::</span><span class="n">UpgradeType</span> <span class="n">upgType</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">BWAPI</span><span class="o">::</span><span class="n">Player</span> <span class="n">self</span> <span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">self</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="n">maxLvl</span>      <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getMaxUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">currentLvl</span>  <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">getUpgradeLevel</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="n">self</span><span class="p">.</span><span class="n">isUpgrading</span><span class="p">(</span><span class="n">upgType</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">currentLvl</span> <span class="o">&lt;</span> <span class="n">maxLvl</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatsRequired</span><span class="p">(</span><span class="n">currentLvl</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">completedUnitCount</span><span class="p">(</span><span class="n">upgType</span><span class="p">.</span><span class="n">whatUpgrades</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">getUnits</span><span class="p">().</span><span class="n">upgrade</span><span class="p">(</span><span class="n">upgType</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span></pre><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_unit.html#a590e9da94263d720ce1df2adc4e98450" class="m-doc">Unit::<wbr />upgrade</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a54d139de801a8a323ca034444cee588b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a54d139de801a8a323ca034444cee588b" class="m-doc-self">isVictorious</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if the player has achieved victory.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if this player has achieved victory, otherwise false</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ade459ab4beff20fa573e9f9559ff985f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ade459ab4beff20fa573e9f9559ff985f" class="m-doc-self">killedUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const</span></span>
+            </h3>
+            <p>Retrieves the number units that the player has killed.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>(optional) The unit type to query. <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> macros are accepted. If this parameter is omitted, then it will use <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a> by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The total number of units that the player has killed throughout the game.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a3df9166ecf3632472c8ce606e9c81da2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3df9166ecf3632472c8ce606e9c81da2" class="m-doc-self">leftGame</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if the player has left the game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>true if the player has left the game, otherwise false</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a61987f53967fde63e640f0e46963dd5c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a61987f53967fde63e640f0e46963dd5c" class="m-doc-self">maxEnergy</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const</span></span>
+            </h3>
+            <p>Retrieves the maximum amount of energy that a unit type will have, taking the player&#x27;s energy upgrades into consideration.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to retrieve the maximum energy for.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Maximum amount of energy that the given unit type can have.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="afa3ca2494a2a9ca665a1d69dc1a1efeb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afa3ca2494a2a9ca665a1d69dc1a1efeb" class="m-doc-self">minerals</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the current amount of minerals/ore that this player has.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Amount of minerals that the player currently has for spending.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4375e733901586d2336550fb338f1abc"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4375e733901586d2336550fb338f1abc" class="m-doc-self">refundedGas</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of vespene gas that this player has gained from refunding (cancelling) units and structures.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of gas that the player has received from refunds.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac6acc70145318e13746314ef5239eb5f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac6acc70145318e13746314ef5239eb5f" class="m-doc-self">refundedMinerals</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of minerals/ore that this player has gained from refunding (cancelling) units and structures.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of minerals that the player has received from refunds.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ad5adf40fc90cd558654f7e50ec2249fd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad5adf40fc90cd558654f7e50ec2249fd" class="m-doc-self">repairedGas</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of vespene gas that this player has spent on repairing units since the beginning of the game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of gas that the player has spent repairing.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This function only applies to <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> players.</p><aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="abf8bcd655394e5b8b993e171f8c5f435"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abf8bcd655394e5b8b993e171f8c5f435" class="m-doc-self">repairedMinerals</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of minerals/ore that this player has spent on repairing units since the beginning of the game.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of minerals that the player has spent repairing.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>This function only applies to <a href="namespace_b_w_a_p_i_1_1_races.html#adc2bcfd85cc7f9881bf6e4ab1588a145" class="m-doc">Terran</a> players.</p><aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af7d1f95c03b25097f09a33b4d0f03685"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af7d1f95c03b25097f09a33b4d0f03685" class="m-doc-self">sightRange</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const</span></span>
+            </h3>
+            <p>Retrieves the sight range of a unit type, taking the player&#x27;s sight range upgrades into consideration.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to retrieve the sight range for.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Sight range of the provided unit type for this player.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a9813e824937db0176ac763b83c6b7b59"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9813e824937db0176ac763b83c6b7b59" class="m-doc-self">spentGas</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of vespene gas that this player has spent, excluding repairs.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of gas that the player has spent.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a852dca7fa77e7fc7cfc4670a9cffbd7b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a852dca7fa77e7fc7cfc4670a9cffbd7b" class="m-doc-self">spentMinerals</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the cumulative amount of minerals/ore that this player has spent, excluding repairs.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Cumulative amount of minerals that the player has spent.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function will return 0 if the player is inaccessible.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a92cab4bf71b32d6751f8858f639fb358"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a92cab4bf71b32d6751f8858f639fb358" class="m-doc-self">supplyTotal</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> race = <a href="namespace_b_w_a_p_i_1_1_races.html#ab6642f18c4a1bf2f081a991d15b01424" class="m-doc">Races::<wbr />None</a>) const</span></span>
+            </h3>
+            <p>Retrieves the total amount of supply the player has available for unit control.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">race</td>
+                  <td>(optional) The race to query the total supply for. If this is omitted, then the player&#x27;s current race will be used.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The total supply available for this player and the given <code>race</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>In Starcraft programming, the managed supply values are double than what they appear in the game. The reason for this is because <a href="namespace_b_w_a_p_i_1_1_unit_types.html#aecc7b465c9d18ee06c189bd43267e86a" class="m-doc">Zerglings</a> use 0.5 visible supply.</p><p>In Starcraft, the supply for each race is separate. Having a <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a346680c9f2748c5612e5241251cd9d2d" class="m-doc">Pylon</a> and an <a href="namespace_b_w_a_p_i_1_1_unit_types.html#a5f48be167258e9c00eabebb7c6c8c85b" class="m-doc">Overlord</a> will not give you 32 supply. It will instead give you 16 <a href="namespace_b_w_a_p_i_1_1_races.html#a90cc40290b9721f7fe1414db4f76a336" class="m-doc">Protoss</a> supply and 16 <a href="namespace_b_w_a_p_i_1_1_races.html#ad34de4d5faa0d1703a174337fc36ab97" class="m-doc">Zerg</a> supply.</p></aside><p>Example usage:</p><pre class="m-code"><span class="k">if</span> <span class="p">(</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">().</span><span class="n">supplyUsed</span><span class="p">()</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">&gt;=</span> <span class="n">game</span><span class="p">.</span><span class="n">self</span><span class="p">().</span><span class="n">supplyTotal</span><span class="p">()</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// Construct pylons, supply depots, or overlords</span>
+<span class="p">}</span></pre><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#aeb56c1e4ad586d8589f8bf6a3d1a3518" class="m-doc">supplyUsed</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aeb56c1e4ad586d8589f8bf6a3d1a3518"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aeb56c1e4ad586d8589f8bf6a3d1a3518" class="m-doc-self">supplyUsed</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_race.html" class="m-doc">Race</a> race = <a href="namespace_b_w_a_p_i_1_1_races.html#ab6642f18c4a1bf2f081a991d15b01424" class="m-doc">Races::<wbr />None</a>) const</span></span>
+            </h3>
+            <p>Retrieves the current amount of supply that the player is using for unit control.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">race</td>
+                  <td>(optional) The race to query the used supply for. If this is omitted, then the player&#x27;s current race will be used.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The supply that is in use for this player and the given <code>race</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#a92cab4bf71b32d6751f8858f639fb358" class="m-doc">supplyTotal</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a914f3d6a135f008e1f23908aa28a2c1b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a914f3d6a135f008e1f23908aa28a2c1b" class="m-doc-self">topSpeed</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const</span></span>
+            </h3>
+            <p>Retrieves the top speed of a unit type, taking the player&#x27;s speed upgrades into consideration.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to retrieve the top speed for.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Top speed of the provided unit type for this player.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="aaf29c0753d9d276ae9bdca99919d054b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aaf29c0753d9d276ae9bdca99919d054b" class="m-doc-self">visibleUnitCount</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit = <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a>) const</span></span>
+            </h3>
+            <p>Retrieves the total number of strictly visible units that the player has, even if information on the player is unrestricted.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>(optional) The unit type to query. <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> macros are accepted. If this parameter is omitted, then it will use <a href="namespace_b_w_a_p_i_1_1_unit_types.html#af1e978d4afe2fc234c5db9f4207b7869" class="m-doc">UnitTypes::<wbr />AllUnits</a> by default.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>The total number of units of the given type that the player owns, and is visible to the <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> player.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_player.html#a72b91bd00c68badaced7bad333f6431d" class="m-doc">allUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#ad2dfa4aee92e12f2cc3ba9098c1f7d21" class="m-doc">completedUnitCount</a>, <a href="class_b_w_a_p_i_1_1_player.html#ae001ff26a461a239e21396c8c8705824" class="m-doc">incompleteUnitCount</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a91534f7aab2c0fc70cbbe53adc0fd1d1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a91534f7aab2c0fc70cbbe53adc0fd1d1" class="m-doc-self">weaponDamageCooldown</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> unit) const</span></span>
+            </h3>
+            <p>Retrieves the ground weapon cooldown of a unit type, taking the player&#x27;s attack speed upgrades into consideration.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">unit</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_unit_type.html" class="m-doc">UnitType</a> to retrieve the ground damage cooldown for.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Ground weapon cooldown of the provided unit type for this player.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a28e4d2f057ff6c9660196f66ea13761f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Player::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a28e4d2f057ff6c9660196f66ea13761f" class="m-doc-self">weaponMaxRange</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> weapon) const</span></span>
+            </h3>
+            <p>Retrieves the maximum weapon range of a weapon type, taking the player&#x27;s weapon upgrades into consideration.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">weapon</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_weapon_type.html" class="m-doc">WeaponType</a> to retrieve the maximum range for.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Maximum range of the given weapon type for units owned by this player.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BWAPI The BroodWar API. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

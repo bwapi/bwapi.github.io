@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BWAPI::Bullet class | BWAPI The BroodWar API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="stylesheet" href="doxygen-mcss.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BWAPI <span class="m-thin">The BroodWar API</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespace_b_w_a_p_i.html">BWAPI</a>::<wbr/></span>Bullet <span class="m-thin">class</span>
+        </h1>
+        <p>An interface object representing a bullet or missile spawned from an attack.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>The <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> interface allows you to detect bullets, missiles, and other types of non-melee attacks or special abilities that would normally be visible through human eyes (A lurker spike or a Queen&#x27;s flying parasite), allowing quicker reaction to unavoidable consequences.</p><p>For example, ordering medics to restore units that are about to receive a lockdown to compensate for latency and minimize its effects. You can&#x27;t know entirely which unit will be receiving a lockdown unless you can detect the lockdown missile using the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> class.</p><p><a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> objects are re-used after they are destroyed, however their ID is updated when it represents a new <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</p><p>If <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a> is disabled, then a <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is accessible if and only if it is visible. Otherwise if <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a> is enabled, then all Bullets in the game are accessible.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_game.html#a78dd40ec533022daef9dca837ebbb02e" class="m-doc">Game::<wbr />getBullets</a>, <a href="class_b_w_a_p_i_1_1_bullet.html#a42405751bc3c162d96c973f4a1388583" class="m-doc">Bullet::<wbr />exists</a></p></aside>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <div class="m-doc-template">template&lt;typename Interface, typename Data&gt;</div>
+              struct <a href="struct_b_w_a_p_i_1_1_interface_data_wrapper.html" class="m-doc">InterfaceDataWrapper&lt;Bullet, BulletData&gt;</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a42405751bc3c162d96c973f4a1388583" class="m-doc">exists</a>(</span><span class="m-doc-wrap">) const -&gt; bool</span>
+            </dt>
+            <dd>Checks if the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> exists in the view of the <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> player.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#ad0d0dcaabb2f4445fa95363f9222b678" class="m-doc">getAngle</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+            </dt>
+            <dd>Retrieve&#x27;s the direction the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is facing.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a2d9ba3262ac287c4099fbff40357bb84" class="m-doc">getPlayer</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a></span>
+            </dt>
+            <dd>Retrieves the <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> interface that owns the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4898359b8b68502b5f55b1b509fd64c3" class="m-doc">getPosition</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a></span>
+            </dt>
+            <dd>Retrieves the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s current position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4b70a2e3d3a8362619a3905780cfeb87" class="m-doc">getRemoveTimer</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the timer that indicates the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s life span.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#acf84ab593b45968f594d8a9bbf580d08" class="m-doc">getSource</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a></span>
+            </dt>
+            <dd>Retrieves the <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface that the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> spawned from.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a61a5910918ee8168a6cfc7f5ac2b7936" class="m-doc">getTarget</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a></span>
+            </dt>
+            <dd>Retrieves the <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface that the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is heading to.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#af01d2f150b3aabeadc7804d9bd65f2af" class="m-doc">getTargetPosition</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a></span>
+            </dt>
+            <dd>Retrieves the target position that the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is heading to.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#afbc43aeae68eb580fb08fa498c6ecd3c" class="m-doc">getType</a>(</span><span class="m-doc-wrap">) const -&gt; <a href="class_b_w_a_p_i_1_1_bullet_type.html" class="m-doc">BulletType</a></span>
+            </dt>
+            <dd>Retrieves the type of this <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#afbd6a9ec71c06fb8578cc544e0300847" class="m-doc">getVelocityX</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+            </dt>
+            <dd>Retrieves the X component of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s velocity, measured in pixels per frame.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a9e48b2a2ed5964c118232b6347504e40" class="m-doc">getVelocityY</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+            </dt>
+            <dd>Retrieves the Y component of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s velocity, measured in pixels per frame.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a4601ee97418a9905730aa4afef2b1d31" class="m-doc">isVisible</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> player = nullptr) const -&gt; bool</span>
+            </dt>
+            <dd>Retrieves the visibility state of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a42405751bc3c162d96c973f4a1388583"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a42405751bc3c162d96c973f4a1388583" class="m-doc-self">exists</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Checks if the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> exists in the view of the <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> player.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Returns</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">true</td>
+                  <td>If the bullet exists or is visible.</td>
+                </tr>
+                <tr>
+                  <td>false</td>
+                  <td>If the bullet was destroyed or has gone out of scope.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>If <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a> is disabled, and a <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is not visible, then the return value will be false regardless of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s true existence. This is because absolutely no state information on invisible enemy bullets is made available to the AI.</p><p>If <a href="namespace_b_w_a_p_i_1_1_flag.html#a394478b7ea50a1fea08f7a73bbad04aeaf6d5058525d1ce926407b5644594d790" class="m-doc">Flag::<wbr />CompleteMapInformation</a> is enabled, then this function is accurate for all <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> information.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_bullet.html#a4601ee97418a9905730aa4afef2b1d31" class="m-doc">isVisible</a>, <a href="class_b_w_a_p_i_1_1_unit.html#a9016baeec0f9378966bffb337a609a3c" class="m-doc">Unit::<wbr />exists</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ad0d0dcaabb2f4445fa95363f9222b678"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad0d0dcaabb2f4445fa95363f9222b678" class="m-doc-self">getAngle</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieve&#x27;s the direction the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is facing.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A double representing the direction the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is facing.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.0</td>
+                  <td>If the bullet is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>If the angle is 0, then the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is facing right.</p>
+          </div></section>
+          <section class="m-doc-details" id="a2d9ba3262ac287c4099fbff40357bb84"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a2d9ba3262ac287c4099fbff40357bb84" class="m-doc-self">getPlayer</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> interface that owns the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The owning <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> interface object.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>nullptr</td>
+                  <td>If the <a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> object for this <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a4898359b8b68502b5f55b1b509fd64c3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4898359b8b68502b5f55b1b509fd64c3" class="m-doc-self">getPosition</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s current position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A Position containing the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s current coordinates.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>None</td>
+                  <td>If the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_bullet.html#af01d2f150b3aabeadc7804d9bd65f2af" class="m-doc">getTargetPosition</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4b70a2e3d3a8362619a3905780cfeb87"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4b70a2e3d3a8362619a3905780cfeb87" class="m-doc-self">getRemoveTimer</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the timer that indicates the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s life span.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>An integer representing the remaining number of frames until the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> self-destructs.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>If the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Bullets are not permanent objects, so they will often have a limited life span. This life span is measured in frames. Normally a <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> will reach its target before being removed.</p>
+          </div></section>
+          <section class="m-doc-details" id="acf84ab593b45968f594d8a9bbf580d08"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#acf84ab593b45968f594d8a9bbf580d08" class="m-doc-self">getSource</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface that the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> spawned from.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The owning <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>nullptr</td>
+                  <td>If the source can not be identified or is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_bullet.html#a61a5910918ee8168a6cfc7f5ac2b7936" class="m-doc">getTarget</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a61a5910918ee8168a6cfc7f5ac2b7936"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a61a5910918ee8168a6cfc7f5ac2b7936" class="m-doc-self">getTarget</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface that the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is heading to.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>The target <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> interface object, if one exists.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>nullptr</td>
+                  <td>If the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s target <a href="class_b_w_a_p_i_1_1_unit.html" class="m-doc">Unit</a> is inaccessible, the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is targetting the ground, or if the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> itself is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_bullet.html#af01d2f150b3aabeadc7804d9bd65f2af" class="m-doc">getTargetPosition</a>, <a href="class_b_w_a_p_i_1_1_bullet.html#acf84ab593b45968f594d8a9bbf580d08" class="m-doc">getSource</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af01d2f150b3aabeadc7804d9bd65f2af"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="namespace_b_w_a_p_i.html#a16aba0785ffe0e6315bb71721ba042f6" class="m-doc">Position</a> BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af01d2f150b3aabeadc7804d9bd65f2af" class="m-doc-self">getTargetPosition</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the target position that the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is heading to.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A Position indicating where the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is headed.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>None</td>
+                  <td>If the bullet is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_bullet.html#a61a5910918ee8168a6cfc7f5ac2b7936" class="m-doc">getTarget</a>, <a href="class_b_w_a_p_i_1_1_bullet.html#a4898359b8b68502b5f55b1b509fd64c3" class="m-doc">getPosition</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="afbc43aeae68eb580fb08fa498c6ecd3c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_bullet_type.html" class="m-doc">BulletType</a> BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afbc43aeae68eb580fb08fa498c6ecd3c" class="m-doc-self">getType</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the type of this <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A <a href="class_b_w_a_p_i_1_1_bullet_type.html" class="m-doc">BulletType</a> representing the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s type.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>None</td>
+                  <td>if the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="afbd6a9ec71c06fb8578cc544e0300847"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afbd6a9ec71c06fb8578cc544e0300847" class="m-doc-self">getVelocityX</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the X component of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s velocity, measured in pixels per frame.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A double representing the number of pixels moved on the X axis per frame.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.0</td>
+                  <td>if the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_bullet.html#a9e48b2a2ed5964c118232b6347504e40" class="m-doc">getVelocityY</a>, <a href="class_b_w_a_p_i_1_1_bullet.html#ad0d0dcaabb2f4445fa95363f9222b678" class="m-doc">getAngle</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9e48b2a2ed5964c118232b6347504e40"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">double BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9e48b2a2ed5964c118232b6347504e40" class="m-doc-self">getVelocityY</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Retrieves the Y component of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s velocity, measured in pixels per frame.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A double representing the number of pixels moved on the Y axis per frame.</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.0</td>
+                  <td>if the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is inaccessible.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_bullet.html#afbd6a9ec71c06fb8578cc544e0300847" class="m-doc">getVelocityX</a>, <a href="class_b_w_a_p_i_1_1_bullet.html#ad0d0dcaabb2f4445fa95363f9222b678" class="m-doc">getAngle</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4601ee97418a9905730aa4afef2b1d31"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Bullet::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4601ee97418a9905730aa4afef2b1d31" class="m-doc-self">isVisible</a>(</span><span class="m-doc-wrap"><a href="class_b_w_a_p_i_1_1_player.html" class="m-doc">Player</a> player = nullptr) const</span></span>
+            </h3>
+            <p>Retrieves the visibility state of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">player</td>
+                  <td>(optional) If this parameter is specified, then the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>&#x27;s visibility to the given player is checked. If this parameter is omitted, then a default value of nullptr is used, which will check if the <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> player has vision of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Returns</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>true</td>
+                  <td>If the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is visible to the specified player.</td>
+                </tr>
+                <tr>
+                  <td>false</td>
+                  <td>If the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is not visible to the specified player.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>If <code>player</code> is nullptr and Broodwar-&gt;self() is also nullptr, then the visibility of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a> is determined by checking if at least one other player has vision of the <a href="class_b_w_a_p_i_1_1_bullet.html" class="m-doc">Bullet</a>.</p></aside>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BWAPI The BroodWar API. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

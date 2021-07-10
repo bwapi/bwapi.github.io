@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BWAPI::Point class | BWAPI The BroodWar API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="stylesheet" href="doxygen-mcss.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m"><img src="logo.png" alt="" />BWAPI <span class="m-thin">The BroodWar API</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a href="annotated.html">Classes</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <div class="m-doc-template">template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;</div>
+          <span class="m-breadcrumb"><a href="namespace_b_w_a_p_i.html">BWAPI</a>::<wbr/></span>Point <span class="m-thin">class</span>
+        </h1>
+        <p>The <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a> class is a base class that implements convenience members and performs conversions for several different position scales.</p>
+        <table class="m-table m-fullwidth m-flat">
+          <thead>
+            <tr><th colspan="2">Template parameters</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 1%">T</td>
+              <td>The underlying type of the x and y values. <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a> uses int.</td>
+            </tr>
+            <tr>
+              <td>Scale</td>
+              <td>The underlying scale that this is intended to be used for. The smaller this value, the higher the precision. A value of 1 indicates the pixel level.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pub-attribs">Public variables</a></li>
+                <li><a href="#friends">Friends</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>It is intended to be inherited or typedef&#x27;d for use with <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a>. Users can extend the <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a> class, and implement their own members, and it will remain compatible with <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a>.</p><p>Consider the following:</p><pre class="m-code"><span class="k">class</span> <span class="nc">VectorPos</span> <span class="o">:</span> <span class="k">public</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Point</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span>   <span class="c1">// Same as BWAPI::Position with underlying type double</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+  <span class="n">VectorPos</span><span class="p">(</span><span class="kt">double</span> <span class="n">x_</span><span class="p">,</span> <span class="kt">double</span> <span class="n">y_</span><span class="p">)</span> <span class="o">:</span> <span class="n">BWAPI</span><span class="o">::</span><span class="n">Point</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="mi">1</span><span class="o">&gt;</span><span class="p">(</span><span class="n">x_</span><span class="p">,</span> <span class="n">y_</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="c1">// ... whatever members that operate with the underling type double</span>
+<span class="p">};</span></pre><p>It then follows that this code will work without incident:</p><pre class="m-code"><span class="n">BWAPI</span><span class="o">::</span><span class="n">Unit</span> <span class="n">myUnit</span><span class="p">;</span> <span class="c1">// assume that the unit is valid and assigned elsewhere</span>
+<span class="n">VectorPos</span> <span class="n">myPos</span><span class="p">{</span><span class="mf">5.7</span><span class="p">,</span> <span class="mf">8.2</span><span class="p">};</span>
+<span class="n">myUnit</span><span class="o">-&gt;</span><span class="n">move</span><span class="p">(</span><span class="n">myPos</span><span class="p">);</span>  <span class="c1">// Automatic type conversion, unit is moved to (5,8)</span></pre><aside class="m-note m-info"><h4>Note</h4><p>For full compatibility with <a href="namespace_b_w_a_p_i.html" class="m-doc">BWAPI</a>, <code>T</code> must have a precision of at least 16 bits and <code>Scale</code> must be a factor of 32.</p></aside>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt id="a34cd51ee137b6957d4bb1c772f9853ab">
+              using <a href="#a34cd51ee137b6957d4bb1c772f9853ab" class="m-doc-self">list</a> = <a href="http://en.cppreference.com/w/cpp/container/deque.html" class="m-doc-external">std::<wbr />deque</a>&lt;<a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&gt;
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="aa6e3ea00f3df16c6f6836e393b73f8e3">
+              <span class="m-doc-wrap-bumper"><a href="#aa6e3ea00f3df16c6f6836e393b73f8e3" class="m-doc-self">Point</a>(</span><span class="m-doc-wrap">) <span class="m-label m-flat m-info">defaulted</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename FromT, <a href="classint.html" class="m-doc">int</a> FromScale&gt;</div>
+              <span class="m-doc-wrap-bumper"><a href="#a41175b1ac40d789c6fb17ee5ce01ec22" class="m-doc">Point</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;FromT, FromScale&gt;&amp; pt) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd>A conversion copy constructor to convert positions of different scales to one another.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename FromT&gt;</div>
+              <span class="m-doc-wrap-bumper"><a href="#ac0f2ffbe6c26221c3c0254a2abaa932a" class="m-doc">Point</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;FromT, Scale&gt;&amp; pt)</span>
+            </dt>
+            <dd>A copy constructor for positions with different underlying types.</dd>
+            <dt id="a7f24819b01f666061372fb55069083e0">
+              <span class="m-doc-wrap-bumper"><a href="#a7f24819b01f666061372fb55069083e0" class="m-doc-self">Point</a>(</span><span class="m-doc-wrap">T _x,
+              T _y)</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5f59d7381aa08e71aecb3ae2925f4463" class="m-doc">getApproxDistance</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; position) const -&gt; <a href="classint.html" class="m-doc">int</a></span>
+            </dt>
+            <dd>Retrieves the approximate distance using an algorithm from Starcraft: Broodwar.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#aa38d2df565c3d15f4e668fbd652886af" class="m-doc">getDistance</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; position) const -&gt; double</span>
+            </dt>
+            <dd>Gets an accurate distance measurement from this point to the given position.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a11beb4f18ff01b2995acbc17e76a75a1" class="m-doc">getLength</a>(</span><span class="m-doc-wrap">) const -&gt; double</span>
+            </dt>
+            <dd>Gets the length of this point from the top left corner of the map.</dd>
+            <dt id="a518b3236d1c7d2bd2c551d31f98ebbe2">
+              <span class="m-doc-wrap-bumper">auto <a href="#a518b3236d1c7d2bd2c551d31f98ebbe2" class="m-doc-self">operator!=</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pos) const -&gt; bool</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a41fb0bd18397fbb90804b6ba0d65c531">
+              <span class="m-doc-wrap-bumper">auto <a href="#a41fb0bd18397fbb90804b6ba0d65c531" class="m-doc-self">operator%</a>(</span><span class="m-doc-wrap">const T&amp; v) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a225525af05e5d97fea155f424382de55">
+              <span class="m-doc-wrap-bumper">auto <a href="#a225525af05e5d97fea155f424382de55" class="m-doc-self">operator%=</a>(</span><span class="m-doc-wrap">const T&amp; val) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a1660c49da72fd83085c23a216850ff49">
+              <span class="m-doc-wrap-bumper">auto <a href="#a1660c49da72fd83085c23a216850ff49" class="m-doc-self">operator&amp;</a>(</span><span class="m-doc-wrap">const T&amp; v) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad6846e86a1c6b4ed7bb7adac09028dcc">
+              <span class="m-doc-wrap-bumper">auto <a href="#ad6846e86a1c6b4ed7bb7adac09028dcc" class="m-doc-self">operator&amp;=</a>(</span><span class="m-doc-wrap">const T&amp; v) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a7e7e3d77ac9d5cce13eb20db40cdd87d">
+              <span class="m-doc-wrap-bumper">auto <a href="#a7e7e3d77ac9d5cce13eb20db40cdd87d" class="m-doc-self">operator*</a>(</span><span class="m-doc-wrap">const T&amp; v) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8dffc47ae14d0a72f1451e4525acf6ad">
+              <span class="m-doc-wrap-bumper">auto <a href="#a8dffc47ae14d0a72f1451e4525acf6ad" class="m-doc-self">operator*=</a>(</span><span class="m-doc-wrap">const T&amp; v) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a1aa3b4639197e41cebc41b6189f9eb64">
+              <span class="m-doc-wrap-bumper">auto <a href="#a1aa3b4639197e41cebc41b6189f9eb64" class="m-doc-self">operator+</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; p) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="af868ae99b705c046914859dfe04ea086">
+              <span class="m-doc-wrap-bumper">auto <a href="#af868ae99b705c046914859dfe04ea086" class="m-doc-self">operator+=</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; p) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa1aa0e4ccb9d5142753fe7f76caca098">
+              <span class="m-doc-wrap-bumper">auto <a href="#aa1aa0e4ccb9d5142753fe7f76caca098" class="m-doc-self">operator-</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; p) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ace9f4958180c1a541b4df90200bfa079">
+              <span class="m-doc-wrap-bumper">auto <a href="#ace9f4958180c1a541b4df90200bfa079" class="m-doc-self">operator-=</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; p) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a27478229692320c3a168a266cf5cb32a">
+              <span class="m-doc-wrap-bumper">auto <a href="#a27478229692320c3a168a266cf5cb32a" class="m-doc-self">operator/</a>(</span><span class="m-doc-wrap">const T&amp; v) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a76c9e98fbe7b7e27770722091b2e787a">
+              <span class="m-doc-wrap-bumper">auto <a href="#a76c9e98fbe7b7e27770722091b2e787a" class="m-doc-self">operator/=</a>(</span><span class="m-doc-wrap">const T&amp; val) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a695edd14e656319808e6c52d5a6d3747" class="m-doc">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; position) const -&gt; bool</span>
+            </dt>
+            <dd>A less than operator that enables positions to be used by additional STL containers.</dd>
+            <dt id="ae5eb77581e24f35b9c0999248b78be09">
+              <span class="m-doc-wrap-bumper">auto <a href="#ae5eb77581e24f35b9c0999248b78be09" class="m-doc-self">operator==</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pos) const -&gt; bool</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a412b9261efaba2bd3b00e8e23b9f6b0b">
+              <span class="m-doc-wrap-bumper">auto <a href="#a412b9261efaba2bd3b00e8e23b9f6b0b" class="m-doc-self">operator^</a>(</span><span class="m-doc-wrap">const T&amp; v) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a7884c82067e5ca81747ff989e9963184">
+              <span class="m-doc-wrap-bumper">auto <a href="#a7884c82067e5ca81747ff989e9963184" class="m-doc-self">operator^=</a>(</span><span class="m-doc-wrap">const T&amp; v) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a71514510ad0a5a663cbbb6decea9bb79">
+              <span class="m-doc-wrap-bumper">auto <a href="#a71514510ad0a5a663cbbb6decea9bb79" class="m-doc-self">operator|</a>(</span><span class="m-doc-wrap">const T&amp; v) const -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8ad8fb0525698f4320c3b771e232e212">
+              <span class="m-doc-wrap-bumper">auto <a href="#a8ad8fb0525698f4320c3b771e232e212" class="m-doc-self">operator|=</a>(</span><span class="m-doc-wrap">const T&amp; v) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a3de7f44721ac974fbd29180c86a3ba1c">
+              <span class="m-doc-wrap-bumper">auto <a href="#a3de7f44721ac974fbd29180c86a3ba1c" class="m-doc-self">setMax</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; max) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&amp;</span>
+            </dt>
+            <dd>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a8a3a642b10813895e8864dc857035af2" class="m-doc">setMax</a>(</span><span class="m-doc-wrap">T max_x,
+              T max_y) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&amp;</span>
+            </dt>
+            <dd>Sets the maximum x and y values.</dd>
+            <dt id="a97ea02c33bf49247df74a9e157af2e5d">
+              <span class="m-doc-wrap-bumper">auto <a href="#a97ea02c33bf49247df74a9e157af2e5d" class="m-doc-self">setMin</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; min) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&amp;</span>
+            </dt>
+            <dd>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#afcd256c4fbc9e8f5b46bdee926d829f5" class="m-doc">setMin</a>(</span><span class="m-doc-wrap">T min_x,
+              T min_y) -&gt; <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&amp;</span>
+            </dt>
+            <dd>Sets the minimum x and y values.</dd>
+          </dl>
+        </section>
+        <section id="pub-attribs">
+          <h2><a href="#pub-attribs">Public variables</a></h2>
+          <dl class="m-doc">
+            <dt>
+              T <a href="#a838ae51f38c986015232b3fc74fe1be3" class="m-doc">x</a>
+            </dt>
+            <dd>The x and y members for this class.</dd>
+            <dt id="ac570a431c01d4eb9b074cc0db43bf1f7">
+              T <a href="#ac570a431c01d4eb9b074cc0db43bf1f7" class="m-doc-self">y</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="friends">
+          <h2><a href="#friends">Friends</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a5c41f1a785094a2b35e72e3e2597040c" class="m-doc">operator&lt;&lt;</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" class="m-doc-external">std::<wbr />ostream</a>&amp; os,
+              const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pt) -&gt; <a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" class="m-doc-external">std::<wbr />ostream</a>&amp;</span>
+            </dt>
+            <dd>Ouput stream operator overload.</dd>
+            <dt id="ac24eee07cd7ded84d4ccf5a001913331">
+              <span class="m-doc-wrap-bumper">auto <a href="#ac24eee07cd7ded84d4ccf5a001913331" class="m-doc-self">operator&lt;&lt;</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" class="m-doc-external">std::<wbr />wostream</a>&amp; os,
+              const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pt) -&gt; <a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" class="m-doc-external">std::<wbr />wostream</a>&amp;</span>
+            </dt>
+            <dd>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">auto <a href="#a489b7b070ed4fdcd8f4106d3bdb42681" class="m-doc">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html" class="m-doc-external">std::<wbr />istream</a>&amp; in,
+              <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pt) -&gt; <a href="http://en.cppreference.com/w/cpp/io/basic_istream.html" class="m-doc-external">std::<wbr />istream</a>&amp;</span>
+            </dt>
+            <dd>Input stream operator overload.</dd>
+            <dt id="aec8da43dcda50528c11598111d1bde80">
+              <span class="m-doc-wrap-bumper">auto <a href="#aec8da43dcda50528c11598111d1bde80" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html" class="m-doc-external">std::<wbr />wistream</a>&amp; in,
+              <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pt) -&gt; <a href="http://en.cppreference.com/w/cpp/io/basic_istream.html" class="m-doc-external">std::<wbr />wistream</a>&amp;</span>
+            </dt>
+            <dd>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a41175b1ac40d789c6fb17ee5ce01ec22"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+                template&lt;typename FromT, <a href="classint.html" class="m-doc">int</a> FromScale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a41175b1ac40d789c6fb17ee5ce01ec22" class="m-doc-self">Point</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;FromT, FromScale&gt;&amp; pt) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <p>A conversion copy constructor to convert positions of different scales to one another.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">FromT</td>
+                  <td>The type that it is converting from.</td>
+                </tr>
+                <tr>
+                  <td>FromScale</td>
+                  <td>The scale that it is converting from.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ac0f2ffbe6c26221c3c0254a2abaa932a"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+                template&lt;typename FromT&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"> BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac0f2ffbe6c26221c3c0254a2abaa932a" class="m-doc-self">Point</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;FromT, Scale&gt;&amp; pt)</span></span>
+            </h3>
+            <p>A copy constructor for positions with different underlying types.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">FromT</td>
+                  <td>The type being converted to type T.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>pt</td>
+                  <td>The <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a> to receive data from.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a5f59d7381aa08e71aecb3ae2925f4463"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="classint.html" class="m-doc">int</a> BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5f59d7381aa08e71aecb3ae2925f4463" class="m-doc-self">getApproxDistance</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; position) const</span></span>
+            </h3>
+            <p>Retrieves the approximate distance using an algorithm from Starcraft: Broodwar.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">position</td>
+                  <td>The target point to measure the distance to.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>An integer representing the distance between this point and <code>position</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This is a direct distance calculation that ignores all collision.</p><p>This function is desired because it uses the same &quot;imperfect&quot; algorithm used in Broodwar, so that calculations will be consistent with the game. It is also optimized for performance.</p><p>The algorithm source is from &quot;Fast Linear Approximations of Euclidean Distance in
+Higher Dimensions&quot; by Yoshikazu Ohashi and appears in the book &quot;Graphics Gems IV&quot; edited by Paul S Heckbert.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_point.html#aa38d2df565c3d15f4e668fbd652886af" class="m-doc">getDistance</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aa38d2df565c3d15f4e668fbd652886af"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">double BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa38d2df565c3d15f4e668fbd652886af" class="m-doc-self">getDistance</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; position) const</span></span>
+            </h3>
+            <p>Gets an accurate distance measurement from this point to the given position.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">position</td>
+                  <td>The target position to get the distance to.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>A double representing the distance between this point and <code>position</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This is a direct distance calculation that ignores all collision.</p><p>This function impedes performance. In most cases you should use getApproxDistance.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_point.html#a5f59d7381aa08e71aecb3ae2925f4463" class="m-doc">getApproxDistance</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a11beb4f18ff01b2995acbc17e76a75a1"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">double BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a11beb4f18ff01b2995acbc17e76a75a1" class="m-doc-self">getLength</a>(</span><span class="m-doc-wrap">) const</span></span>
+            </h3>
+            <p>Gets the length of this point from the top left corner of the map.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>A double representing the length of this point from (0,0).</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>This function impedes performance. In most cases you should use getApproxDistance.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_point.html#a5f59d7381aa08e71aecb3ae2925f4463" class="m-doc">getApproxDistance</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a695edd14e656319808e6c52d5a6d3747"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">bool BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a695edd14e656319808e6c52d5a6d3747" class="m-doc-self">operator&lt;</a>(</span><span class="m-doc-wrap">const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; position) const</span></span>
+            </h3>
+            <p>A less than operator that enables positions to be used by additional STL containers.</p>
+<p>Compares lexicographically the x position, followed by the y position.</p>
+          </div></section>
+          <section class="m-doc-details" id="a8a3a642b10813895e8864dc857035af2"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&amp; BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8a3a642b10813895e8864dc857035af2" class="m-doc-self">setMax</a>(</span><span class="m-doc-wrap">T max_x,
+              T max_y)</span></span>
+            </h3>
+            <p>Sets the maximum x and y values.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">max_x</td>
+                  <td>Maximum x value.</td>
+                </tr>
+                <tr>
+                  <td>max_y</td>
+                  <td>Maximum y value.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>A reference to itself.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>If the current x or y values exceed the given maximum, then values are set to the maximum.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_point.html#afcd256c4fbc9e8f5b46bdee926d829f5" class="m-doc">setMin</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="afcd256c4fbc9e8f5b46bdee926d829f5"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&amp; BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afcd256c4fbc9e8f5b46bdee926d829f5" class="m-doc-self">setMin</a>(</span><span class="m-doc-wrap">T min_x,
+              T min_y)</span></span>
+            </h3>
+            <p>Sets the minimum x and y values.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">min_x</td>
+                  <td>Minimum x value.</td>
+                </tr>
+                <tr>
+                  <td>min_y</td>
+                  <td>Minimum y value.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>A reference to itself.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>If the current x or y values are below the given minimum, then values are set to the minimum.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="class_b_w_a_p_i_1_1_point.html#a8a3a642b10813895e8864dc857035af2" class="m-doc">setMax</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a5c41f1a785094a2b35e72e3e2597040c"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" class="m-doc-external">std::<wbr />ostream</a>&amp; </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a5c41f1a785094a2b35e72e3e2597040c" class="m-doc-self">operator&lt;&lt;</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html" class="m-doc-external">std::<wbr />ostream</a>&amp; os,
+              const <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pt)</span></span>
+            </h3>
+            <p>Ouput stream operator overload.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">os</td>
+                  <td>Output stream.</td>
+                </tr>
+                <tr>
+                  <td>pt</td>
+                  <td><a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a> to output.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Output stream <code>out</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Outputs the <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a> in the format &quot;(x,y)&quot; without quotations.</p>
+          </div></section>
+          <section class="m-doc-details" id="a489b7b070ed4fdcd8f4106d3bdb42681"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              <span class="m-doc-wrap-bumper"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html" class="m-doc-external">std::<wbr />istream</a>&amp; </span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a489b7b070ed4fdcd8f4106d3bdb42681" class="m-doc-self">operator&gt;&gt;</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/io/basic_istream.html" class="m-doc-external">std::<wbr />istream</a>&amp; in,
+              <a href="class_b_w_a_p_i_1_1_point.html" class="m-doc">Point</a>&lt;T, Scale&gt;&amp; pt)</span></span>
+            </h3>
+            <p>Input stream operator overload.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">in</td>
+                  <td>The input stream.</td>
+                </tr>
+                <tr>
+                  <td>pt</td>
+                  <td>The receiving variable.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Input stream <code>in</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Reads the input in the form &quot;x y&quot; without quotations.</p><p>The x and y values are read as type T(typically int or float) and stored into pt.</p>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-doc-details" id="a838ae51f38c986015232b3fc74fe1be3"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T, <a href="classint.html" class="m-doc">int</a> Scale&gt;
+              </div>
+              T BWAPI::<wbr />Point&lt;T, Scale&gt;::<wbr /><a href="#a838ae51f38c986015232b3fc74fe1be3" class="m-doc-self">x</a>
+            </h3>
+            <p>The x and y members for this class.</p>
+<p>Simply reference these members when retrieving a position&#x27;s x and y values.</p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v1.js"></script>
+<script src="searchdata-v1.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>BWAPI The BroodWar API. Created with <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
